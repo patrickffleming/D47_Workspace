@@ -1,0 +1,22 @@
+#JSFPKIEditor last values
+serial=0
+ca.expiry=2017-01-01
+ca.keystore=ca-privatekey.p8
+ca.keystore.password=
+ca.certificate=ca-certificate.cer
+request.keystore.password=
+request.keystore=certificate-privatekey.p8
+request.certificate=certificate-request.p10
+days=365
+certificate=certificate.cer
+location.name=Name
+location.state=State
+location.locality=Locality
+location.organization=Organization
+location.unit=Unit
+location.country=AU
+location.email=person@company
+blank.password=*yes
+strength=2048
+algorithm=*RSA
+certificate.signing.algorithm=*sha256rsa
