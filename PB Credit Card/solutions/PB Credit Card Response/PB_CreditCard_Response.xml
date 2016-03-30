@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ccAuth>
+       	<site>Invacare</site>
+       	<crosstrioUser>adsmith</crosstrioUser>
+	<RequestDateTime>03/12/2013 17:23:31</RequestDateTime>
+	<ResponseDateTime>03/12/2013 17:24:08</ResponseDateTime>
+	<AuthID>ABC000111222</AuthID>
+	<AuthMsg>optional text</AuthMsg>
+</ccAuth>

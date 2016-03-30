@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ccInfo>
+       	<site>Invacare</site>
+       	<crosstrioUser>adsmith</crosstrioUser>
+       	<PaymentAmount>122.65</PaymentAmount> 
+	<DateTime>03/12/2013 17:23:31</DateTime>
+	<ccNumber>0000111122223333</ccNumber>
+	<ccType>002</ccType> 
+	<ccExpMonth>02</ccExpMonth>
+	<ccExpYear>2015</ccExpYear>
+	<ccName>Albert Einstein</ccName>
+	<ccAddr1>123 Main</ccAddr1>
+	<ccAddr2>optional</ccAddr2>
+	<ccCity>Hawoth</ccCity>
+	<ccState>NJ</ccState>
+	<ccZip>07641</ccZip>
+	<ccCountry>US</ccCountry>
+</ccInfo>
+
+  

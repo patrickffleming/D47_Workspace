@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DepartmentListRequest> 
+    <ReverseString>ABCDEFG</ReverseString> 
+    <Department> 
+        <Code>ADM</Code> 
+    </Department> 
+    <Department> 
+        <Code>FLT</Code> 
+     </Department> 
+</DepartmentListRequest>

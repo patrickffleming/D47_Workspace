@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<project type="server" package="com.acme.service.soap" service-class="ProcessMakertoLANSAService" provider-class="ProcessMakertoLANSAProvider" endpoint="http://solutions.lansa.com/cgi-bin/jsmdirect?PMAKER_LANSA" style="wrapped" typemapping="" archive-types="true">
+
+<operation name="noop" checked="false">
+</operation>
+
+<operation name="SetEmployeeTerminationDate" checked="true">
+
+  <parameter name="EmployeeNumber" parameter-type="String" entity-name="EMPNO" entity-type="field" entity-format="">
+  </parameter>
+
+  <parameter name="TerminationDate" parameter-type="String" entity-name="PM_TERMDATE" entity-type="field" entity-format="">
+  </parameter>
+
+  <parameter name="ProcessMakerCaseNumber" parameter-type="String" entity-name="PM_CASENUMBER" entity-type="field" entity-format="">
+  </parameter>
+
+  <parameter name="TerminationReason" parameter-type="String" entity-name="PM_TERMREASON" entity-type="field" entity-format="">
+  </parameter>
+
+  <return name="SetEmployeeTerminationDateReturn" parameter-type="String" entity-name="PM_TERMRET" entity-type="field" entity-format="">
+  </return>
+
+</operation>
+
+<operation name="UploadDocument" checked="false">
+
+  <parameter name="Document" parameter-type="byte" parameter-array="true" entity-name="DF_ELFNAM" entity-type="streamfile" entity-format="">
+  </parameter>
+
+  <parameter name="ObjectID" parameter-type="String" entity-name="DF_ELOID" entity-type="field" entity-format="">
+  </parameter>
+
+  <parameter name="ObjectKey1" parameter-type="String" entity-name="DF_ELKEY1" entity-type="field" entity-format="">
+  </parameter>
+
+  <parameter name="ObjectKey2" parameter-type="String" entity-name="DF_ELKEY2" entity-type="field" entity-format="">
+  </parameter>
+
+  <parameter name="ObjectKey3" parameter-type="String" entity-name="DF_ELKEY3" entity-type="field" entity-format="">
+  </parameter>
+
+  <parameter name="ObjectKey4" parameter-type="String" entity-name="DF_ELKEY4" entity-type="field" entity-format="">
+  </parameter>
+
+  <parameter name="ObjectKey5" parameter-type="String" entity-name="DF_ELKEY5" entity-type="field" entity-format="">
+  </parameter>
+
+  <parameter name="ObjectKey6" parameter-type="String" entity-name="DF_ELKEY6" entity-type="field" entity-format="">
+  </parameter>
+
+  <parameter name="ObjectKey7" parameter-type="String" entity-name="DF_ELKEY7" entity-type="field" entity-format="">
+  </parameter>
+
+  <parameter name="ObjectKey8" parameter-type="String" entity-name="DF_ELKEY8" entity-type="field" entity-format="">
+  </parameter>
+
+  <parameter name="ObjectKey9" parameter-type="String" entity-name="DF_ELKEY9" entity-type="field" entity-format="">
+  </parameter>
+
+  <parameter name="ObjectKey0" parameter-type="String" entity-name="DF_ELKEY0" entity-type="field" entity-format="">
+  </parameter>
+
+  <return name="UploadDocumentReturn" parameter-type="String" entity-name="PM_UPDOCRET" entity-type="field" entity-format="">
+  </return>
+
+</operation>
+
+<operation name="updateInvoices" checked="true">
+
+  <parameter name="processID" parameter-type="String" entity-name="PM_PROCESSID" entity-type="field" entity-format="">
+  </parameter>
+
+  <parameter name="caseID" parameter-type="String" entity-name="PM_CASEID" entity-type="field" entity-format="">
+  </parameter>
+
+  <parameter name="control" parameter-type="String" entity-name="AICTRL" entity-type="field" entity-format="">
+  </parameter>
+
+  <parameter name="company" parameter-type="String" entity-name="COMPANY" entity-type="field" entity-format="">
+  </parameter>
+
+  <parameter name="partition" parameter-type="String" entity-name="PARTITION" entity-type="field" entity-format="">
+  </parameter>
+
+  <parameter name="caseNumber" parameter-type="String" entity-name="PM_CASENUMBER" entity-type="field" entity-format="">
+  </parameter>
+
+  <parameter name="casePIN" parameter-type="String" entity-name="PM_CASEPIN" entity-type="field" entity-format="">
+  </parameter>
+
+  <parameter name="createUser" parameter-type="String" entity-name="PM_CREATEUSER" entity-type="field" entity-format="">
+  </parameter>
+
+  <parameter name="approveUser" parameter-type="String" entity-name="PM_APPROVEUSER" entity-type="field" entity-format="">
+  </parameter>
+
+  <parameter name="bemsMessageQ" parameter-type="String" entity-name="PM_MESSAGEQ" entity-type="field" entity-format="">
+  </parameter>
+
+  <parameter name="bemsMessage" parameter-type="String" entity-name="PM_MESSAGE" entity-type="field" entity-format="">
+  </parameter>
+
+  <parameter name="bemsObject" parameter-type="String" entity-name="PM_BEMSOBJECT" entity-type="field" entity-format="">
+  </parameter>
+
+  <parameter name="bemsCommand" parameter-type="String" entity-name="PM_BEMSCOMMAND" entity-type="field" entity-format="">
+  </parameter>
+
+  <return name="updateInvoicesReturn" parameter-type="String" entity-name="PM_STATUSCODE" entity-type="field" entity-format="">
+  </return>
+
+</operation>
+
+<operation name="SendInvoice" checked="false">
+
+  <parameter name="ProcId" parameter-type="String" entity-name="PM_PROCESSID" entity-type="field" entity-format="">
+  </parameter>
+
+  <parameter name="CaseId" parameter-type="String" entity-name="PM_CASEID" entity-type="field" entity-format="">
+  </parameter>
+
+  <return name="SendInvoiceReturn" parameter-type="String" entity-name="PM_STATUSCODE" entity-type="field" entity-format="">
+  </return>
+
+</operation>
+
+</project>

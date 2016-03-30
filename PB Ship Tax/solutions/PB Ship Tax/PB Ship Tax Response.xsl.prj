@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<project source="PB_ShipTax_Response.xml">
+  <preference indent="true" omit-declaration="false" use-structure="false"/>
+
+  <template path="/TaxAndShipChargesResponse/Order/Destination"/>
+
+  <function>
+  </function>
+
+  <list>
+    <field name="XBRECNBR" path="/TaxAndShipChargesResponse/Order/Destination/RecipientNumber" />
+    <field name="XBSVCACD" path="/TaxAndShipChargesResponse/Order/Destination/ShipVia" />
+    <field name="XBOHSHAM" path="/TaxAndShipChargesResponse/Order/Destination/ShippingAmount" />
+    <field name="XBOHSHMG" path="/TaxAndShipChargesResponse/Order/Destination/ShippingMessage" />
+    <field name="XBOHTXAM" path="/TaxAndShipChargesResponse/Order/Destination/TaxAmount" />
+    <field name="XBOHTXMG" path="/TaxAndShipChargesResponse/Order/Destination/TaxMessage" />
+    <field name="XBOHSITE" path="/TaxAndShipChargesResponse/Site" />
+    <field name="WK_STATUS" path="/TaxAndShipChargesResponse/Status" />
+    <field name="WK_TXT01" path="/TaxAndShipChargesResponse/ErrorMsg" />
+    <field name="XBOHUSER" path="/TaxAndShipChargesResponse/Order/User" />
+    <field name="XBOHDATE" path="/TaxAndShipChargesResponse/Order/OrderDate" />
+  </list>
+</project>

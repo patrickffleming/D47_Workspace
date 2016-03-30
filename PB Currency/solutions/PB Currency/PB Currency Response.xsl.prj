@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<project source="PB_Currency_Response.xml">
+  <preference indent="true" omit-declaration="false" use-structure="false"/>
+
+  <template path="/CurrencyResponse/Currencies/Currency"/>
+
+  <function>
+    <field name="WK_STATUS" path="/CurrencyResponse/Status" />
+    <field name="WK_TXT01" path="/CurrencyResponse/ErrorMsg" />
+  </function>
+
+  <list>
+    <field name="FSCUCD" path="/CurrencyResponse/Currencies/Currency/CurrencyCode" />
+    <field name="FSDESC" path="/CurrencyResponse/Currencies/Currency/CurrencyDescription" />
+    <field name="FTCURT" path="/CurrencyResponse/Currencies/Currency/ExchangeRate" />
+    <field name="WK_DAT10A" path="/CurrencyResponse/Currencies/Currency/ExchangeRateDate" />
+  </list>
+</project>

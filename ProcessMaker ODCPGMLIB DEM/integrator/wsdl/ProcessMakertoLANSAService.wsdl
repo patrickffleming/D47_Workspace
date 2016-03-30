@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<wsdl:definitions targetNamespace="http://soap.service.acme.com" xmlns:apachesoap="http://xml.apache.org/xml-soap" xmlns:impl="http://soap.service.acme.com" xmlns:intf="http://soap.service.acme.com" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns:wsdlsoap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+
+ <!--WSDL created by LANSA Integrator SOAP Wizard and Apache Axis version: 1.4 Built on Nov 19, 2006 (02:31:34 GMT+00:00)-->
+
+ <wsdl:types>
+  <schema elementFormDefault="qualified" targetNamespace="http://soap.service.acme.com" xmlns="http://www.w3.org/2001/XMLSchema">
+   <element name="SetEmployeeTerminationDate">
+    <complexType>
+     <sequence>
+      <element name="EmployeeNumber" type="xsd:string"/>
+      <element name="TerminationDate" type="xsd:string"/>
+      <element name="ProcessMakerCaseNumber" type="xsd:string"/>
+      <element name="TerminationReason" type="xsd:string"/>
+     </sequence>
+    </complexType>
+   </element>
+   <element name="SetEmployeeTerminationDateResponse">
+    <complexType>
+     <sequence>
+      <element name="SetEmployeeTerminationDateReturn" type="xsd:string"/>
+     </sequence>
+    </complexType>
+   </element>
+   <element name="updateInvoices">
+    <complexType>
+     <sequence>
+      <element name="processID" type="xsd:string"/>
+      <element name="caseID" type="xsd:string"/>
+      <element name="control" type="xsd:string"/>
+      <element name="company" type="xsd:string"/>
+      <element name="partition" type="xsd:string"/>
+      <element name="caseNumber" type="xsd:string"/>
+      <element name="casePIN" type="xsd:string"/>
+      <element name="createUser" type="xsd:string"/>
+      <element name="approveUser" type="xsd:string"/>
+      <element name="bemsMessageQ" type="xsd:string"/>
+      <element name="bemsMessage" type="xsd:string"/>
+     </sequence>
+    </complexType>
+   </element>
+   <complexType name="Invoices">
+    <sequence>
+     <element maxOccurs="1" minOccurs="0" name="account" nillable="true" type="xsd:int"/>
+     <element maxOccurs="1" minOccurs="0" name="amount" nillable="true" type="xsd:double"/>
+     <element maxOccurs="1" minOccurs="0" name="branch" nillable="true" type="xsd:int"/>
+     <element maxOccurs="1" minOccurs="0" name="department" nillable="true" type="xsd:int"/>
+     <element maxOccurs="1" minOccurs="0" name="line" nillable="true" type="xsd:int"/>
+     <element maxOccurs="1" minOccurs="0" name="units" nillable="true" type="xsd:double"/>
+    </sequence>
+   </complexType>
+   <element name="updateInvoicesResponse">
+    <complexType>
+     <sequence>
+      <element name="updateInvoicesReturn" type="xsd:string"/>
+     </sequence>
+    </complexType>
+   </element>
+  </schema>
+ </wsdl:types>
+
+ <wsdl:message name="updateInvoicesResponse">
+  <wsdl:part element="impl:updateInvoicesResponse" name="parameters">
+  </wsdl:part>
+ </wsdl:message>
+
+ <wsdl:message name="SetEmployeeTerminationDateResponse">
+  <wsdl:part element="impl:SetEmployeeTerminationDateResponse" name="parameters">
+  </wsdl:part>
+ </wsdl:message>
+
+ <wsdl:message name="updateInvoicesRequest">
+  <wsdl:part element="impl:updateInvoices" name="parameters">
+  </wsdl:part>
+ </wsdl:message>
+
+ <wsdl:message name="SetEmployeeTerminationDateRequest">
+  <wsdl:part element="impl:SetEmployeeTerminationDate" name="parameters">
+  </wsdl:part>
+ </wsdl:message>
+
+ <wsdl:portType name="ProcessMakertoLANSAServicePortType">
+  <wsdl:operation name="SetEmployeeTerminationDate">
+   <wsdl:input message="impl:SetEmployeeTerminationDateRequest" name="SetEmployeeTerminationDateRequest">
+       </wsdl:input>
+   <wsdl:output message="impl:SetEmployeeTerminationDateResponse" name="SetEmployeeTerminationDateResponse">
+       </wsdl:output>
+  </wsdl:operation>
+  <wsdl:operation name="updateInvoices">
+   <wsdl:input message="impl:updateInvoicesRequest" name="updateInvoicesRequest">
+       </wsdl:input>
+   <wsdl:output message="impl:updateInvoicesResponse" name="updateInvoicesResponse">
+       </wsdl:output>
+  </wsdl:operation>
+ </wsdl:portType>
+
+ <wsdl:binding name="ProcessMakertoLANSAServiceBinding" type="impl:ProcessMakertoLANSAServicePortType">
+  <wsdlsoap:binding style="document" transport="http://schemas.xmlsoap.org/soap/http"/>
+  <wsdl:operation name="SetEmployeeTerminationDate">
+   <wsdlsoap:operation soapAction="SetEmployeeTerminationDate"/>
+   <wsdl:input name="SetEmployeeTerminationDateRequest">
+    <wsdlsoap:body use="literal"/>
+   </wsdl:input>
+   <wsdl:output name="SetEmployeeTerminationDateResponse">
+    <wsdlsoap:body use="literal"/>
+   </wsdl:output>
+  </wsdl:operation>
+  <wsdl:operation name="updateInvoices">
+   <wsdlsoap:operation soapAction="updateInvoices"/>
+   <wsdl:input name="updateInvoicesRequest">
+    <wsdlsoap:body use="literal"/>
+   </wsdl:input>
+   <wsdl:output name="updateInvoicesResponse">
+    <wsdlsoap:body use="literal"/>
+   </wsdl:output>
+  </wsdl:operation>
+ </wsdl:binding>
+
+ <wsdl:service name="ProcessMakertoLANSAServiceService">
+  <wsdl:port binding="impl:ProcessMakertoLANSAServiceBinding" name="ProcessMakertoLANSAServicePort">
+   <wsdlsoap:address location="http://solutions.lansa.com/cgi-bin/jsmdirect?PMAKER_LANSA"/>
+  </wsdl:port>
+ </wsdl:service>
+
+</wsdl:definitions>

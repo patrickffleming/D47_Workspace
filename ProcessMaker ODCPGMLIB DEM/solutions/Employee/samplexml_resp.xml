@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="windows-1250"?>
+<workflow_response>
+<identifier>
+      <Object>Employee</Object>
+      <Event>Add</Event>
+      <Workflow>Add New Employee</Workflow>
+      <Case_Number>123</Case_Number>
+      <Workflow_User>patrickf</Workflow_User>
+      <DateTime>2013-11-07 15:41:00 -4:00</DateTime>
+</identifier>
+<response>
+<status>OK</status>
+<message>Insert completed</message>
+</response>
+</workflow_response>
+

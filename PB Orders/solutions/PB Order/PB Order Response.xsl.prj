@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<project source="PB_Response.xml">
+  <preference indent="true" omit-declaration="false" use-structure="false"/>
+
+
+  <function>
+    <field name="WK_STATUS" path="/OrderResponse/Status" />
+    <field name="WK_TXT01" path="/OrderResponse/ErrorMsg" />
+  </function>
+
+  <list>
+  </list>
+</project>

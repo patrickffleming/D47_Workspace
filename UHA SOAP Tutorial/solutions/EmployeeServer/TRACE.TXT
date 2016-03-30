@@ -1,0 +1,17 @@
+LUXServerProject constructor ( String projectName, Element projectElement, LUXServerTypeCollection collection )
+LUXServerTypeList constructor ( LUXServerProject project, LUXServerTypeCollection collection )
+type : Employee
+LUXServerTypeList construction completed
+LUXDataField constructor ( LUXServerProject project, LUXServerOperation operation, String name, LUXType type )
+name : departmentCode
+type : java.lang.String
+LUXDataField construction completed
+LUXDataField constructor ( LUXServerProject project, LUXServerOperation operation, String name, LUXType type )
+name : sectionCode
+type : java.lang.String
+LUXDataField construction completed
+LUXDataField constructor ( LUXServerProject project, LUXServerOperation operation, String name, LUXType type )
+name : getEmployeesReturn
+type : Employee
+LUXDataField construction completed
+LUXServerProject construction completed

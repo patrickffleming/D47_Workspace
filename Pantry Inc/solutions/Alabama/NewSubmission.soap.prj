@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<project type="agent" package="com.acme.service.soap" service-class="NewSubmissionService" shared-locator="false" maintain-session="false" gzip="false" http10="false" basic-authentication="true">
+
+<operation name="SubmissionListByTransmissionId" checked="false">
+
+  <parameter name="UserName">
+  </parameter>
+
+  <parameter name="Password">
+  </parameter>
+
+  <parameter name="TransmissionId">
+  </parameter>
+
+  <return name="SubmissionListByTransmissionIdResult">
+  </return>
+
+</operation>
+
+<operation name="SubmissionListByDate" checked="false">
+
+  <parameter name="UserName">
+  </parameter>
+
+  <parameter name="Password">
+  </parameter>
+
+  <parameter name="DateFrom">
+  </parameter>
+
+  <parameter name="DateTo">
+  </parameter>
+
+  <return name="SubmissionListByDateResult">
+  </return>
+
+</operation>
+
+<operation name="NewSubmission" checked="true">
+
+  <parameter name="UserName" entity-name="WK_USER" entity-type="field" entity-format="">
+  </parameter>
+
+  <parameter name="Password" entity-name="" entity-type="fixed" entity-format="" entity-value="WK_PASS">
+  </parameter>
+
+  <parameter name="File" entity-name="XMLREQ" entity-type="streamfile" entity-format="">
+  </parameter>
+
+  <return name="NewSubmissionResult" entity-name="XMLRSP" entity-type="streamfile" entity-format="">
+  </return>
+
+</operation>
+
+<operation name="SubmissionListByAcknowledgementId" checked="false">
+
+  <parameter name="UserName">
+  </parameter>
+
+  <parameter name="Password">
+  </parameter>
+
+  <parameter name="AcknowledgementId">
+  </parameter>
+
+  <return name="SubmissionListByAcknowledgementIdResult">
+  </return>
+
+</operation>
+
+</project>

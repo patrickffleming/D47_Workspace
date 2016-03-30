@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<project source="PB_Part_Update_Response.xml">
+  <preference indent="true" omit-declaration="false" use-structure="false"/>
+
+  <template path="/PartsInformationResponse/Parts/Part"/>
+
+  <function>
+    <field name="XBOHSITE" path="/PartsInformationResponse/Site" />
+    <field name="WK_STATUS" path="/PartsInformationResponse/Status" />
+    <field name="WK_TXT01" path="/PartsInformationResponse/ErrorMsg" />
+  </function>
+
+  <list>
+    <field name="BNPART" path="/PartsInformationResponse/Parts/Part/PartNumber" />
+    <field name="INDESC" path="/PartsInformationResponse/Parts/Part/PartDesc" />
+    <field name="BN01DS" path="/PartsInformationResponse/Parts/Part/Revision" />
+    <field name="INALQT" path="/PartsInformationResponse/Parts/Part/QtyAllocated" />
+    <field name="INOHQT" path="/PartsInformationResponse/Parts/Part/QtyOnHand" />
+    <field name="WK_QTY1" path="/PartsInformationResponse/Parts/Part/QryAvailable" />
+  </list>
+</project>

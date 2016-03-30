@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<project source="PB_ShipTax.xml">
+  <preference indent="true" omit-declaration="false" use-structure="false"/>
+
+  <template path="/TaxAndShipChargesRequest/Order/Destination/Parts/Part"/>
+
+  <function>
+  </function>
+
+  <list>
+    <field name="XBINPART" path="/TaxAndShipChargesRequest/Order/Destination/Parts/Part/PartNumber" />
+    <field name="XBSDORQT" path="/TaxAndShipChargesRequest/Order/Destination/Parts/Part/OrderQty" />
+    <field name="XBSDSEPR" path="/TaxAndShipChargesRequest/Order/Destination/Parts/Part/UnitPrice" />
+    <field name="XBSDSEAM" path="/TaxAndShipChargesRequest/Order/Destination/Parts/Part/ExtPrice" />
+    <field name="XBSDLCAM" path="/TaxAndShipChargesRequest/Order/Destination/Parts/Part/LineCharge" />
+    <field name="XBCOCN" path="/TaxAndShipChargesRequest/Order/Destination/Parts/Part/CostCenter" />
+    <field name="XBOHUSER" path="/TaxAndShipChargesRequest/Order/User" />
+    <field name="XBOHORDT" path="/TaxAndShipChargesRequest/Order/OrderDate" />
+    <field name="XBRECNBR" path="/TaxAndShipChargesRequest/Order/Destination/RecipientNumber" />
+    <field name="XBSHNAME" path="/TaxAndShipChargesRequest/Order/Destination/Name" />
+    <field name="XBSHADR1" path="/TaxAndShipChargesRequest/Order/Destination/Address1" />
+    <field name="XBSHADR2" path="/TaxAndShipChargesRequest/Order/Destination/Address2" />
+    <field name="XBSHCITY" path="/TaxAndShipChargesRequest/Order/Destination/City" />
+    <field name="XBSHSTAT" path="/TaxAndShipChargesRequest/Order/Destination/State" />
+    <field name="XBSHZIPC" path="/TaxAndShipChargesRequest/Order/Destination/PostalCode" />
+    <field name="XBSHCOCD" path="/TaxAndShipChargesRequest/Order/Destination/Country" />
+    <field name="XBOHEMAD" path="/TaxAndShipChargesRequest/Order/Destination/Email" />
+    <field name="XBSHS1PH" path="/TaxAndShipChargesRequest/Order/Destination/Phone" />
+    <field name="XBSVCACD" path="/TaxAndShipChargesRequest/Order/Destination/ShipVia" />
+    <field name="XBOHSITE" path="/TaxAndShipChargesRequest/Site" />
+    <field name="XBOHOCAM" path="/TaxAndShipChargesRequest/Order/Destination/OrderCharge" />
+  </list>
+</project>

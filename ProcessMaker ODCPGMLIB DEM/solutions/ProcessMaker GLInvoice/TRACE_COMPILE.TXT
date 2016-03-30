@@ -1,0 +1,83 @@
+C:\Program Files (x86)\Java\jdk1.6.0_25\bin\javac.exe
+-g
+-encoding
+Cp1252
+-source
+1.4
+-target
+1.4
+-verbose
+-deprecation
+-J-Duser.language=en
+-classpath
+"C:\Program Files (x86)\LANSAD10CMP\Integrator\Studio\workspace\ProcessMaker ODCPGMLIB DEM\solutions\ProcessMaker GLInvoice\compile"
+-extdirs
+"C:\Program Files (x86)\LANSAD10CMP\Integrator\Studio\lib\ext;"
+-d
+"C:\Program Files (x86)\LANSAD10CMP\Integrator\Studio\workspace\ProcessMaker ODCPGMLIB DEM\solutions\ProcessMaker GLInvoice\compile"
+com\acme\service\soap\Invoices.java
+com\acme\service\soap\PMGLInvoiceService.java
+com\acme\service\soap\PMGLInvoiceProvider.java
+com\acme\service\soap\PMGLInvoiceProviderStub.java
+[parsing started com\acme\service\soap\Invoices.java]
+[parsing completed 17ms]
+[parsing started com\acme\service\soap\PMGLInvoiceService.java]
+[parsing completed 19ms]
+[parsing started com\acme\service\soap\PMGLInvoiceProvider.java]
+[parsing completed 0ms]
+[parsing started com\acme\service\soap\PMGLInvoiceProviderStub.java]
+[parsing completed 1ms]
+[search path for source files: C:\Program Files (x86)\LANSAD10CMP\Integrator\Studio\workspace\ProcessMaker ODCPGMLIB DEM\solutions\ProcessMaker GLInvoice\compile]
+[search path for class files: C:\Program Files (x86)\Java\jdk1.6.0_25\jre\lib\resources.jar,C:\Program Files (x86)\Java\jdk1.6.0_25\jre\lib\rt.jar,C:\Program Files (x86)\Java\jdk1.6.0_25\jre\lib\sunrsasign.jar,C:\Program Files (x86)\Java\jdk1.6.0_25\jre\lib\jsse.jar,C:\Program Files (x86)\Java\jdk1.6.0_25\jre\lib\jce.jar,C:\Program Files (x86)\Java\jdk1.6.0_25\jre\lib\charsets.jar,C:\Program Files (x86)\Java\jdk1.6.0_25\jre\lib\modules\jdk.boot.jar,C:\Program Files (x86)\Java\jdk1.6.0_25\jre\classes,C:\Program Files (x86)\LANSAD10CMP\Integrator\Studio\lib\ext\jsfeditor.jar,C:\Program Files (x86)\LANSAD10CMP\Integrator\Studio\lib\ext\jsfjsonwizard.jar,C:\Program Files (x86)\LANSAD10CMP\Integrator\Studio\lib\ext\jsflook.jar,C:\Program Files (x86)\LANSAD10CMP\Integrator\Studio\lib\ext\jsfsoapwizard.jar,C:\Program Files (x86)\LANSAD10CMP\Integrator\Studio\lib\ext\jsfstudio.jar,C:\Program Files (x86)\LANSAD10CMP\Integrator\Studio\lib\ext\jsfuseragent.jar,C:\Program Files (x86)\LANSAD10CMP\Integrator\Studio\lib\ext\jsfwizard.jar,C:\Program Files (x86)\LANSAD10CMP\Integrator\Studio\lib\ext\jsfxmlwizard.jar,C:\Program Files (x86)\LANSAD10CMP\Integrator\Studio\lib\ext\jsm.jar,C:\Program Files (x86)\LANSAD10CMP\Integrator\Studio\lib\ext\jsmaxis.jar,C:\Program Files (x86)\LANSAD10CMP\Integrator\Studio\lib\ext\jsmbcprov.jar,C:\Program Files (x86)\LANSAD10CMP\Integrator\Studio\lib\ext\jsmcomdisc.jar,C:\Program Files (x86)\LANSAD10CMP\Integrator\Studio\lib\ext\jsmcomlog.jar,C:\Program Files (x86)\LANSAD10CMP\Integrator\Studio\lib\ext\jsmedi.jar,C:\Program Files (x86)\LANSAD10CMP\Integrator\Studio\lib\ext\jsmedimap.jar,C:\Program Files (x86)\LANSAD10CMP\Integrator\Studio\lib\ext\jsmide.jar,C:\Program Files (x86)\LANSAD10CMP\Integrator\Studio\lib\ext\jsmjaf.jar,C:\Program Files (x86)\LANSAD10CMP\Integrator\Studio\lib\ext\jsmjaxrpc.jar,C:\Program Files (x86)\LANSAD10CMP\Integrator\Studio\lib\ext\jsmlog4j.jar,C:\Program Files (x86)\LANSAD10CMP\Integrator\Studio\lib\ext\jsmmail.jar,C:\Program Files (x86)\LANSAD10CMP\Integrator\Studio\lib\ext\jsmrfi.jar,C:\Program Files (x86)\LANSAD10CMP\Integrator\Studio\lib\ext\jsmsaaj.jar,C:\Program Files (x86)\LANSAD10CMP\Integrator\Studio\lib\ext\jsmschema.jar,C:\Program Files (x86)\LANSAD10CMP\Integrator\Studio\lib\ext\jsmscript.jar,C:\Program Files (x86)\LANSAD10CMP\Integrator\Studio\lib\ext\jsmserializer.jar,C:\Program Files (x86)\LANSAD10CMP\Integrator\Studio\lib\ext\jsmservice.jar,C:\Program Files (x86)\LANSAD10CMP\Integrator\Studio\lib\ext\jsmssh2.jar,C:\Program Files (x86)\LANSAD10CMP\Integrator\Studio\lib\ext\jsmwsaddr.jar,C:\Program Files (x86)\LANSAD10CMP\Integrator\Studio\lib\ext\jsmwsdl4j.jar,C:\Program Files (x86)\LANSAD10CMP\Integrator\Studio\lib\ext\jsmxalan.jar,C:\Program Files (x86)\LANSAD10CMP\Integrator\Studio\lib\ext\jsmxerces.jar,C:\Program Files (x86)\LANSAD10CMP\Integrator\Studio\lib\ext\jsmxls.jar,C:\Program Files (x86)\LANSAD10CMP\Integrator\Studio\lib\ext\jsmxmlapi.jar,C:\Program Files (x86)\LANSAD10CMP\Integrator\Studio\workspace\ProcessMaker ODCPGMLIB DEM\solutions\ProcessMaker GLInvoice\compile]
+[loading java\io\Serializable.class(java\io:Serializable.class)]
+[loading java\lang\Object.class(java\lang:Object.class)]
+[loading java\lang\Integer.class(java\lang:Integer.class)]
+[loading org\apache\axis\description\TypeDesc.class(org\apache\axis\description:TypeDesc.class)]
+[loading java\lang\String.class(java\lang:String.class)]
+[loading java\lang\Class.class(java\lang:Class.class)]
+[loading javax\xml\namespace\QName.class(javax\xml\namespace:QName.class)]
+[loading org\apache\axis\encoding\Serializer.class(org\apache\axis\encoding:Serializer.class)]
+[loading org\apache\axis\encoding\Deserializer.class(org\apache\axis\encoding:Deserializer.class)]
+[loading com\lansa\jsm\service\SOAPServerHandler.class(com\lansa\jsm\service:SOAPServerHandler.class)]
+[loading com\lansa\jsm\service\SOAPServerParameter.class(com\lansa\jsm\service:SOAPServerParameter.class)]
+[loading java\lang\Exception.class(java\lang:Exception.class)]
+[loading com\lansa\jsm\service\SOAPServerBind.class(com\lansa\jsm\service:SOAPServerBind.class)]
+[loading com\lansa\jsm\service\SOAPServerParameterFragment.class(com\lansa\jsm\service:SOAPServerParameterFragment.class)]
+[loading com\lansa\jsm\service\SOAPServerResponse.class(com\lansa\jsm\service:SOAPServerResponse.class)]
+[loading com\lansa\jsm\service\SOAPServerResponseParameter.class(com\lansa\jsm\service:SOAPServerResponseParameter.class)]
+[loading com\lansa\jsm\service\SOAPServerProviderStub.class(com\lansa\jsm\service:SOAPServerProviderStub.class)]
+[loading com\lansa\jsm\service\SOAPServerProviderProperties.class(com\lansa\jsm\service:SOAPServerProviderProperties.class)]
+[checking com.acme.service.soap.Invoices]
+[loading org\apache\axis\description\ElementDesc.class(org\apache\axis\description:ElementDesc.class)]
+[loading org\apache\axis\description\FieldDesc.class(org\apache\axis\description:FieldDesc.class)]
+[loading org\apache\axis\encoding\ser\BeanSerializer.class(org\apache\axis\encoding\ser:BeanSerializer.class)]
+[loading org\apache\axis\encoding\ser\BeanDeserializer.class(org\apache\axis\encoding\ser:BeanDeserializer.class)]
+[loading org\apache\axis\encoding\DeserializerImpl.class(org\apache\axis\encoding:DeserializerImpl.class)]
+[loading org\apache\axis\message\SOAPHandler.class(org\apache\axis\message:SOAPHandler.class)]
+[loading org\apache\axis\message\MessageElement.class(org\apache\axis\message:MessageElement.class)]
+[loading org\xml\sax\helpers\DefaultHandler.class(org\xml\sax\helpers:DefaultHandler.class)]
+[loading org\xml\sax\EntityResolver.class(org\xml\sax:EntityResolver.class)]
+[loading org\xml\sax\DTDHandler.class(org\xml\sax:DTDHandler.class)]
+[loading org\xml\sax\ContentHandler.class(org\xml\sax:ContentHandler.class)]
+[loading org\xml\sax\ErrorHandler.class(org\xml\sax:ErrorHandler.class)]
+[loading javax\xml\rpc\encoding\Deserializer.class(javax\xml\rpc\encoding:Deserializer.class)]
+[loading java\lang\NoClassDefFoundError.class(java\lang:NoClassDefFoundError.class)]
+[loading java\lang\LinkageError.class(java\lang:LinkageError.class)]
+[loading java\lang\Error.class(java\lang:Error.class)]
+[loading java\lang\Throwable.class(java\lang:Throwable.class)]
+[loading java\lang\ClassNotFoundException.class(java\lang:ClassNotFoundException.class)]
+[wrote C:\Program Files (x86)\LANSAD10CMP\Integrator\Studio\workspace\ProcessMaker ODCPGMLIB DEM\solutions\ProcessMaker GLInvoice\compile\com\acme\service\soap\Invoices.class]
+[checking com.acme.service.soap.PMGLInvoiceService]
+[loading java\lang\RuntimeException.class(java\lang:RuntimeException.class)]
+[loading com\lansa\jsm\service\SOAPEntityFormat.class(com\lansa\jsm\service:SOAPEntityFormat.class)]
+[wrote C:\Program Files (x86)\LANSAD10CMP\Integrator\Studio\workspace\ProcessMaker ODCPGMLIB DEM\solutions\ProcessMaker GLInvoice\compile\com\acme\service\soap\PMGLInvoiceService.class]
+[checking com.acme.service.soap.PMGLInvoiceProvider]
+[wrote C:\Program Files (x86)\LANSAD10CMP\Integrator\Studio\workspace\ProcessMaker ODCPGMLIB DEM\solutions\ProcessMaker GLInvoice\compile\com\acme\service\soap\PMGLInvoiceProvider.class]
+[checking com.acme.service.soap.PMGLInvoiceProviderStub]
+[loading java\lang\IllegalArgumentException.class(java\lang:IllegalArgumentException.class)]
+[loading java\lang\StringBuffer.class(java\lang:StringBuffer.class)]
+[loading java\lang\AbstractStringBuilder.class(java\lang:AbstractStringBuilder.class)]
+[loading java\lang\CharSequence.class(java\lang:CharSequence.class)]
+[loading java\lang\Comparable.class(java\lang:Comparable.class)]
+[wrote C:\Program Files (x86)\LANSAD10CMP\Integrator\Studio\workspace\ProcessMaker ODCPGMLIB DEM\solutions\ProcessMaker GLInvoice\compile\com\acme\service\soap\PMGLInvoiceProviderStub.class]
+[total 306ms]

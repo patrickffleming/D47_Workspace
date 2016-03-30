@@ -1,0 +1,202 @@
+       // Sample RPG skeleton for xml binding
+
+       // Message handling structure and prototype
+     D ErrorDS         DS            16
+     D  BytesProv                    10I 0 INZ(%SIZE(ErrorDS))
+     D  BytesAvail                   10I 0
+     D  ExceptionID                   7A
+
+     D SendMsg         PR                  EXTPGM('QMHSNDPM')
+     D  MsgID                         7A   CONST
+     D  MsgF                         20A   CONST
+     D  MsgData                      30A   CONST
+     D  MsgDataLen                   10I 0 CONST
+     D  MsgType                      10A   CONST
+     D  CallStackEnt                 10A   CONST
+     D  CallStackCtr                 10I 0 CONST
+     D  MsgKey                        4A   CONST
+     D  Error                              LIKE(ErrorDS)
+
+     D Msg             S             78A   INZ(*BLANKS)
+
+       // Prototypes for Integrator service procedures
+     D PROTODS         DS
+     D  DUMMYFIELD                    1A   INZ(*BLANK)
+     D PROTOARRAY      S             60A   DIM(1)
+
+     D JSMX_BEGIN      PR                  EXTPROC('JSMX_BEGIN') OPDESC
+     D                                4A   OPTIONS(*OMIT)
+     D                               10I 0 CONST
+
+     D JSMX_OPEN       PR                  EXTPROC('JSMX_OPEN') OPDESC
+     D                                4A
+     D                               50A   CONST OPTIONS(*VARSIZE)
+     D                               20A   OPTIONS(*VARSIZE)
+     D                              512A   OPTIONS(*VARSIZE)
+
+     D JSMX_BINDFLD    PR                  EXTPROC('JSMX_BINDFLD') OPDESC
+     D                                4A   CONST
+     D  META                               DIM(1) LIKE(PROTOARRAY)
+     D                               10I 0 CONST
+     D  DATA                               LIKEDS(PROTODS)
+     D                               10I 0 CONST
+     D                               20A   OPTIONS(*VARSIZE)
+     D                              512A   OPTIONS(*VARSIZE)
+
+     D JSMX_BINDLST    PR                  EXTPROC('JSMX_BINDLST') OPDESC
+     D                                4A   CONST
+     D  META                               DIM(1) LIKE(PROTOARRAY)
+     D                               10I 0 CONST
+     D  DATA                               LIKEDS(PROTODS)
+     D                               10I 0 CONST
+     D                               10I 0  
+     D                               10I 0 CONST
+     D                               20A   OPTIONS(*VARSIZE)
+     D                              512A   OPTIONS(*VARSIZE)
+
+     D JSMX_COMMAND    PR                  EXTPROC('JSMX_COMMAND') OPDESC
+     D                                4A   CONST
+     D                              512A   CONST OPTIONS(*VARSIZE)
+     D                               20A   OPTIONS(*VARSIZE)
+     D                              512A   OPTIONS(*VARSIZE)
+
+     D JSMX_CLOSE      PR                  EXTPROC('JSMX_CLOSE') OPDESC
+     D                                4A   CONST
+     D                               20A   OPTIONS(*VARSIZE)
+     D                              512A   OPTIONS(*VARSIZE)
+
+     D JSMX_END        PR                  EXTPROC('JSMX_END') OPDESC
+
+       // Variables
+     D JSMXHDLE1       S              4A   INZ(*BLANKS)
+     D JSMXSRV         S             50A   INZ(*BLANKS)
+     D JSMXSTS         S             20A   INZ(*BLANKS)
+     D JSMXMSG         S            512A   INZ(*BLANKS)
+     D JSMXCMD         S            512A   INZ(*BLANKS)
+     D ZEROLENGTH      S             10I 0 INZ(0)
+
+       // The following fields are used by the xml binding map
+     D FIELDDEF        S             60A   DIM(1) CTDATA
+     D FIELDSZE        S             10I 0 INZ(0)
+     D FIELDENT        S             10I 0 INZ(0)
+     D FIELDDTA        DS                  QUALIFIED
+     D  DEPTDESC...
+     D                               50A   INZ(*BLANKS)
+
+      /free
+
+       // Initialize
+       JSMX_BEGIN (*OMIT : ZEROLENGTH);
+
+       // Open service
+       JSMX_OPEN (JSMXHDLE1         :
+                  'LOCALHOST:4560'  :
+                  JSMXSTS           :
+                  JSMXMSG);
+       exsr check;
+
+       // Load service
+       JSMX_COMMAND (JSMXHDLE1      :
+                     'SERVICE_LOAD SERVICE(HTTPOUTBOUNDXMLBINDSERVICE)' +
+                     ' TRACE(*YES)' :
+                     JSMXSTS        :
+                     JSMXMSG);
+       exsr check;
+
+       // Bind service to create HTTP request content
+       JSMX_COMMAND (JSMXHDLE1      :
+                     'BIND SERVICE(MLQPRO04_RESPONSE)' +
+                     ' TYPE(*OUTBOUND)' :
+                     JSMXSTS        :
+                     JSMXMSG);
+       exsr check;
+
+       // Set fragment - DEPARTMENTRESPONSE
+       FIELDSZE=%SIZE(FIELDDEF:*ALL);
+       FIELDENT=%SIZE(FIELDDTA);
+       JSMX_BINDFLD (JSMXHDLE1      :
+                     FIELDDEF       :
+                     FIELDSZE       :
+                     FIELDDTA       :
+                     FIELDENT       :
+                     JSMXSTS        :
+                     JSMXMSG);
+       exsr check;
+       JSMX_COMMAND (JSMXHDLE1      :
+                     'SET FRAGMENT(DEPARTMENTRESPONSE)' :
+                     JSMXSTS        :
+                     JSMXMSG);
+       exsr check;
+
+       // Write content
+       JSMX_COMMAND (JSMXHDLE1      :
+                     'WRITE INDENT(*YES) BINDTRACE(*YES)' :
+                     JSMXSTS        :
+                     JSMXMSG);
+       exsr check;
+
+       // Close binding
+       JSMX_COMMAND (JSMXHDLE1      :
+                     'CLOSE'        :
+                     JSMXSTS        :
+                     JSMXMSG);
+       exsr check;
+
+       // Send HTTP request content
+       JSMX_COMMAND (JSMXHDLE1      :
+                     'SEND HOST( <<<host:port>>> )' +
+                     ' URL( <<<url>> )' :
+                     JSMXSTS        :
+                     JSMXMSG);
+       exsr check;
+
+       // Bind service to read HTTP response content
+       JSMX_COMMAND (JSMXHDLE1      :
+                     'BIND SERVICE( <<<inbound.class>>> )' +
+                     ' TYPE(*INBOUND) BINDTRACE(*YES)' :
+                     JSMXSTS        :
+                     JSMXMSG);
+       exsr check;
+
+
+       // <<< Inbound binding logic goes here >>>
+
+
+       // Unload service
+       JSMX_COMMAND (JSMXHDLE1        :
+                     'SERVICE_UNLOAD' :
+                     JSMXSTS          :
+                     JSMXMSG);
+       exsr check;
+
+       // Close service
+       JSMX_CLOSE (JSMXHDLE1 :
+                   JSMXSTS   :
+                   JSMXMSG);
+       exsr check;
+
+       // Finalize
+       JSMX_END ();
+
+       *inlr = *on;
+       return;
+
+       begsr check;
+        if JSMXSTS <> 'OK';
+          JSMX_CLOSE (JSMXHDLE1 :
+                      JSMXSTS   :
+                      JSMXMSG);
+          JSMX_END ();
+          msg = 'Java service error has occured';
+          callp  SendMsg (*blanks: *blanks : Msg : %size(Msg):
+                          '*INFO': '*': 0: *blanks: ErrorDS);
+
+          *inlr = *on;
+          return;
+        endif;
+       endsr;
+
+      /end-free
+
+**CTDATA FIELDDEF
+DEPTDESC                                          A000005000

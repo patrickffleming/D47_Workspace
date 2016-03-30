@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<project type="agent" package="com.lansa.SOAPAgent.tutorial" service-class="MLQEmployeeAgentService" shared-locator="false" maintain-session="false" gzip="false" http10="false" basic-authentication="true">
+
+<operation name="MLQGetEmployees" checked="true">
+
+  <parameter name="departmentCode" entity-name="DEPTMENT" entity-type="field" entity-format="">
+  </parameter>
+
+  <parameter name="sectionCode" entity-name="SECTION" entity-type="field" entity-format="">
+  </parameter>
+
+  <return name="MLQGetEmployeesReturn" entity-name="EMPLOYEE" entity-type="fragment" entity-format="">
+    <entity entity-name="EMPNO" entity-type="field" entity-format="" entity-path="employeeID"/>
+    <entity entity-name="GIVENAME" entity-type="field" entity-format="" entity-path="firstName"/>
+    <entity entity-name="SURNAME" entity-type="field" entity-format="" entity-path="lastName"/>
+    <entity entity-name="SALARY" entity-type="field" entity-format="" entity-path="salary"/>
+  </return>
+
+</operation>
+
+</project>

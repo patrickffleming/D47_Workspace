@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<project type="agent" package="com.lansa.UHASOAPAgent.Tutorial" service-class="UHAEmployeeAgentService" shared-locator="false" maintain-session="false" gzip="false" http10="false" basic-authentication="true">
+
+<operation name="noop" checked="false">
+
+  <return name="return">
+  </return>
+
+</operation>
+
+<operation name="getEmployees" checked="true">
+
+  <parameter name="department_code" entity-name="DEPTMENT" entity-type="field" entity-format="">
+  </parameter>
+
+  <parameter name="section_code" entity-name="SECTION" entity-type="field" entity-format="">
+  </parameter>
+
+  <return name="getEmployeesReturn" entity-name="EMPLOYEE" entity-type="fragment" entity-format="">
+    <entity entity-name="EMPNO" entity-type="field" entity-format="" entity-path="employee_ID"/>
+    <entity entity-name="GIVENAME" entity-type="field" entity-format="" entity-path="firstname"/>
+    <entity entity-name="SALARY" entity-type="field" entity-format="" entity-path="salary"/>
+    <entity entity-name="SURNAME" entity-type="field" entity-format="" entity-path="surname"/>
+  </return>
+
+</operation>
+
+</project>

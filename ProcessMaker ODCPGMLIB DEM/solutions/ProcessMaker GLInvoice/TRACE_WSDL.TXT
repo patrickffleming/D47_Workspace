@@ -1,0 +1,31 @@
+C:\Program Files (x86)\Java\jre7\bin\java.exe
+-classpath
+"C:\Program Files (x86)\LANSAD10CMP\Integrator\Studio\workspace\ProcessMaker ODCPGMLIB DEM\solutions\ProcessMaker GLInvoice\compile"
+"-Djava.ext.dirs=C:\Program Files (x86)\LANSAD10CMP\Integrator\Studio\lib\ext;"
+-Duser.language=en
+org.apache.axis.wsdl.Java2WSDL
+-l
+http://www.acme.com/cgi-bin/jsmdirect?myservice
+-o
+C:\Program Files (x86)\LANSAD10CMP\Integrator\Studio\workspace\ProcessMaker ODCPGMLIB DEM\solutions\ProcessMaker GLInvoice\PMGLInvoiceService.wsdl
+-b
+PMGLInvoiceServiceBinding
+-S
+PMGLInvoiceServiceService
+-s
+PMGLInvoiceServicePort
+-P
+PMGLInvoiceServicePortType
+-y
+WRAPPED
+-u
+LITERAL
+-T
+1.2
+-A
+OPERATION
+-i
+com.acme.service.soap.PMGLInvoiceProviderStub
+com.acme.service.soap.PMGLInvoiceProvider
+log4j:WARN No appenders could be found for logger (org.apache.axis.i18n.ProjectResourceBundle).
+log4j:WARN Please initialize the log4j system properly.

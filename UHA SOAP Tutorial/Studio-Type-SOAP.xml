@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<studio-type type="soap" sort-type-elements="true">
+
+  <type name="Employee" entity="" description="" readonly="false">
+    <element name="employeeID" type="String" array="false" entity="" description="" readonly="false"/>
+    <element name="firstName" type="String" array="false" entity="" description="" readonly="false"/>
+    <element name="salary" type="Double" array="false" entity="" description="" readonly="false"/>
+    <element name="surname" type="String" array="false" entity="" description="" readonly="false"/>
+  </type>
+
+</studio-type>
+

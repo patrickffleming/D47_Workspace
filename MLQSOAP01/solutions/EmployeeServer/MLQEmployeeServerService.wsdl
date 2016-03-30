@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<wsdl:definitions targetNamespace="http://mlqtutorial.SOAPServer.lansa.com" xmlns:apachesoap="http://xml.apache.org/xml-soap" xmlns:impl="http://mlqtutorial.SOAPServer.lansa.com" xmlns:intf="http://mlqtutorial.SOAPServer.lansa.com" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns:wsdlsoap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+
+ <!--WSDL created by LANSA Integrator SOAP Wizard and Apache Axis version: 1.4 Built on Nov 19, 2006 (02:31:34 GMT+00:00)-->
+
+ <wsdl:types>
+  <schema elementFormDefault="qualified" targetNamespace="http://mlqtutorial.SOAPServer.lansa.com" xmlns="http://www.w3.org/2001/XMLSchema">
+   <element name="MLQGetEmployees">
+    <complexType>
+     <sequence>
+      <element name="departmentCode" type="xsd:string"/>
+      <element name="sectionCode" type="xsd:string"/>
+     </sequence>
+    </complexType>
+   </element>
+   <element name="MLQGetEmployeesResponse">
+    <complexType>
+     <sequence>
+      <element maxOccurs="unbounded" name="MLQGetEmployeesReturn" type="impl:EMPLOYEE"/>
+     </sequence>
+    </complexType>
+   </element>
+   <complexType name="EMPLOYEE">
+    <sequence>
+     <element name="employeeID" nillable="true" type="xsd:string"/>
+     <element name="firstName" nillable="true" type="xsd:string"/>
+     <element name="lastName" nillable="true" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="salary" nillable="true" type="xsd:double"/>
+    </sequence>
+   </complexType>
+  </schema>
+ </wsdl:types>
+
+ <wsdl:message name="MLQGetEmployeesResponse">
+  <wsdl:part element="impl:MLQGetEmployeesResponse" name="parameters">
+  </wsdl:part>
+ </wsdl:message>
+
+ <wsdl:message name="MLQGetEmployeesRequest">
+  <wsdl:part element="impl:MLQGetEmployees" name="parameters">
+  </wsdl:part>
+ </wsdl:message>
+
+ <wsdl:portType name="MLQEmployeeServerServicePortType">
+  <wsdl:operation name="MLQGetEmployees">
+   <wsdl:input message="impl:MLQGetEmployeesRequest" name="MLQGetEmployeesRequest">
+       </wsdl:input>
+   <wsdl:output message="impl:MLQGetEmployeesResponse" name="MLQGetEmployeesResponse">
+       </wsdl:output>
+  </wsdl:operation>
+ </wsdl:portType>
+
+ <wsdl:binding name="MLQEmployeeServerServiceBinding" type="impl:MLQEmployeeServerServicePortType">
+  <wsdlsoap:binding style="document" transport="http://schemas.xmlsoap.org/soap/http"/>
+  <wsdl:operation name="MLQGetEmployees">
+   <wsdlsoap:operation soapAction="MLQGetEmployees"/>
+   <wsdl:input name="MLQGetEmployeesRequest">
+    <wsdlsoap:body use="literal"/>
+   </wsdl:input>
+   <wsdl:output name="MLQGetEmployeesResponse">
+    <wsdlsoap:body use="literal"/>
+   </wsdl:output>
+  </wsdl:operation>
+ </wsdl:binding>
+
+ <wsdl:service name="MLQEmployeeServerServiceService">
+  <wsdl:port binding="impl:MLQEmployeeServerServiceBinding" name="MLQEmployeeServerServicePort">
+   <wsdlsoap:address location="http://solutions.lansa.com:8561/cgi-bin/jsmdirect?mlqtutorial"/>
+  </wsdl:port>
+ </wsdl:service>
+
+</wsdl:definitions>

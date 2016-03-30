@@ -1,0 +1,855 @@
+LUXAgentProject constructor ( String projectName, Element projectElement )
+Load classes from C:\Program Files (x86)\LANSAD10CMP\Integrator\Studio\workspace\ProcessMaker ODCPGMLIB DEM\solutions\ProcessMaker WSDL\ProcessMaker WSDL.soap.jar
+Get project classes
+Local entry load : com.processmaker.www.InputDocumentListStruct
+Local entry load : com.processmaker.www.GroupListStruct
+Local entry load : com.processmaker.www.UserListRequest
+Local entry load : com.processmaker.www.ExecuteTriggerRequest
+Local entry load : com.processmaker.www.UserListStruct
+Local entry load : com.processmaker.www.RemoveDocumentRequest
+Local entry load : com.processmaker.www.ImportProcessFromLibraryRequest
+Local entry load : com.processmaker.www.PauseCaseRequest
+Local entry load : com.processmaker.www.ProcessMakerServiceSoap
+Local entry load : com.processmaker.www.UpdateUserRequest
+Local entry load : com.processmaker.www.UnpauseCaseRequest
+Local entry load : com.processmaker.www.SendVariablesRequest
+Local entry load : com.processmaker.www.DeleteCaseResponse
+Local entry load : com.processmaker.www.AssignUserToGroupRequest
+Local entry load : com.processmaker.www.ProcessListStruct
+Local entry load : com.processmaker.www.RouteCaseResponse
+Local entry load : com.processmaker.www.AssignUserToDepartmentRequest
+Local entry load : com.processmaker.www.Login
+Local entry load : com.processmaker.www.LoginResponse
+Local entry load : com.processmaker.www.DeleteCaseRequest
+Local entry load : com.processmaker.www.PauseCaseResponse
+Local entry load : com.processmaker.www.DepartmentListRequest
+Local entry load : com.processmaker.www.GetCaseInfoStruct
+Local entry load : com.processmaker.www.VariableStruct
+Local entry load : com.processmaker.www.OutputDocumentListRequest
+Local entry load : com.processmaker.www.InformationUserRequest
+Local entry load : com.processmaker.www.CreateUserRequest
+Local entry load : com.processmaker.www.ImportProcessFromLibraryResponse
+Local entry load : com.processmaker.www.UnassignedCaseListRequest
+Local entry load : com.processmaker.www.CreateGroupRequest
+Local entry load : com.processmaker.www.TaskListRequest
+Local entry load : com.processmaker.www.InputDocumentProcessListStruct
+Local entry load : com.processmaker.www.TaskCaseRequest
+Local entry load : com.processmaker.www.NewCaseResponse
+Local entry load : com.processmaker.www.CreateDepartmentRequest
+Local entry load : com.processmaker.www.GetVariablesResponse
+Local entry load : com.processmaker.www.SystemInformationResponse
+Local entry load : com.processmaker.www.RemoveUserFromGroupRequest
+Local entry load : com.processmaker.www.GetCaseInfoResponse
+Local entry load : com.processmaker.www.CancelCaseResponse
+Local entry load : com.processmaker.www.AddCaseNoteRequest
+Local entry load : com.processmaker.www.TriggerListRequest
+Local entry load : com.processmaker.www.RoleListRequest
+Local entry load : com.processmaker.www.RouteCaseRequest
+Local entry load : com.processmaker.www.ProcessMakerService
+Local entry load : com.processmaker.www.RouteListStruct
+Local entry load : com.processmaker.www.CreateUserResponse
+Local entry load : com.processmaker.www.ProcessMakerServiceSoapStub
+Local entry load : com.processmaker.www.UnassignedCaseListStruct
+Local entry load : com.processmaker.www.RemoveDocumentResponse
+Local entry load : com.processmaker.www.InputDocumentListRequest
+Local entry load : com.processmaker.www.CreateGroupResponse
+Local entry load : com.processmaker.www.GroupListRequest
+Local entry load : com.processmaker.www.UpdateUserResponse
+Local entry load : com.processmaker.www.GetCaseInfoRequest
+Local entry load : com.processmaker.www.VariableListNameStruct
+Local entry load : com.acme.service.soap.ProcessMakerWSDLService
+Local entry load : com.processmaker.www.AddCaseNoteResponse
+Local entry load : com.processmaker.www.NewCaseImpersonateResponse
+Local entry load : com.processmaker.www.InputDocumentProcessListRequest
+Local entry load : com.processmaker.www.RoleListStruct
+Local entry load : com.processmaker.www.DepartmentListStruct
+Local entry load : com.processmaker.www.OutputDocumentListStruct
+Local entry load : com.processmaker.www.TaskListStruct
+Local entry load : com.processmaker.www.InformationUserStruct
+Local entry load : com.processmaker.www.ReassignCaseRequest
+Local entry load : com.processmaker.www.UnpauseCaseResponse
+Local entry load : com.processmaker.www.GetCaseNotesResponse
+Local entry load : com.processmaker.www.TriggerListStruct
+Local entry load : com.processmaker.www.CaseListRequest
+Local entry load : com.processmaker.www.SendMessageRequest
+Local entry load : com.processmaker.www.GetVariablesNamesRequest
+Local entry load : com.processmaker.www.CancelCaseRequest
+Local entry load : com.processmaker.www.VariableListStruct
+Local entry load : com.processmaker.www.GetCaseNotesRequest
+Local entry load : com.processmaker.www.SystemInformationRequest
+Local entry load : com.processmaker.www.NewCaseImpersonateRequest
+Local entry load : com.processmaker.www.NewCaseRequest
+Local entry load : com.processmaker.www.PmResponse
+Local entry load : com.processmaker.www.InformationUserResponse
+Local entry load : com.processmaker.www.ProcessMakerServiceLocator
+Local entry load : com.processmaker.www.ProcessMakerServiceSoapStubAccessor
+Local entry load : com.processmaker.www.GetVariablesRequest
+Local entry load : com.processmaker.www.CaseListStruct
+Local entry load : com.processmaker.www.GetVariablesNamesResponse
+Local entry load : com.processmaker.www.ProcessListRequest
+Local entry load : com.processmaker.www.GetCaseNotesStruct
+Local entry load : com.processmaker.www.TaskCaseStruct
+Local entry load : com.processmaker.www.CreateDepartmentResponse
+Class count 89
+LUXAgentTypeList constructor ( LUXAgentProject project, Class[] classArray )
+class : com.processmaker.www.InputDocumentListStruct
+class : com.processmaker.www.GroupListStruct
+class : com.processmaker.www.UserListRequest
+class : com.processmaker.www.ExecuteTriggerRequest
+class : com.processmaker.www.UserListStruct
+class : com.processmaker.www.RemoveDocumentRequest
+class : com.processmaker.www.ImportProcessFromLibraryRequest
+class : com.processmaker.www.PauseCaseRequest
+class : com.processmaker.www.ProcessMakerServiceSoap
+class : com.processmaker.www.UpdateUserRequest
+class : com.processmaker.www.UnpauseCaseRequest
+class : com.processmaker.www.SendVariablesRequest
+class : com.processmaker.www.DeleteCaseResponse
+class : com.processmaker.www.AssignUserToGroupRequest
+class : com.processmaker.www.ProcessListStruct
+class : com.processmaker.www.RouteCaseResponse
+class : com.processmaker.www.AssignUserToDepartmentRequest
+class : com.processmaker.www.Login
+class : com.processmaker.www.LoginResponse
+class : com.processmaker.www.DeleteCaseRequest
+class : com.processmaker.www.PauseCaseResponse
+class : com.processmaker.www.DepartmentListRequest
+class : com.processmaker.www.GetCaseInfoStruct
+class : com.processmaker.www.VariableStruct
+class : com.processmaker.www.OutputDocumentListRequest
+class : com.processmaker.www.InformationUserRequest
+class : com.processmaker.www.CreateUserRequest
+class : com.processmaker.www.ImportProcessFromLibraryResponse
+class : com.processmaker.www.UnassignedCaseListRequest
+class : com.processmaker.www.CreateGroupRequest
+class : com.processmaker.www.TaskListRequest
+class : com.processmaker.www.InputDocumentProcessListStruct
+class : com.processmaker.www.TaskCaseRequest
+class : com.processmaker.www.NewCaseResponse
+class : com.processmaker.www.CreateDepartmentRequest
+class : com.processmaker.www.GetVariablesResponse
+class : com.processmaker.www.SystemInformationResponse
+class : com.processmaker.www.RemoveUserFromGroupRequest
+class : com.processmaker.www.GetCaseInfoResponse
+class : com.processmaker.www.CancelCaseResponse
+class : com.processmaker.www.AddCaseNoteRequest
+class : com.processmaker.www.TriggerListRequest
+class : com.processmaker.www.RoleListRequest
+class : com.processmaker.www.RouteCaseRequest
+class : com.processmaker.www.ProcessMakerService
+class : com.processmaker.www.RouteListStruct
+class : com.processmaker.www.CreateUserResponse
+class : com.processmaker.www.ProcessMakerServiceSoapStub
+class : com.processmaker.www.UnassignedCaseListStruct
+class : com.processmaker.www.RemoveDocumentResponse
+class : com.processmaker.www.InputDocumentListRequest
+class : com.processmaker.www.CreateGroupResponse
+class : com.processmaker.www.GroupListRequest
+class : com.processmaker.www.UpdateUserResponse
+class : com.processmaker.www.GetCaseInfoRequest
+class : com.processmaker.www.VariableListNameStruct
+class : com.acme.service.soap.ProcessMakerWSDLService
+class : com.processmaker.www.AddCaseNoteResponse
+class : com.processmaker.www.NewCaseImpersonateResponse
+class : com.processmaker.www.InputDocumentProcessListRequest
+class : com.processmaker.www.RoleListStruct
+class : com.processmaker.www.DepartmentListStruct
+class : com.processmaker.www.OutputDocumentListStruct
+class : com.processmaker.www.TaskListStruct
+class : com.processmaker.www.InformationUserStruct
+class : com.processmaker.www.ReassignCaseRequest
+class : com.processmaker.www.UnpauseCaseResponse
+class : com.processmaker.www.GetCaseNotesResponse
+class : com.processmaker.www.TriggerListStruct
+class : com.processmaker.www.CaseListRequest
+class : com.processmaker.www.SendMessageRequest
+class : com.processmaker.www.GetVariablesNamesRequest
+class : com.processmaker.www.CancelCaseRequest
+class : com.processmaker.www.VariableListStruct
+class : com.processmaker.www.GetCaseNotesRequest
+class : com.processmaker.www.SystemInformationRequest
+class : com.processmaker.www.NewCaseImpersonateRequest
+class : com.processmaker.www.NewCaseRequest
+class : com.processmaker.www.PmResponse
+class : com.processmaker.www.InformationUserResponse
+class : com.processmaker.www.ProcessMakerServiceLocator
+class : com.processmaker.www.ProcessMakerServiceSoapStubAccessor
+class : com.processmaker.www.GetVariablesRequest
+class : com.processmaker.www.CaseListStruct
+class : com.processmaker.www.GetVariablesNamesResponse
+class : com.processmaker.www.ProcessListRequest
+class : com.processmaker.www.GetCaseNotesStruct
+class : com.processmaker.www.TaskCaseStruct
+class : com.processmaker.www.CreateDepartmentResponse
+LUXAgentTypeList construction completed
+LUXAgentOperationList constructor ( LUXAgentProject project, Class[] classArray )
+accessor found com.processmaker.www.ProcessMakerServiceSoapStubAccessor
+locator found com.processmaker.www.ProcessMakerServiceLocator
+service found com.processmaker.www.ProcessMakerService
+remote interface found com.processmaker.www.ProcessMakerServiceSoap
+create operations
+operation accessor count : 1
+accessor : 1
+stub class : com.processmaker.www.ProcessMakerServiceSoapStub
+stub locator class : com.processmaker.www.ProcessMakerServiceLocator
+stub remote class : com.processmaker.www.ProcessMakerServiceSoap
+stub remote methods
+  createGroup
+  userList
+  sendMessage
+  login
+  roleList
+  caseList
+  taskList
+  newCase
+  taskCase
+  unassignedCaseList
+  assignUserToGroup
+  assignUserToDepartment
+  newCaseImpersonate
+  getVariablesNames
+  systemInformation
+  outputDocumentList
+  inputDocumentList
+  inputDocumentProcessList
+  importProcessFromLibrary
+  removeUserFromGroup
+  processList
+  groupList
+  departmentList
+  createUser
+  updateUser
+  informationUser
+  createDepartment
+  reassignCase
+  routeCase
+  executeTrigger
+  sendVariables
+  getVariables
+  getCaseInfo
+  triggerList
+  removeDocument
+  getCaseNotes
+  deleteCase
+  cancelCase
+  pauseCase
+  unpauseCase
+  addCaseNote
+operations
+  login ( login )
+  processList ( processList )
+  roleList ( roleList )
+  groupList ( groupList )
+  departmentList ( departmentList )
+  userList ( userList )
+  caseList ( caseList )
+  unassignedCaseList ( unassignedCaseList )
+  createUser ( createUser )
+  updateUser ( updateUser )
+  informationUser ( informationUser )
+  createGroup ( createGroup )
+  createDepartment ( createDepartment )
+  assignUserToGroup ( assignUserToGroup )
+  assignUserToDepartment ( assignUserToDepartment )
+  newCase ( newCase )
+  reassignCase ( reassignCase )
+  newCaseImpersonate ( newCaseImpersonate )
+  routeCase ( routeCase )
+  executeTrigger ( executeTrigger )
+  sendVariables ( sendVariables )
+  getVariables ( getVariables )
+  getVariablesNames ( getVariablesNames )
+  sendMessage ( sendMessage )
+  getCaseInfo ( getCaseInfo )
+  taskList ( taskList )
+  taskCase ( taskCase )
+  systemInformation ( systemInformation )
+  triggerList ( triggerList )
+  outputDocumentList ( outputDocumentList )
+  inputDocumentList ( inputDocumentList )
+  inputDocumentProcessList ( inputDocumentProcessList )
+  removeDocument ( removeDocument )
+  importProcessFromLibrary ( importProcessFromLibrary )
+  getCaseNotes ( getCaseNotes )
+  removeUserFromGroup ( removeUserFromGroup )
+  deleteCase ( deleteCase )
+  cancelCase ( cancelCase )
+  pauseCase ( pauseCase )
+  unpauseCase ( unpauseCase )
+  addCaseNote ( addCaseNote )
+find operation for remote method : createGroup
+method name match, check parameters
+method parameter match
+LUXAgentOperation constructor ( LUXAgentProject project, LUXAgentOperationList agentOperationList, Class stubClass, Class locatorClass, Class remoteClass, OperationDesc operationDesc, Method remoteMethod )
+Operation : CREATEGROUP
+Process parameters for createGroup
+LUXDataField constructor ( LUXAgentProject project, LUXAgentOperation operation, Class clazz )
+Parameter class : com.processmaker.www.CreateGroupRequest
+LUXDataField construction completed
+Process return parameter for createGroup
+LUXDataField constructor ( LUXAgentProject project, LUXAgentOperation operation, Class clazz )
+Parameter class : com.processmaker.www.CreateGroupResponse
+LUXDataField construction completed
+LUXAgentOperation construction completed
+find operation for remote method : userList
+method name match, check parameters
+method parameter match
+LUXAgentOperation constructor ( LUXAgentProject project, LUXAgentOperationList agentOperationList, Class stubClass, Class locatorClass, Class remoteClass, OperationDesc operationDesc, Method remoteMethod )
+Operation : USERLIST
+Process parameters for userList
+LUXDataField constructor ( LUXAgentProject project, LUXAgentOperation operation, Class clazz )
+Parameter class : com.processmaker.www.UserListRequest
+LUXDataField construction completed
+Process return parameter for userList
+LUXDataField constructor ( LUXAgentProject project, LUXAgentOperation operation, Class clazz )
+Parameter class : [Lcom.processmaker.www.UserListStruct;
+LUXDataField construction completed
+LUXAgentOperation construction completed
+find operation for remote method : sendMessage
+method name match, check parameters
+method parameter match
+LUXAgentOperation constructor ( LUXAgentProject project, LUXAgentOperationList agentOperationList, Class stubClass, Class locatorClass, Class remoteClass, OperationDesc operationDesc, Method remoteMethod )
+Operation : SENDMESSAGE
+Process parameters for sendMessage
+LUXDataField constructor ( LUXAgentProject project, LUXAgentOperation operation, Class clazz )
+Parameter class : com.processmaker.www.SendMessageRequest
+LUXDataField construction completed
+Process return parameter for sendMessage
+LUXDataField constructor ( LUXAgentProject project, LUXAgentOperation operation, Class clazz )
+Parameter class : com.processmaker.www.PmResponse
+LUXDataField construction completed
+LUXAgentOperation construction completed
+find operation for remote method : login
+method name match, check parameters
+method parameter match
+LUXAgentOperation constructor ( LUXAgentProject project, LUXAgentOperationList agentOperationList, Class stubClass, Class locatorClass, Class remoteClass, OperationDesc operationDesc, Method remoteMethod )
+Operation : LOGIN
+Process parameters for login
+LUXDataField constructor ( LUXAgentProject project, LUXAgentOperation operation, Class clazz )
+Parameter class : com.processmaker.www.Login
+LUXDataField construction completed
+Process return parameter for login
+LUXDataField constructor ( LUXAgentProject project, LUXAgentOperation operation, Class clazz )
+Parameter class : com.processmaker.www.LoginResponse
+LUXDataField construction completed
+LUXAgentOperation construction completed
+find operation for remote method : roleList
+method name match, check parameters
+method parameter match
+LUXAgentOperation constructor ( LUXAgentProject project, LUXAgentOperationList agentOperationList, Class stubClass, Class locatorClass, Class remoteClass, OperationDesc operationDesc, Method remoteMethod )
+Operation : ROLELIST
+Process parameters for roleList
+LUXDataField constructor ( LUXAgentProject project, LUXAgentOperation operation, Class clazz )
+Parameter class : com.processmaker.www.RoleListRequest
+LUXDataField construction completed
+Process return parameter for roleList
+LUXDataField constructor ( LUXAgentProject project, LUXAgentOperation operation, Class clazz )
+Parameter class : [Lcom.processmaker.www.RoleListStruct;
+LUXDataField construction completed
+LUXAgentOperation construction completed
+find operation for remote method : caseList
+method name match, check parameters
+method parameter match
+LUXAgentOperation constructor ( LUXAgentProject project, LUXAgentOperationList agentOperationList, Class stubClass, Class locatorClass, Class remoteClass, OperationDesc operationDesc, Method remoteMethod )
+Operation : CASELIST
+Process parameters for caseList
+LUXDataField constructor ( LUXAgentProject project, LUXAgentOperation operation, Class clazz )
+Parameter class : com.processmaker.www.CaseListRequest
+LUXDataField construction completed
+Process return parameter for caseList
+LUXDataField constructor ( LUXAgentProject project, LUXAgentOperation operation, Class clazz )
+Parameter class : [Lcom.processmaker.www.CaseListStruct;
+LUXDataField construction completed
+LUXAgentOperation construction completed
+find operation for remote method : taskList
+method name match, check parameters
+method parameter match
+LUXAgentOperation constructor ( LUXAgentProject project, LUXAgentOperationList agentOperationList, Class stubClass, Class locatorClass, Class remoteClass, OperationDesc operationDesc, Method remoteMethod )
+Operation : TASKLIST
+Process parameters for taskList
+LUXDataField constructor ( LUXAgentProject project, LUXAgentOperation operation, Class clazz )
+Parameter class : com.processmaker.www.TaskListRequest
+LUXDataField construction completed
+Process return parameter for taskList
+LUXDataField constructor ( LUXAgentProject project, LUXAgentOperation operation, Class clazz )
+Parameter class : [Lcom.processmaker.www.TaskListStruct;
+LUXDataField construction completed
+LUXAgentOperation construction completed
+find operation for remote method : newCase
+method name match, check parameters
+method parameter match
+LUXAgentOperation constructor ( LUXAgentProject project, LUXAgentOperationList agentOperationList, Class stubClass, Class locatorClass, Class remoteClass, OperationDesc operationDesc, Method remoteMethod )
+Operation : NEWCASE
+Process parameters for newCase
+LUXDataField constructor ( LUXAgentProject project, LUXAgentOperation operation, Class clazz )
+Parameter class : com.processmaker.www.NewCaseRequest
+LUXDataField construction completed
+Process return parameter for newCase
+LUXDataField constructor ( LUXAgentProject project, LUXAgentOperation operation, Class clazz )
+Parameter class : com.processmaker.www.NewCaseResponse
+LUXDataField construction completed
+LUXAgentOperation construction completed
+find operation for remote method : taskCase
+method name match, check parameters
+method parameter match
+LUXAgentOperation constructor ( LUXAgentProject project, LUXAgentOperationList agentOperationList, Class stubClass, Class locatorClass, Class remoteClass, OperationDesc operationDesc, Method remoteMethod )
+Operation : TASKCASE
+Process parameters for taskCase
+LUXDataField constructor ( LUXAgentProject project, LUXAgentOperation operation, Class clazz )
+Parameter class : com.processmaker.www.TaskCaseRequest
+LUXDataField construction completed
+Process return parameter for taskCase
+LUXDataField constructor ( LUXAgentProject project, LUXAgentOperation operation, Class clazz )
+Parameter class : [Lcom.processmaker.www.TaskCaseStruct;
+LUXDataField construction completed
+LUXAgentOperation construction completed
+find operation for remote method : unassignedCaseList
+method name match, check parameters
+method parameter match
+LUXAgentOperation constructor ( LUXAgentProject project, LUXAgentOperationList agentOperationList, Class stubClass, Class locatorClass, Class remoteClass, OperationDesc operationDesc, Method remoteMethod )
+Operation : UNASSIGNEDCASELIST
+Process parameters for unassignedCaseList
+LUXDataField constructor ( LUXAgentProject project, LUXAgentOperation operation, Class clazz )
+Parameter class : com.processmaker.www.UnassignedCaseListRequest
+LUXDataField construction completed
+Process return parameter for unassignedCaseList
+LUXDataField constructor ( LUXAgentProject project, LUXAgentOperation operation, Class clazz )
+Parameter class : [Lcom.processmaker.www.UnassignedCaseListStruct;
+LUXDataField construction completed
+LUXAgentOperation construction completed
+find operation for remote method : assignUserToGroup
+method name match, check parameters
+method parameter match
+LUXAgentOperation constructor ( LUXAgentProject project, LUXAgentOperationList agentOperationList, Class stubClass, Class locatorClass, Class remoteClass, OperationDesc operationDesc, Method remoteMethod )
+Operation : ASSIGNUSERTOGROUP
+Process parameters for assignUserToGroup
+LUXDataField constructor ( LUXAgentProject project, LUXAgentOperation operation, Class clazz )
+Parameter class : com.processmaker.www.AssignUserToGroupRequest
+LUXDataField construction completed
+Process return parameter for assignUserToGroup
+LUXDataField constructor ( LUXAgentProject project, LUXAgentOperation operation, Class clazz )
+Parameter class : com.processmaker.www.PmResponse
+LUXDataField construction completed
+LUXAgentOperation construction completed
+find operation for remote method : assignUserToDepartment
+method name match, check parameters
+method parameter match
+LUXAgentOperation constructor ( LUXAgentProject project, LUXAgentOperationList agentOperationList, Class stubClass, Class locatorClass, Class remoteClass, OperationDesc operationDesc, Method remoteMethod )
+Operation : ASSIGNUSERTODEPARTMENT
+Process parameters for assignUserToDepartment
+LUXDataField constructor ( LUXAgentProject project, LUXAgentOperation operation, Class clazz )
+Parameter class : com.processmaker.www.AssignUserToDepartmentRequest
+LUXDataField construction completed
+Process return parameter for assignUserToDepartment
+LUXDataField constructor ( LUXAgentProject project, LUXAgentOperation operation, Class clazz )
+Parameter class : com.processmaker.www.PmResponse
+LUXDataField construction completed
+LUXAgentOperation construction completed
+find operation for remote method : newCaseImpersonate
+method name match, check parameters
+method parameter match
+LUXAgentOperation constructor ( LUXAgentProject project, LUXAgentOperationList agentOperationList, Class stubClass, Class locatorClass, Class remoteClass, OperationDesc operationDesc, Method remoteMethod )
+Operation : NEWCASEIMPERSONATE
+Process parameters for newCaseImpersonate
+LUXDataField constructor ( LUXAgentProject project, LUXAgentOperation operation, Class clazz )
+Parameter class : com.processmaker.www.NewCaseImpersonateRequest
+LUXDataField construction completed
+Process return parameter for newCaseImpersonate
+LUXDataField constructor ( LUXAgentProject project, LUXAgentOperation operation, Class clazz )
+Parameter class : com.processmaker.www.NewCaseImpersonateResponse
+LUXDataField construction completed
+LUXAgentOperation construction completed
+find operation for remote method : getVariablesNames
+method name match, check parameters
+method parameter match
+LUXAgentOperation constructor ( LUXAgentProject project, LUXAgentOperationList agentOperationList, Class stubClass, Class locatorClass, Class remoteClass, OperationDesc operationDesc, Method remoteMethod )
+Operation : GETVARIABLESNAMES
+Process parameters for getVariablesNames
+LUXDataField constructor ( LUXAgentProject project, LUXAgentOperation operation, Class clazz )
+Parameter class : com.processmaker.www.GetVariablesNamesRequest
+LUXDataField construction completed
+Process return parameter for getVariablesNames
+LUXDataField constructor ( LUXAgentProject project, LUXAgentOperation operation, Class clazz )
+Parameter class : com.processmaker.www.GetVariablesNamesResponse
+LUXDataField construction completed
+LUXAgentOperation construction completed
+find operation for remote method : systemInformation
+method name match, check parameters
+method parameter match
+LUXAgentOperation constructor ( LUXAgentProject project, LUXAgentOperationList agentOperationList, Class stubClass, Class locatorClass, Class remoteClass, OperationDesc operationDesc, Method remoteMethod )
+Operation : SYSTEMINFORMATION
+Process parameters for systemInformation
+LUXDataField constructor ( LUXAgentProject project, LUXAgentOperation operation, Class clazz )
+Parameter class : com.processmaker.www.SystemInformationRequest
+LUXDataField construction completed
+Process return parameter for systemInformation
+LUXDataField constructor ( LUXAgentProject project, LUXAgentOperation operation, Class clazz )
+Parameter class : com.processmaker.www.SystemInformationResponse
+LUXDataField construction completed
+LUXAgentOperation construction completed
+find operation for remote method : outputDocumentList
+method name match, check parameters
+method parameter match
+LUXAgentOperation constructor ( LUXAgentProject project, LUXAgentOperationList agentOperationList, Class stubClass, Class locatorClass, Class remoteClass, OperationDesc operationDesc, Method remoteMethod )
+Operation : OUTPUTDOCUMENTLIST
+Process parameters for outputDocumentList
+LUXDataField constructor ( LUXAgentProject project, LUXAgentOperation operation, Class clazz )
+Parameter class : com.processmaker.www.OutputDocumentListRequest
+LUXDataField construction completed
+Process return parameter for outputDocumentList
+LUXDataField constructor ( LUXAgentProject project, LUXAgentOperation operation, Class clazz )
+Parameter class : [Lcom.processmaker.www.OutputDocumentListStruct;
+LUXDataField construction completed
+LUXAgentOperation construction completed
+find operation for remote method : inputDocumentList
+method name match, check parameters
+method parameter match
+LUXAgentOperation constructor ( LUXAgentProject project, LUXAgentOperationList agentOperationList, Class stubClass, Class locatorClass, Class remoteClass, OperationDesc operationDesc, Method remoteMethod )
+Operation : INPUTDOCUMENTLIST
+Process parameters for inputDocumentList
+LUXDataField constructor ( LUXAgentProject project, LUXAgentOperation operation, Class clazz )
+Parameter class : com.processmaker.www.InputDocumentListRequest
+LUXDataField construction completed
+Process return parameter for inputDocumentList
+LUXDataField constructor ( LUXAgentProject project, LUXAgentOperation operation, Class clazz )
+Parameter class : [Lcom.processmaker.www.InputDocumentListStruct;
+LUXDataField construction completed
+LUXAgentOperation construction completed
+find operation for remote method : inputDocumentProcessList
+method name match, check parameters
+method parameter match
+LUXAgentOperation constructor ( LUXAgentProject project, LUXAgentOperationList agentOperationList, Class stubClass, Class locatorClass, Class remoteClass, OperationDesc operationDesc, Method remoteMethod )
+Operation : INPUTDOCUMENTPROCESSLIST
+Process parameters for inputDocumentProcessList
+LUXDataField constructor ( LUXAgentProject project, LUXAgentOperation operation, Class clazz )
+Parameter class : com.processmaker.www.InputDocumentProcessListRequest
+LUXDataField construction completed
+Process return parameter for inputDocumentProcessList
+LUXDataField constructor ( LUXAgentProject project, LUXAgentOperation operation, Class clazz )
+Parameter class : [Lcom.processmaker.www.InputDocumentProcessListStruct;
+LUXDataField construction completed
+LUXAgentOperation construction completed
+find operation for remote method : importProcessFromLibrary
+method name match, check parameters
+method parameter match
+LUXAgentOperation constructor ( LUXAgentProject project, LUXAgentOperationList agentOperationList, Class stubClass, Class locatorClass, Class remoteClass, OperationDesc operationDesc, Method remoteMethod )
+Operation : IMPORTPROCESSFROMLIBRARY
+Process parameters for importProcessFromLibrary
+LUXDataField constructor ( LUXAgentProject project, LUXAgentOperation operation, Class clazz )
+Parameter class : com.processmaker.www.ImportProcessFromLibraryRequest
+LUXDataField construction completed
+Process return parameter for importProcessFromLibrary
+LUXDataField constructor ( LUXAgentProject project, LUXAgentOperation operation, Class clazz )
+Parameter class : com.processmaker.www.ImportProcessFromLibraryResponse
+LUXDataField construction completed
+LUXAgentOperation construction completed
+find operation for remote method : removeUserFromGroup
+method name match, check parameters
+method parameter match
+LUXAgentOperation constructor ( LUXAgentProject project, LUXAgentOperationList agentOperationList, Class stubClass, Class locatorClass, Class remoteClass, OperationDesc operationDesc, Method remoteMethod )
+Operation : REMOVEUSERFROMGROUP
+Process parameters for removeUserFromGroup
+LUXDataField constructor ( LUXAgentProject project, LUXAgentOperation operation, Class clazz )
+Parameter class : com.processmaker.www.RemoveUserFromGroupRequest
+LUXDataField construction completed
+Process return parameter for removeUserFromGroup
+LUXDataField constructor ( LUXAgentProject project, LUXAgentOperation operation, Class clazz )
+Parameter class : com.processmaker.www.PmResponse
+LUXDataField construction completed
+LUXAgentOperation construction completed
+find operation for remote method : processList
+method name match, check parameters
+method parameter match
+LUXAgentOperation constructor ( LUXAgentProject project, LUXAgentOperationList agentOperationList, Class stubClass, Class locatorClass, Class remoteClass, OperationDesc operationDesc, Method remoteMethod )
+Operation : PROCESSLIST
+Process parameters for processList
+LUXDataField constructor ( LUXAgentProject project, LUXAgentOperation operation, Class clazz )
+Parameter class : com.processmaker.www.ProcessListRequest
+LUXDataField construction completed
+Process return parameter for processList
+LUXDataField constructor ( LUXAgentProject project, LUXAgentOperation operation, Class clazz )
+Parameter class : [Lcom.processmaker.www.ProcessListStruct;
+LUXDataField construction completed
+LUXAgentOperation construction completed
+find operation for remote method : groupList
+method name match, check parameters
+method parameter match
+LUXAgentOperation constructor ( LUXAgentProject project, LUXAgentOperationList agentOperationList, Class stubClass, Class locatorClass, Class remoteClass, OperationDesc operationDesc, Method remoteMethod )
+Operation : GROUPLIST
+Process parameters for groupList
+LUXDataField constructor ( LUXAgentProject project, LUXAgentOperation operation, Class clazz )
+Parameter class : com.processmaker.www.GroupListRequest
+LUXDataField construction completed
+Process return parameter for groupList
+LUXDataField constructor ( LUXAgentProject project, LUXAgentOperation operation, Class clazz )
+Parameter class : [Lcom.processmaker.www.GroupListStruct;
+LUXDataField construction completed
+LUXAgentOperation construction completed
+find operation for remote method : departmentList
+method name match, check parameters
+method parameter match
+LUXAgentOperation constructor ( LUXAgentProject project, LUXAgentOperationList agentOperationList, Class stubClass, Class locatorClass, Class remoteClass, OperationDesc operationDesc, Method remoteMethod )
+Operation : DEPARTMENTLIST
+Process parameters for departmentList
+LUXDataField constructor ( LUXAgentProject project, LUXAgentOperation operation, Class clazz )
+Parameter class : com.processmaker.www.DepartmentListRequest
+LUXDataField construction completed
+Process return parameter for departmentList
+LUXDataField constructor ( LUXAgentProject project, LUXAgentOperation operation, Class clazz )
+Parameter class : [Lcom.processmaker.www.DepartmentListStruct;
+LUXDataField construction completed
+LUXAgentOperation construction completed
+find operation for remote method : createUser
+method name match, check parameters
+method parameter match
+LUXAgentOperation constructor ( LUXAgentProject project, LUXAgentOperationList agentOperationList, Class stubClass, Class locatorClass, Class remoteClass, OperationDesc operationDesc, Method remoteMethod )
+Operation : CREATEUSER
+Process parameters for createUser
+LUXDataField constructor ( LUXAgentProject project, LUXAgentOperation operation, Class clazz )
+Parameter class : com.processmaker.www.CreateUserRequest
+LUXDataField construction completed
+Process return parameter for createUser
+LUXDataField constructor ( LUXAgentProject project, LUXAgentOperation operation, Class clazz )
+Parameter class : com.processmaker.www.CreateUserResponse
+LUXDataField construction completed
+LUXAgentOperation construction completed
+find operation for remote method : updateUser
+method name match, check parameters
+method parameter match
+LUXAgentOperation constructor ( LUXAgentProject project, LUXAgentOperationList agentOperationList, Class stubClass, Class locatorClass, Class remoteClass, OperationDesc operationDesc, Method remoteMethod )
+Operation : UPDATEUSER
+Process parameters for updateUser
+LUXDataField constructor ( LUXAgentProject project, LUXAgentOperation operation, Class clazz )
+Parameter class : com.processmaker.www.UpdateUserRequest
+LUXDataField construction completed
+Process return parameter for updateUser
+LUXDataField constructor ( LUXAgentProject project, LUXAgentOperation operation, Class clazz )
+Parameter class : com.processmaker.www.UpdateUserResponse
+LUXDataField construction completed
+LUXAgentOperation construction completed
+find operation for remote method : informationUser
+method name match, check parameters
+method parameter match
+LUXAgentOperation constructor ( LUXAgentProject project, LUXAgentOperationList agentOperationList, Class stubClass, Class locatorClass, Class remoteClass, OperationDesc operationDesc, Method remoteMethod )
+Operation : INFORMATIONUSER
+Process parameters for informationUser
+LUXDataField constructor ( LUXAgentProject project, LUXAgentOperation operation, Class clazz )
+Parameter class : com.processmaker.www.InformationUserRequest
+LUXDataField construction completed
+Process return parameter for informationUser
+LUXDataField constructor ( LUXAgentProject project, LUXAgentOperation operation, Class clazz )
+Parameter class : com.processmaker.www.InformationUserResponse
+LUXDataField construction completed
+LUXAgentOperation construction completed
+find operation for remote method : createDepartment
+method name match, check parameters
+method parameter match
+LUXAgentOperation constructor ( LUXAgentProject project, LUXAgentOperationList agentOperationList, Class stubClass, Class locatorClass, Class remoteClass, OperationDesc operationDesc, Method remoteMethod )
+Operation : CREATEDEPARTMENT
+Process parameters for createDepartment
+LUXDataField constructor ( LUXAgentProject project, LUXAgentOperation operation, Class clazz )
+Parameter class : com.processmaker.www.CreateDepartmentRequest
+LUXDataField construction completed
+Process return parameter for createDepartment
+LUXDataField constructor ( LUXAgentProject project, LUXAgentOperation operation, Class clazz )
+Parameter class : com.processmaker.www.CreateDepartmentResponse
+LUXDataField construction completed
+LUXAgentOperation construction completed
+find operation for remote method : reassignCase
+method name match, check parameters
+method parameter match
+LUXAgentOperation constructor ( LUXAgentProject project, LUXAgentOperationList agentOperationList, Class stubClass, Class locatorClass, Class remoteClass, OperationDesc operationDesc, Method remoteMethod )
+Operation : REASSIGNCASE
+Process parameters for reassignCase
+LUXDataField constructor ( LUXAgentProject project, LUXAgentOperation operation, Class clazz )
+Parameter class : com.processmaker.www.ReassignCaseRequest
+LUXDataField construction completed
+Process return parameter for reassignCase
+LUXDataField constructor ( LUXAgentProject project, LUXAgentOperation operation, Class clazz )
+Parameter class : com.processmaker.www.PmResponse
+LUXDataField construction completed
+LUXAgentOperation construction completed
+find operation for remote method : routeCase
+method name match, check parameters
+method parameter match
+LUXAgentOperation constructor ( LUXAgentProject project, LUXAgentOperationList agentOperationList, Class stubClass, Class locatorClass, Class remoteClass, OperationDesc operationDesc, Method remoteMethod )
+Operation : ROUTECASE
+Process parameters for routeCase
+LUXDataField constructor ( LUXAgentProject project, LUXAgentOperation operation, Class clazz )
+Parameter class : com.processmaker.www.RouteCaseRequest
+LUXDataField construction completed
+Process return parameter for routeCase
+LUXDataField constructor ( LUXAgentProject project, LUXAgentOperation operation, Class clazz )
+Parameter class : com.processmaker.www.RouteCaseResponse
+LUXDataField construction completed
+LUXAgentOperation construction completed
+find operation for remote method : executeTrigger
+method name match, check parameters
+method parameter match
+LUXAgentOperation constructor ( LUXAgentProject project, LUXAgentOperationList agentOperationList, Class stubClass, Class locatorClass, Class remoteClass, OperationDesc operationDesc, Method remoteMethod )
+Operation : EXECUTETRIGGER
+Process parameters for executeTrigger
+LUXDataField constructor ( LUXAgentProject project, LUXAgentOperation operation, Class clazz )
+Parameter class : com.processmaker.www.ExecuteTriggerRequest
+LUXDataField construction completed
+Process return parameter for executeTrigger
+LUXDataField constructor ( LUXAgentProject project, LUXAgentOperation operation, Class clazz )
+Parameter class : com.processmaker.www.PmResponse
+LUXDataField construction completed
+LUXAgentOperation construction completed
+find operation for remote method : sendVariables
+method name match, check parameters
+method parameter match
+LUXAgentOperation constructor ( LUXAgentProject project, LUXAgentOperationList agentOperationList, Class stubClass, Class locatorClass, Class remoteClass, OperationDesc operationDesc, Method remoteMethod )
+Operation : SENDVARIABLES
+Process parameters for sendVariables
+LUXDataField constructor ( LUXAgentProject project, LUXAgentOperation operation, Class clazz )
+Parameter class : com.processmaker.www.SendVariablesRequest
+LUXDataField construction completed
+Process return parameter for sendVariables
+LUXDataField constructor ( LUXAgentProject project, LUXAgentOperation operation, Class clazz )
+Parameter class : com.processmaker.www.PmResponse
+LUXDataField construction completed
+LUXAgentOperation construction completed
+find operation for remote method : getVariables
+method name match, check parameters
+method parameter match
+LUXAgentOperation constructor ( LUXAgentProject project, LUXAgentOperationList agentOperationList, Class stubClass, Class locatorClass, Class remoteClass, OperationDesc operationDesc, Method remoteMethod )
+Operation : GETVARIABLES
+Process parameters for getVariables
+LUXDataField constructor ( LUXAgentProject project, LUXAgentOperation operation, Class clazz )
+Parameter class : com.processmaker.www.GetVariablesRequest
+LUXDataField construction completed
+Process return parameter for getVariables
+LUXDataField constructor ( LUXAgentProject project, LUXAgentOperation operation, Class clazz )
+Parameter class : com.processmaker.www.GetVariablesResponse
+LUXDataField construction completed
+LUXAgentOperation construction completed
+find operation for remote method : getCaseInfo
+method name match, check parameters
+method parameter match
+LUXAgentOperation constructor ( LUXAgentProject project, LUXAgentOperationList agentOperationList, Class stubClass, Class locatorClass, Class remoteClass, OperationDesc operationDesc, Method remoteMethod )
+Operation : GETCASEINFO
+Process parameters for getCaseInfo
+LUXDataField constructor ( LUXAgentProject project, LUXAgentOperation operation, Class clazz )
+Parameter class : com.processmaker.www.GetCaseInfoRequest
+LUXDataField construction completed
+Process return parameter for getCaseInfo
+LUXDataField constructor ( LUXAgentProject project, LUXAgentOperation operation, Class clazz )
+Parameter class : com.processmaker.www.GetCaseInfoResponse
+LUXDataField construction completed
+LUXAgentOperation construction completed
+find operation for remote method : triggerList
+method name match, check parameters
+method parameter match
+LUXAgentOperation constructor ( LUXAgentProject project, LUXAgentOperationList agentOperationList, Class stubClass, Class locatorClass, Class remoteClass, OperationDesc operationDesc, Method remoteMethod )
+Operation : TRIGGERLIST
+Process parameters for triggerList
+LUXDataField constructor ( LUXAgentProject project, LUXAgentOperation operation, Class clazz )
+Parameter class : com.processmaker.www.TriggerListRequest
+LUXDataField construction completed
+Process return parameter for triggerList
+LUXDataField constructor ( LUXAgentProject project, LUXAgentOperation operation, Class clazz )
+Parameter class : [Lcom.processmaker.www.TriggerListStruct;
+LUXDataField construction completed
+LUXAgentOperation construction completed
+find operation for remote method : removeDocument
+method name match, check parameters
+method parameter match
+LUXAgentOperation constructor ( LUXAgentProject project, LUXAgentOperationList agentOperationList, Class stubClass, Class locatorClass, Class remoteClass, OperationDesc operationDesc, Method remoteMethod )
+Operation : REMOVEDOCUMENT
+Process parameters for removeDocument
+LUXDataField constructor ( LUXAgentProject project, LUXAgentOperation operation, Class clazz )
+Parameter class : com.processmaker.www.RemoveDocumentRequest
+LUXDataField construction completed
+Process return parameter for removeDocument
+LUXDataField constructor ( LUXAgentProject project, LUXAgentOperation operation, Class clazz )
+Parameter class : com.processmaker.www.RemoveDocumentResponse
+LUXDataField construction completed
+LUXAgentOperation construction completed
+find operation for remote method : getCaseNotes
+method name match, check parameters
+method parameter match
+LUXAgentOperation constructor ( LUXAgentProject project, LUXAgentOperationList agentOperationList, Class stubClass, Class locatorClass, Class remoteClass, OperationDesc operationDesc, Method remoteMethod )
+Operation : GETCASENOTES
+Process parameters for getCaseNotes
+LUXDataField constructor ( LUXAgentProject project, LUXAgentOperation operation, Class clazz )
+Parameter class : com.processmaker.www.GetCaseNotesRequest
+LUXDataField construction completed
+Process return parameter for getCaseNotes
+LUXDataField constructor ( LUXAgentProject project, LUXAgentOperation operation, Class clazz )
+Parameter class : com.processmaker.www.GetCaseNotesResponse
+LUXDataField construction completed
+LUXAgentOperation construction completed
+find operation for remote method : deleteCase
+method name match, check parameters
+method parameter match
+LUXAgentOperation constructor ( LUXAgentProject project, LUXAgentOperationList agentOperationList, Class stubClass, Class locatorClass, Class remoteClass, OperationDesc operationDesc, Method remoteMethod )
+Operation : DELETECASE
+Process parameters for deleteCase
+LUXDataField constructor ( LUXAgentProject project, LUXAgentOperation operation, Class clazz )
+Parameter class : com.processmaker.www.DeleteCaseRequest
+LUXDataField construction completed
+Process return parameter for deleteCase
+LUXDataField constructor ( LUXAgentProject project, LUXAgentOperation operation, Class clazz )
+Parameter class : com.processmaker.www.DeleteCaseResponse
+LUXDataField construction completed
+LUXAgentOperation construction completed
+find operation for remote method : cancelCase
+method name match, check parameters
+method parameter match
+LUXAgentOperation constructor ( LUXAgentProject project, LUXAgentOperationList agentOperationList, Class stubClass, Class locatorClass, Class remoteClass, OperationDesc operationDesc, Method remoteMethod )
+Operation : CANCELCASE
+Process parameters for cancelCase
+LUXDataField constructor ( LUXAgentProject project, LUXAgentOperation operation, Class clazz )
+Parameter class : com.processmaker.www.CancelCaseRequest
+LUXDataField construction completed
+Process return parameter for cancelCase
+LUXDataField constructor ( LUXAgentProject project, LUXAgentOperation operation, Class clazz )
+Parameter class : com.processmaker.www.CancelCaseResponse
+LUXDataField construction completed
+LUXAgentOperation construction completed
+find operation for remote method : pauseCase
+method name match, check parameters
+method parameter match
+LUXAgentOperation constructor ( LUXAgentProject project, LUXAgentOperationList agentOperationList, Class stubClass, Class locatorClass, Class remoteClass, OperationDesc operationDesc, Method remoteMethod )
+Operation : PAUSECASE
+Process parameters for pauseCase
+LUXDataField constructor ( LUXAgentProject project, LUXAgentOperation operation, Class clazz )
+Parameter class : com.processmaker.www.PauseCaseRequest
+LUXDataField construction completed
+Process return parameter for pauseCase
+LUXDataField constructor ( LUXAgentProject project, LUXAgentOperation operation, Class clazz )
+Parameter class : com.processmaker.www.PauseCaseResponse
+LUXDataField construction completed
+LUXAgentOperation construction completed
+find operation for remote method : unpauseCase
+method name match, check parameters
+method parameter match
+LUXAgentOperation constructor ( LUXAgentProject project, LUXAgentOperationList agentOperationList, Class stubClass, Class locatorClass, Class remoteClass, OperationDesc operationDesc, Method remoteMethod )
+Operation : UNPAUSECASE
+Process parameters for unpauseCase
+LUXDataField constructor ( LUXAgentProject project, LUXAgentOperation operation, Class clazz )
+Parameter class : com.processmaker.www.UnpauseCaseRequest
+LUXDataField construction completed
+Process return parameter for unpauseCase
+LUXDataField constructor ( LUXAgentProject project, LUXAgentOperation operation, Class clazz )
+Parameter class : com.processmaker.www.UnpauseCaseResponse
+LUXDataField construction completed
+LUXAgentOperation construction completed
+find operation for remote method : addCaseNote
+method name match, check parameters
+method parameter match
+LUXAgentOperation constructor ( LUXAgentProject project, LUXAgentOperationList agentOperationList, Class stubClass, Class locatorClass, Class remoteClass, OperationDesc operationDesc, Method remoteMethod )
+Operation : ADDCASENOTE
+Process parameters for addCaseNote
+LUXDataField constructor ( LUXAgentProject project, LUXAgentOperation operation, Class clazz )
+Parameter class : com.processmaker.www.AddCaseNoteRequest
+LUXDataField construction completed
+Process return parameter for addCaseNote
+LUXDataField constructor ( LUXAgentProject project, LUXAgentOperation operation, Class clazz )
+Parameter class : com.processmaker.www.AddCaseNoteResponse
+LUXDataField construction completed
+LUXAgentOperation construction completed
+LUXAgentOperationList construction completed
+LUXAgentProject construction completed

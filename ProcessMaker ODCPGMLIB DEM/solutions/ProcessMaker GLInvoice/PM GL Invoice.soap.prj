@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<project type="server" package="com.acme.service.soap" service-class="PMGLInvoiceService" provider-class="PMGLInvoiceProvider" endpoint="http://www.acme.com/cgi-bin/jsmdirect?myservice" style="wrapped" typemapping="" archive-types="true">
+
+<operation name="noop" checked="false">
+</operation>
+
+<operation name="updateInvoice" checked="true">
+
+  <parameter name="processID" parameter-type="String" entity-name="PM_PROCESSID" entity-type="field" entity-format="">
+  </parameter>
+
+  <parameter name="caseID" parameter-type="String" entity-name="PM_CASEID" entity-type="field" entity-format="">
+  </parameter>
+
+  <parameter name="invoice" parameter-type="Invoices" parameter-array="true" entity-name="NEWINVOICEREQUEST" entity-type="fragment" entity-format="">
+    <entity entity-name="AICTRL" entity-type="field" entity-format="" entity-path="control"/>
+  </parameter>
+
+  <return name="updateInvoiceReturn" parameter-type="String" entity-name="PM_STATUSCODE" entity-type="field" entity-format="">
+  </return>
+
+</operation>
+
+</project>

@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<wsdl:definitions targetNamespace="http://Tutorial.UHASOAPServer.lansa.com" xmlns:apachesoap="http://xml.apache.org/xml-soap" xmlns:impl="http://Tutorial.UHASOAPServer.lansa.com" xmlns:intf="http://Tutorial.UHASOAPServer.lansa.com" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns:wsdlsoap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+
+ <!--WSDL created by LANSA Integrator SOAP Wizard and Apache Axis version: 1.4 Built on Nov 19, 2006 (02:31:34 GMT+00:00)-->
+
+ <wsdl:types>
+  <schema elementFormDefault="qualified" targetNamespace="http://Tutorial.UHASOAPServer.lansa.com" xmlns="http://www.w3.org/2001/XMLSchema">
+   <element name="noop">
+    <complexType/>
+   </element>
+   <element name="noopResponse">
+    <complexType/>
+   </element>
+   <element name="getEmployees">
+    <complexType>
+     <sequence>
+      <element name="department_code" type="xsd:string"/>
+      <element name="section_code" type="xsd:string"/>
+     </sequence>
+    </complexType>
+   </element>
+   <element name="getEmployeesResponse">
+    <complexType>
+     <sequence>
+      <element maxOccurs="unbounded" name="getEmployeesReturn" type="impl:Employee"/>
+     </sequence>
+    </complexType>
+   </element>
+   <complexType name="Employee">
+    <sequence>
+     <element name="employee_ID" nillable="true" type="xsd:string"/>
+     <element name="firstname" nillable="true" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="salary" nillable="true" type="xsd:double"/>
+     <element name="surname" nillable="true" type="xsd:string"/>
+    </sequence>
+   </complexType>
+  </schema>
+ </wsdl:types>
+
+ <wsdl:message name="noopRequest">
+  <wsdl:part element="impl:noop" name="parameters">
+  </wsdl:part>
+ </wsdl:message>
+
+ <wsdl:message name="noopResponse">
+  <wsdl:part element="impl:noopResponse" name="parameters">
+  </wsdl:part>
+ </wsdl:message>
+
+ <wsdl:message name="getEmployeesResponse">
+  <wsdl:part element="impl:getEmployeesResponse" name="parameters">
+  </wsdl:part>
+ </wsdl:message>
+
+ <wsdl:message name="getEmployeesRequest">
+  <wsdl:part element="impl:getEmployees" name="parameters">
+  </wsdl:part>
+ </wsdl:message>
+
+ <wsdl:portType name="UHAEmployeeServerServicePortType">
+  <wsdl:operation name="noop">
+   <wsdl:input message="impl:noopRequest" name="noopRequest">
+       </wsdl:input>
+   <wsdl:output message="impl:noopResponse" name="noopResponse">
+       </wsdl:output>
+  </wsdl:operation>
+  <wsdl:operation name="getEmployees">
+   <wsdl:input message="impl:getEmployeesRequest" name="getEmployeesRequest">
+       </wsdl:input>
+   <wsdl:output message="impl:getEmployeesResponse" name="getEmployeesResponse">
+       </wsdl:output>
+  </wsdl:operation>
+ </wsdl:portType>
+
+ <wsdl:binding name="UHAEmployeeServerServiceBinding" type="impl:UHAEmployeeServerServicePortType">
+  <wsdlsoap:binding style="document" transport="http://schemas.xmlsoap.org/soap/http"/>
+  <wsdl:operation name="noop">
+   <wsdlsoap:operation soapAction="noop"/>
+   <wsdl:input name="noopRequest">
+    <wsdlsoap:body use="literal"/>
+   </wsdl:input>
+   <wsdl:output name="noopResponse">
+    <wsdlsoap:body use="literal"/>
+   </wsdl:output>
+  </wsdl:operation>
+  <wsdl:operation name="getEmployees">
+   <wsdlsoap:operation soapAction="getEmployees"/>
+   <wsdl:input name="getEmployeesRequest">
+    <wsdlsoap:body use="literal"/>
+   </wsdl:input>
+   <wsdl:output name="getEmployeesResponse">
+    <wsdlsoap:body use="literal"/>
+   </wsdl:output>
+  </wsdl:operation>
+ </wsdl:binding>
+
+ <wsdl:service name="UHAEmployeeServerServiceService">
+  <wsdl:port binding="impl:UHAEmployeeServerServiceBinding" name="UHAEmployeeServerServicePort">
+   <wsdlsoap:address location="http://solutions.lansa.com:8561/cgi-bin/jsmdirect?"/>
+  </wsdl:port>
+ </wsdl:service>
+
+</wsdl:definitions>

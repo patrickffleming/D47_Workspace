@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<project source="PB_Pricing_Update_Response.xml">
+  <preference indent="true" omit-declaration="false" use-structure="false"/>
+
+  <template path="/PartsPricingResponse/Parts/Part"/>
+
+  <function>
+    <field name="XBOHSITE" path="/PartsPricingResponse/Site" />
+    <field name="WK_STATUS" path="/PartsPricingResponse/Status" />
+    <field name="WK_TXT01" path="/PartsPricingResponse/ErrorMsg" />
+  </function>
+
+  <list>
+    <field name="BNPART" path="/PartsPricingResponse/Parts/Part/PartNumber" />
+    <field name="SDSEPR" path="/PartsPricingResponse/Parts/Part/Price" />
+    <field name="FSCUCD" path="/PartsPricingResponse/Parts/Part/CurrencyCode" />
+    <field name="WK_QTY1" path="/PartsPricingResponse/Parts/Part/MinQuantity" />
+    <field name="WK_QTY2" path="/PartsPricingResponse/Parts/Part/MaxQuantity" />
+  </list>
+</project>

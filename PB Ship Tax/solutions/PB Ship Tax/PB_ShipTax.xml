@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TaxAndShipChargesRequest>
+   <Site>Invacare</Site>
+   <Order>
+    <User>sstewart</User>
+    <OrderDate>01/22/2013 10:45:03AM</OrderDate>    
+	  <Destination>
+		<RecipientNumber>1</RecipientNumber>
+		<Name>Dunn Williams</Name>
+		<Address1>123 Main St.</Address1>
+		<Address2>Suite 200</Address2>
+		<City>St. Paul</City>
+		<State>MN</State>
+		<PostalCode>12345</PostalCode>
+		<Country>USA</Country>
+		<Email></Email>
+		<Phone>202-555-1212</Phone>
+		<ShipVia>FedEx Std Overnight - by 3:00 pm</ShipVia>
+		<OrderCharge>5.00</OrderCharge>
+		<Parts>
+		 <Part>
+		  <PartNumber>72-011</PartNumber>
+		  <OrderQty>20</OrderQty>
+		  <UnitPrice>2.50</UnitPrice>
+		  <ExtPrice>50.00</ExtPrice>
+		  <LineCharge>2.00</LineCharge>
+		  <CostCenter>ABC1000</CostCenter>
+		 </Part>
+		 <Part>
+		  <PartNumber>73-011</PartNumber>
+		  <OrderQty>21</OrderQty>
+		  <UnitPrice>2.50</UnitPrice>
+		  <ExtPrice>50.00</ExtPrice>
+		  <LineCharge>2.00</LineCharge>
+		  <CostCenter>ABC1000</CostCenter>
+		 </Part>
+		 <Part>
+		  <PartNumber>74-011</PartNumber>
+		  <OrderQty>22</OrderQty>
+		  <UnitPrice>2.50</UnitPrice>
+		  <ExtPrice>50.00</ExtPrice>
+		  <LineCharge>2.00</LineCharge>
+		  <CostCenter>ABC1000</CostCenter>
+		 </Part>
+		</Parts>
+	  </Destination>
+	  <Destination>
+		<RecipientNumber>2</RecipientNumber>
+		<PartNumber>07-611</PartNumber>
+		<OrderQty>20</OrderQty>
+		<Name>Benjamin Moore</Name>
+		<Address1>123 Main St.</Address1>
+		<Address2>Suite 200</Address2>
+		<City>Wilmington</City>
+		<State>DE</State>
+		<PostalCode>09213</PostalCode>
+		<Country>USA</Country>
+		<Email></Email>
+		<Phone>202-555-1212</Phone>
+		<ShipVia>FedEx 2nd Day - by 4:30 pm</ShipVia>
+		<OrderCharge>5.00</OrderCharge>
+		<Parts>
+		 <Part>
+		  <PartNumber>72-011</PartNumber>
+		  <OrderQty>20</OrderQty>
+		  <UnitPrice>2.50</UnitPrice>
+		  <ExtPrice>50.00</ExtPrice>
+		  <LineCharge>2.00</LineCharge>
+		  <CostCenter>ABC1000</CostCenter>
+		 </Part>
+		 <Part>
+		  <PartNumber>73-011</PartNumber>
+		  <OrderQty>21</OrderQty>
+		  <UnitPrice>2.50</UnitPrice>
+		  <ExtPrice>50.00</ExtPrice>
+		  <LineCharge>2.00</LineCharge>
+		  <CostCenter>ABC1000</CostCenter>
+		 </Part>
+		 <Part>
+		  <PartNumber>74-011</PartNumber>
+		  <OrderQty>22</OrderQty>
+		  <UnitPrice>2.50</UnitPrice>
+		  <ExtPrice>50.00</ExtPrice>
+		  <LineCharge>2.00</LineCharge>
+		  <CostCenter>ABC1000</CostCenter>
+		 </Part>
+		</Parts>
+	  </Destination>
+	</Order>
+	<Order>
+	  <User>sstewart</User> 
+  	  <OrderDate>01/22/2013 10:55:03AM</OrderDate>
+	  <Destination>
+		<RecipientNumber>1</RecipientNumber>
+		<Name>Mike Bradley</Name>
+		<Address1>123 Main St.</Address1>
+		<Address2>Suite 200</Address2>
+		<City>St. Paul</City>
+		<State>MN</State>
+		<PostalCode>12345</PostalCode>
+		<Country>USA</Country>
+		<Email></Email>
+		<Phone>202-555-1212</Phone>
+		<ShipVia>DHL Next Day</ShipVia>
+		<OrderCharge>5.00</OrderCharge>
+		<Parts>
+		 <Part>
+		  <PartNumber>72-011</PartNumber>
+		  <OrderQty>20</OrderQty>
+		  <UnitPrice>2.50</UnitPrice>
+		  <ExtPrice>50.00</ExtPrice>
+		  <LineCharge>2.00</LineCharge>
+		  <CostCenter>ABC1000</CostCenter>
+		 </Part>
+		 <Part>
+		  <PartNumber>73-011</PartNumber>
+		  <OrderQty>21</OrderQty>
+		  <UnitPrice>2.50</UnitPrice>
+		  <ExtPrice>50.00</ExtPrice>
+		  <LineCharge>2.00</LineCharge>
+		  <CostCenter>ABC1000</CostCenter>
+		 </Part>
+		 <Part>
+		  <PartNumber>74-011</PartNumber>
+		  <OrderQty>22</OrderQty>
+		  <UnitPrice>2.50</UnitPrice>
+		  <ExtPrice>50.00</ExtPrice>
+		  <LineCharge>2.00</LineCharge>
+		  <CostCenter>ABC1000</CostCenter>
+		 </Part>
+		</Parts>
+	  </Destination>
+	  <Destination>
+		<RecipientNumber>2</RecipientNumber>
+		<PartNumber>07-611</PartNumber>
+		<OrderQty>20</OrderQty>
+		<Name>Patricia Newman</Name>
+		<Address1>123 Main St.</Address1>
+		<Address2>Suite 200</Address2>
+		<City>Wilmington</City>
+		<State>DE</State>
+		<PostalCode>09213</PostalCode>
+		<Country>USA</Country>
+		<Email></Email>
+		<Phone>202-555-1212</Phone>
+		<ShipVia>UPS Early AM</ShipVia>
+		<OrderCharge>5.00</OrderCharge>
+		<Parts>
+		 <Part>
+		  <PartNumber>72-011</PartNumber>
+		  <OrderQty>20</OrderQty>
+		  <UnitPrice>2.50</UnitPrice>
+		  <ExtPrice>50.00</ExtPrice>
+		  <LineCharge>2.00</LineCharge>
+		  <CostCenter>ABC1000</CostCenter>
+		 </Part>
+		 <Part>
+		  <PartNumber>73-011</PartNumber>
+		  <OrderQty>21</OrderQty>
+		  <UnitPrice>2.50</UnitPrice>
+		  <ExtPrice>50.00</ExtPrice>
+		  <LineCharge>2.00</LineCharge>
+		  <CostCenter>ABC1000</CostCenter>
+		 </Part>
+		 <Part>
+		  <PartNumber>74-011</PartNumber>
+		  <OrderQty>22</OrderQty>
+		  <UnitPrice>2.50</UnitPrice>
+		  <ExtPrice>50.00</ExtPrice>
+		  <LineCharge>2.00</LineCharge>
+		  <CostCenter>ABC1000</CostCenter>
+		 </Part>
+		</Parts>
+	  </Destination>
+	</Order>
+</TaxAndShipChargesRequest>
+  

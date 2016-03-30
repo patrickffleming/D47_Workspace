@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<OrderInfo>
+   <Site>Invacare</Site>
+   <Order>
+    <OrderNumber>199</OrderNumber>
+    <PaymentType>CC</PaymentType>
+    <AuthID>ABC000111222</AuthID>
+    <User>sstewart</User>
+    <Role>INJLVA</Role>
+    <OrderDate>01/22/2013 10:45:03AM</OrderDate>
+	  <Destination>
+		<RecipientNumber>1</RecipientNumber>
+		<Name>Dunn Williams</Name>
+		<Address1>123 Main St.</Address1>
+		<Address2>Suite 200</Address2>
+		<City>St. Paul</City>
+		<State>MN</State>
+		<PostalCode>12345</PostalCode>
+		<Country>USA</Country>
+		<Email></Email>
+		<Phone>202-555-1212</Phone>
+		<ShipVia>FedEx Std Overnight - by 3:00 pm</ShipVia>
+		<ShipInstructions>
+			Free Flowing Text
+		</ShipInstructions>
+		<Parts>
+		 <Part>
+		  <PartNumber>72-011</PartNumber>
+		  <OrderQty>20</OrderQty>
+		  <CostCenter>ABC1000</CostCenter>
+		 </Part>
+		 <Part>
+		  <PartNumber>73-011</PartNumber>
+		  <OrderQty>21</OrderQty>
+		  <CostCenter>ABC1000</CostCenter>
+		 </Part>
+		 <Part>
+		  <PartNumber>74-011</PartNumber>
+		  <OrderQty>22</OrderQty>
+		  <CostCenter>ABC1000</CostCenter>
+		 </Part>
+		</Parts>
+	  </Destination>
+	  <Destination>
+		<RecipientNumber>2</RecipientNumber>
+		<PartNumber>07-611</PartNumber>
+		<OrderQty>20</OrderQty>
+		<Name>Benjamin Moore</Name>
+		<Address1>123 Main St.</Address1>
+		<Address2>Suite 200</Address2>
+		<City>Wilmington</City>
+		<State>DE</State>
+		<PostalCode>09213</PostalCode>
+		<Country>USA</Country>
+		<Email></Email>
+		<Phone>202-555-1212</Phone>
+		<ShipVia>FedEx 2nd Day - by 4:30 pm</ShipVia>
+		<ShipInstructions>
+			Free Flowing Text
+		</ShipInstructions>
+		<Parts>
+		 <Part>
+		  <PartNumber>72-011</PartNumber>
+		  <OrderQty>20</OrderQty>
+		  <CostCenter>ABC1000</CostCenter>
+		 </Part>
+		 <Part>
+		  <PartNumber>73-011</PartNumber>
+		  <OrderQty>21</OrderQty>
+		  <CostCenter>ABC1000</CostCenter>
+		 </Part>
+		 <Part>
+		  <PartNumber>74-011</PartNumber>
+		  <OrderQty>22</OrderQty>
+		  <CostCenter>ABC1000</CostCenter>
+		 </Part>
+		</Parts>
+	  </Destination>
+	</Order>
+	<Order>
+    <OrderNumber>201</OrderNumber>
+    <PaymentType></PaymentType>
+    <OrderDate>01/22/2013 10:55:03AM</OrderDate>
+	  <Destination>
+		<RecipientNumber>1</RecipientNumber>
+		<Name>Mike Bradley</Name>
+		<Address1>123 Main St.</Address1>
+		<Address2>Suite 200</Address2>
+		<City>St. Paul</City>
+		<State>MN</State>
+		<PostalCode>12345</PostalCode>
+		<Country>USA</Country>
+		<Email></Email>
+		<Phone>202-555-1212</Phone>
+		<ShipVia>DHL Next Day</ShipVia>
+		<ShipInstructions>
+			Free Flowing Text
+		</ShipInstructions>
+		<Parts>
+		 <Part>
+		  <PartNumber>72-011</PartNumber>
+		  <OrderQty>20</OrderQty>
+		  <CostCenter>ABC1000</CostCenter>
+		 </Part>
+		 <Part>
+		  <PartNumber>73-011</PartNumber>
+		  <OrderQty>21</OrderQty>
+		  <CostCenter>ABC1000</CostCenter>
+		 </Part>
+		 <Part>
+		  <PartNumber>74-011</PartNumber>
+		  <OrderQty>22</OrderQty>
+		  <CostCenter>ABC1000</CostCenter>
+		 </Part>
+		</Parts>
+	  </Destination>
+	  <Destination>
+		<RecipientNumber>2</RecipientNumber>
+		<PartNumber>07-611</PartNumber>
+		<OrderQty>20</OrderQty>
+		<Name>Patricia Newman</Name>
+		<Address1>123 Main St.</Address1>
+		<Address2>Suite 200</Address2>
+		<City>Wilmington</City>
+		<State>DE</State>
+		<PostalCode>09213</PostalCode>
+		<Country>USA</Country>
+		<Email></Email>
+		<Phone>202-555-1212</Phone>
+		<ShipVia>UPS Early AM</ShipVia>
+		<ShipInstructions>
+			Free Flowing Text
+		</ShipInstructions>
+		<Parts>
+		 <Part>
+		  <PartNumber>72-011</PartNumber>
+		  <OrderQty>20</OrderQty>
+		  <CostCenter>ABC1000</CostCenter>
+		 </Part>
+		 <Part>
+		  <PartNumber>73-011</PartNumber>
+		  <OrderQty>21</OrderQty>
+		  <CostCenter>ABC1000</CostCenter>
+		 </Part>
+		 <Part>
+		  <PartNumber>74-011</PartNumber>
+		  <OrderQty>22</OrderQty>
+		  <CostCenter>ABC1000</CostCenter>
+		 </Part>
+		</Parts>
+	  </Destination>
+	</Order>
+</OrderInfo>
+  

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?> 
+<DepartmentListResponse> 
+   <ReverseString>ABCDEFG</ReverseString> 
+   <Department> 
+       <Code>ADM</Code> 
+   <Description>Administration Dept</Description> 
+   </Department> 
+   <Department> 
+       <Code>FLT</Code> 
+       <Description>Fleet Administration</Description> 
+    </Department> 
+</DepartmentListResponse>

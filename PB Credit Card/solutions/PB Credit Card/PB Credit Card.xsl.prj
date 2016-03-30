@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<project source="PB_CreditCard.xml">
+  <preference indent="true" omit-declaration="false" use-structure="false"/>
+
+
+  <function>
+    <field name="XBOHSITE" path="/ccInfo/site" />
+    <field name="XBOHUSER" path="/ccInfo/crosstrioUser" />
+    <field name="XBOHRQDT" path="/ccInfo/DateTime" />
+    <field name="XBCCCRNO" path="/ccInfo/ccNumber" />
+    <field name="XBCDTYCD" path="/ccInfo/ccType" />
+    <field name="XBCCEXMO" path="/ccInfo/ccExpMonth" />
+    <field name="XBCCEXYR" path="/ccInfo/ccExpYear" />
+    <field name="XBCJNAME" path="/ccInfo/ccName" />
+    <field name="XBCJADR1" path="/ccInfo/ccAddr1" />
+    <field name="XBCJADR2" path="/ccInfo/ccAddr2" />
+    <field name="XBCJCITY" path="/ccInfo/ccCity" />
+    <field name="XBCJSTAT" path="/ccInfo/ccState" />
+    <field name="XBZCZIPC" path="/ccInfo/ccZip" />
+    <field name="XBCTCOCD" path="/ccInfo/ccCountry" />
+    <field name="XBCJMEAM" path="/ccInfo/PaymentAmount" />
+  </function>
+
+  <list>
+  </list>
+</project>

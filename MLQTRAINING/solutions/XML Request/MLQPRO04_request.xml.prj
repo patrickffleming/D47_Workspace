@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<project package="com.mlqlansa.service.xml" service-class="MLQPRO04_requestService" locale="" script="" inbound="true" outbound="false" source="MLQPRO04_request.xml">
+
+  <inbound>
+    <entity entity="field" name="DEPTMENT" format="" format-script="" trim="" type="" number-format="false" path="/{}DepartmentRequest/{}DepartmentCode"/>
+    <entity entity="fragment" name="DEPARTMENTREQUEST" field="" format="" format-script="" trim="" type="" number-format="false" multiple-occurrence="false" path="/{}DepartmentRequest"/>
+  </inbound>
+
+  <outbound>
+  </outbound>
+
+</project>

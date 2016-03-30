@@ -1,0 +1,56 @@
+LUXAgentProject constructor ( String projectName, Element projectElement )
+Load classes from C:\Program Files (x86)\LANSAD10CMP\Integrator\Studio\workspace\MLQSOAP02\solutions\EmployeeAgent\MLQEmployeeAgent.soap.jar
+Get project classes
+Local entry load : com.lansa.SOAPServer.mlqtutorial.MLQEmployeeServerServiceServiceLocator
+Local entry load : com.lansa.SOAPServer.mlqtutorial.MLQEmployeeServerServiceService
+Local class load : com.lansa.SOAPServer.mlqtutorial.MLQEmployeeServerServiceService
+Local entry load : com.lansa.SOAPServer.mlqtutorial.MLQEmployeeServerServiceBindingStubAccessor
+Local entry load : com.lansa.SOAPAgent.tutorial.MLQEmployeeAgentService
+Local entry load : com.lansa.SOAPServer.mlqtutorial.EMPLOYEE
+Local entry load : com.lansa.SOAPServer.mlqtutorial.MLQEmployeeServerServiceBindingStub
+Local entry load : com.lansa.SOAPServer.mlqtutorial.MLQEmployeeServerServicePortType
+Local class load : com.lansa.SOAPServer.mlqtutorial.MLQEmployeeServerServicePortType
+Class count 7
+LUXAgentTypeList constructor ( LUXAgentProject project, Class[] classArray )
+class : com.lansa.SOAPServer.mlqtutorial.MLQEmployeeServerServiceServiceLocator
+class : com.lansa.SOAPServer.mlqtutorial.MLQEmployeeServerServiceBindingStubAccessor
+class : com.lansa.SOAPAgent.tutorial.MLQEmployeeAgentService
+class : com.lansa.SOAPServer.mlqtutorial.MLQEmployeeServerServiceService
+class : com.lansa.SOAPServer.mlqtutorial.EMPLOYEE
+class : com.lansa.SOAPServer.mlqtutorial.MLQEmployeeServerServiceBindingStub
+class : com.lansa.SOAPServer.mlqtutorial.MLQEmployeeServerServicePortType
+LUXAgentTypeList construction completed
+LUXAgentOperationList constructor ( LUXAgentProject project, Class[] classArray )
+accessor found com.lansa.SOAPServer.mlqtutorial.MLQEmployeeServerServiceBindingStubAccessor
+locator found com.lansa.SOAPServer.mlqtutorial.MLQEmployeeServerServiceServiceLocator
+service found com.lansa.SOAPServer.mlqtutorial.MLQEmployeeServerServiceService
+remote interface found com.lansa.SOAPServer.mlqtutorial.MLQEmployeeServerServicePortType
+create operations
+operation accessor count : 1
+accessor : 1
+stub class : com.lansa.SOAPServer.mlqtutorial.MLQEmployeeServerServiceBindingStub
+stub locator class : com.lansa.SOAPServer.mlqtutorial.MLQEmployeeServerServiceServiceLocator
+stub remote class : com.lansa.SOAPServer.mlqtutorial.MLQEmployeeServerServicePortType
+stub remote methods
+  MLQGetEmployees
+operations
+  MLQGetEmployees ( MLQGetEmployees )
+find operation for remote method : MLQGetEmployees
+method name match, check parameters
+method parameter match
+LUXAgentOperation constructor ( LUXAgentProject project, LUXAgentOperationList agentOperationList, Class stubClass, Class locatorClass, Class remoteClass, OperationDesc operationDesc, Method remoteMethod )
+Operation : MLQGETEMPLOYEES
+Process parameters for MLQGetEmployees
+LUXDataField constructor ( LUXAgentProject project, LUXAgentOperation operation, Class clazz )
+Parameter class : java.lang.String
+LUXDataField construction completed
+LUXDataField constructor ( LUXAgentProject project, LUXAgentOperation operation, Class clazz )
+Parameter class : java.lang.String
+LUXDataField construction completed
+Process return parameter for MLQGetEmployees
+LUXDataField constructor ( LUXAgentProject project, LUXAgentOperation operation, Class clazz )
+Parameter class : [Lcom.lansa.SOAPServer.mlqtutorial.EMPLOYEE;
+LUXDataField construction completed
+LUXAgentOperation construction completed
+LUXAgentOperationList construction completed
+LUXAgentProject construction completed

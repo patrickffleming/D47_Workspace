@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<project source="PB_Part_Update.xml">
+  <preference indent="true" omit-declaration="false" use-structure="false"/>
+
+
+  <function>
+    <field name="XBOHSITE" path="/PartUpdateRequest/Site" />
+  </function>
+
+  <list>
+  </list>
+</project>

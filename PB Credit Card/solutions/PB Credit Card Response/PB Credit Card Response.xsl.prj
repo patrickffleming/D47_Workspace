@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<project source="PB_CreditCard_Response.xml">
+  <preference indent="true" omit-declaration="false" use-structure="false"/>
+
+
+  <function>
+    <field name="XBOHSITE" path="/ccAuth/site" />
+    <field name="XBOHUSER" path="/ccAuth/crosstrioUser" />
+    <field name="XBOHRQDT" path="/ccAuth/RequestDateTime" />
+    <field name="XBOHRSDT" path="/ccAuth/ResponseDateTime" />
+    <field name="XBAUTHID" path="/ccAuth/AuthID" />
+    <field name="XBAUTHMG" path="/ccAuth/AuthMsg" />
+  </function>
+
+  <list>
+  </list>
+</project>

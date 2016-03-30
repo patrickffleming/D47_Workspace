@@ -1,0 +1,24 @@
+Java compile started
+C:\Program Files (x86)\Java\jdk1.6.0_25\bin\javac.exe
+-encoding
+Cp1252
+-source
+1.4
+-target
+1.4
+-verbose
+-deprecation
+-J-Duser.language=en
+-classpath
+"C:\Program Files (x86)\LANSATRN\Integrator\Studio\workspace\ProcessMaker ODCPGMLIB DEM\solutions\Employee\compile"
+-extdirs
+"C:\Program Files (x86)\LANSATRN\Integrator\Studio\lib\ext;"
+-d
+"C:\Program Files (x86)\LANSATRN\Integrator\Studio\workspace\ProcessMaker ODCPGMLIB DEM\solutions\Employee\compile"
+com\acme\service\xml\AddEmployeeService.java
+Java compile status: no errors
+Java compile completed
+Create archive started
+add source com/acme/service/xml/AddEmployeeService.java
+add class com/acme/service/xml/AddEmployeeService.class
+Create archive completed

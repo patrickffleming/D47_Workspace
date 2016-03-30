@@ -1,0 +1,145 @@
+LUXServerProject constructor ( String projectName, Element projectElement, LUXServerTypeCollection collection )
+LUXServerTypeList constructor ( LUXServerProject project, LUXServerTypeCollection collection )
+type : Invoices
+LUXServerTypeList construction completed
+LUXDataField constructor ( LUXServerProject project, LUXServerOperation operation, String name, LUXType type )
+name : EmployeeNumber
+type : java.lang.String
+LUXDataField construction completed
+LUXDataField constructor ( LUXServerProject project, LUXServerOperation operation, String name, LUXType type )
+name : TerminationDate
+type : java.lang.String
+LUXDataField construction completed
+LUXDataField constructor ( LUXServerProject project, LUXServerOperation operation, String name, LUXType type )
+name : ProcessMakerCaseNumber
+type : java.lang.String
+LUXDataField construction completed
+LUXDataField constructor ( LUXServerProject project, LUXServerOperation operation, String name, LUXType type )
+name : TerminationReason
+type : java.lang.String
+LUXDataField construction completed
+LUXDataField constructor ( LUXServerProject project, LUXServerOperation operation, String name, LUXType type )
+name : SetEmployeeTerminationDateReturn
+type : java.lang.String
+LUXDataField construction completed
+LUXDataField constructor ( LUXServerProject project, LUXServerOperation operation, String name, LUXType type )
+name : Document
+type : byte
+LUXDataField construction completed
+LUXDataField constructor ( LUXServerProject project, LUXServerOperation operation, String name, LUXType type )
+name : ObjectID
+type : java.lang.String
+LUXDataField construction completed
+LUXDataField constructor ( LUXServerProject project, LUXServerOperation operation, String name, LUXType type )
+name : ObjectKey1
+type : java.lang.String
+LUXDataField construction completed
+LUXDataField constructor ( LUXServerProject project, LUXServerOperation operation, String name, LUXType type )
+name : ObjectKey2
+type : java.lang.String
+LUXDataField construction completed
+LUXDataField constructor ( LUXServerProject project, LUXServerOperation operation, String name, LUXType type )
+name : ObjectKey3
+type : java.lang.String
+LUXDataField construction completed
+LUXDataField constructor ( LUXServerProject project, LUXServerOperation operation, String name, LUXType type )
+name : ObjectKey4
+type : java.lang.String
+LUXDataField construction completed
+LUXDataField constructor ( LUXServerProject project, LUXServerOperation operation, String name, LUXType type )
+name : ObjectKey5
+type : java.lang.String
+LUXDataField construction completed
+LUXDataField constructor ( LUXServerProject project, LUXServerOperation operation, String name, LUXType type )
+name : ObjectKey6
+type : java.lang.String
+LUXDataField construction completed
+LUXDataField constructor ( LUXServerProject project, LUXServerOperation operation, String name, LUXType type )
+name : ObjectKey7
+type : java.lang.String
+LUXDataField construction completed
+LUXDataField constructor ( LUXServerProject project, LUXServerOperation operation, String name, LUXType type )
+name : ObjectKey8
+type : java.lang.String
+LUXDataField construction completed
+LUXDataField constructor ( LUXServerProject project, LUXServerOperation operation, String name, LUXType type )
+name : ObjectKey9
+type : java.lang.String
+LUXDataField construction completed
+LUXDataField constructor ( LUXServerProject project, LUXServerOperation operation, String name, LUXType type )
+name : ObjectKey0
+type : java.lang.String
+LUXDataField construction completed
+LUXDataField constructor ( LUXServerProject project, LUXServerOperation operation, String name, LUXType type )
+name : UploadDocumentReturn
+type : java.lang.String
+LUXDataField construction completed
+LUXDataField constructor ( LUXServerProject project, LUXServerOperation operation, String name, LUXType type )
+name : processID
+type : java.lang.String
+LUXDataField construction completed
+LUXDataField constructor ( LUXServerProject project, LUXServerOperation operation, String name, LUXType type )
+name : caseID
+type : java.lang.String
+LUXDataField construction completed
+LUXDataField constructor ( LUXServerProject project, LUXServerOperation operation, String name, LUXType type )
+name : control
+type : java.lang.String
+LUXDataField construction completed
+LUXDataField constructor ( LUXServerProject project, LUXServerOperation operation, String name, LUXType type )
+name : company
+type : java.lang.String
+LUXDataField construction completed
+LUXDataField constructor ( LUXServerProject project, LUXServerOperation operation, String name, LUXType type )
+name : partition
+type : java.lang.String
+LUXDataField construction completed
+LUXDataField constructor ( LUXServerProject project, LUXServerOperation operation, String name, LUXType type )
+name : caseNumber
+type : java.lang.String
+LUXDataField construction completed
+LUXDataField constructor ( LUXServerProject project, LUXServerOperation operation, String name, LUXType type )
+name : casePIN
+type : java.lang.String
+LUXDataField construction completed
+LUXDataField constructor ( LUXServerProject project, LUXServerOperation operation, String name, LUXType type )
+name : createUser
+type : java.lang.String
+LUXDataField construction completed
+LUXDataField constructor ( LUXServerProject project, LUXServerOperation operation, String name, LUXType type )
+name : approveUser
+type : java.lang.String
+LUXDataField construction completed
+LUXDataField constructor ( LUXServerProject project, LUXServerOperation operation, String name, LUXType type )
+name : bemsMessageQ
+type : java.lang.String
+LUXDataField construction completed
+LUXDataField constructor ( LUXServerProject project, LUXServerOperation operation, String name, LUXType type )
+name : bemsMessage
+type : java.lang.String
+LUXDataField construction completed
+LUXDataField constructor ( LUXServerProject project, LUXServerOperation operation, String name, LUXType type )
+name : bemsObject
+type : java.lang.String
+LUXDataField construction completed
+LUXDataField constructor ( LUXServerProject project, LUXServerOperation operation, String name, LUXType type )
+name : bemsCommand
+type : java.lang.String
+LUXDataField construction completed
+LUXDataField constructor ( LUXServerProject project, LUXServerOperation operation, String name, LUXType type )
+name : updateInvoicesReturn
+type : java.lang.String
+LUXDataField construction completed
+LUXDataField constructor ( LUXServerProject project, LUXServerOperation operation, String name, LUXType type )
+name : ProcId
+type : java.lang.String
+LUXDataField construction completed
+LUXDataField constructor ( LUXServerProject project, LUXServerOperation operation, String name, LUXType type )
+name : CaseId
+type : java.lang.String
+LUXDataField construction completed
+LUXDataField constructor ( LUXServerProject project, LUXServerOperation operation, String name, LUXType type )
+name : SendInvoiceReturn
+type : java.lang.String
+LUXDataField construction completed
+LUXServerProject construction completed

@@ -1,0 +1,144 @@
+==============================================================================
+[2014-03-11 19:34:03 -0400] JSFUserAgent ( 12.1.0 ) started in graphical mode from studio.
+==============================================================================
+
+==============================================================================
+[2014-03-11 19:34:12 -0400] HTTPClient: send message
+[2014-03-11 19:34:12 -0400] Host: http://www2.viatechpub.com/cgi-bin/jsmdirect?PBPRICINGUPDD
+[2014-03-11 19:34:12 -0400] Send content using method : POST
+[2014-03-11 19:34:12 -0400] Path: C:\Program Files\LANSAV\Integrator\Studio\workspace\PB Pricing\solutions\PB Pricing Update\
+[2014-03-11 19:34:12 -0400] File: PB_Pricing_Update.xml
+[2014-03-11 19:34:12 -0400] Content type: application/xml; charset=utf-8
+[2014-03-11 19:34:12 -0400] Content encoding: UTF-8
+[2014-03-11 19:34:12 -0400] Local encoding: Cp1252
+[2014-03-11 19:34:12 -0400] Remote encoding: UTF-8
+[2014-03-11 19:34:12 -0400] Negotiate authentication
+[2014-03-11 19:34:12 -0400] Connect to host : www2.viatechpub.com:80
+[2014-03-11 19:34:13 -0400] Read response protocol
+[2014-03-11 19:34:13 -0400] HTTP/1.1 500 JSM Exception
+[2014-03-11 19:34:13 -0400] Date: Tue, 11 Mar 2014 23:33:54 GMT
+[2014-03-11 19:34:13 -0400] Server: Apache
+[2014-03-11 19:34:13 -0400] Connection: close
+[2014-03-11 19:34:13 -0400] Cache-Control: max-age=0, s-maxage=0, must-revalidate, proxy-revalidate, no-cache
+[2014-03-11 19:34:13 -0400] Transfer-Encoding: chunked
+[2014-03-11 19:34:13 -0400] Content-Type: application/xml; charset=utf-8
+[2014-03-11 19:34:13 -0400] X-Pad: avoid browser bug
+[2014-03-11 19:34:13 -0400] 
+[2014-03-11 19:34:13 -0400] Read response protocol completed
+[2014-03-11 19:34:13 -0400] Response: 500 : JSM Exception
+[2014-03-11 19:34:13 -0400] Response: application/xml; charset=utf-8
+==============================================================================
+
+==============================================================================
+[2014-03-11 19:39:04 -0400] JSFUserAgent ( 12.1.0 ) started in graphical mode from studio.
+==============================================================================
+
+==============================================================================
+[2014-03-11 19:39:10 -0400] HTTPClient: send message
+[2014-03-11 19:39:10 -0400] Host: http://www2.viatechpub.com/cgi-bin/jsmdirect?PBPRICINGUPDD
+[2014-03-11 19:39:10 -0400] Send content using method : POST
+[2014-03-11 19:39:10 -0400] Path: C:\Program Files\LANSAV\Integrator\Studio\workspace\PB Pricing\solutions\PB Pricing Update\
+[2014-03-11 19:39:10 -0400] File: PB_Pricing_Update.xml
+[2014-03-11 19:39:10 -0400] Content type: application/xml; charset=utf-8
+[2014-03-11 19:39:10 -0400] Content encoding: UTF-8
+[2014-03-11 19:39:10 -0400] Local encoding: Cp1252
+[2014-03-11 19:39:10 -0400] Remote encoding: UTF-8
+[2014-03-11 19:39:10 -0400] Negotiate authentication
+[2014-03-11 19:39:10 -0400] Connect to host : www2.viatechpub.com:80
+[2014-03-11 19:39:10 -0400] Read response protocol
+[2014-03-11 19:39:11 -0400] HTTP/1.1 500 JSM Exception
+[2014-03-11 19:39:11 -0400] Date: Tue, 11 Mar 2014 23:38:51 GMT
+[2014-03-11 19:39:11 -0400] Server: Apache
+[2014-03-11 19:39:11 -0400] Connection: close
+[2014-03-11 19:39:11 -0400] Cache-Control: max-age=0, s-maxage=0, must-revalidate, proxy-revalidate, no-cache
+[2014-03-11 19:39:11 -0400] Transfer-Encoding: chunked
+[2014-03-11 19:39:11 -0400] Content-Type: application/xml; charset=utf-8
+[2014-03-11 19:39:11 -0400] X-Pad: avoid browser bug
+[2014-03-11 19:39:11 -0400] 
+[2014-03-11 19:39:11 -0400] Read response protocol completed
+[2014-03-11 19:39:11 -0400] Response: 500 : JSM Exception
+[2014-03-11 19:39:11 -0400] Response: application/xml; charset=utf-8
+==============================================================================
+
+==============================================================================
+[2014-03-11 19:43:06 -0400] JSFUserAgent ( 12.1.0 ) started in graphical mode from studio.
+==============================================================================
+
+==============================================================================
+[2014-03-11 19:43:15 -0400] HTTPClient: send message
+[2014-03-11 19:43:15 -0400] Host: http://www2.viatechpub.com/cgi-bin/jsmdirect?PBPRICINGUPDD
+[2014-03-11 19:43:15 -0400] Send content using method : POST
+[2014-03-11 19:43:15 -0400] Path: C:\Program Files\LANSAV\Integrator\Studio\workspace\PB Pricing\solutions\PB Pricing Update\
+[2014-03-11 19:43:15 -0400] File: PB_Pricing_Update.xml
+[2014-03-11 19:43:15 -0400] Content type: application/xml; charset=utf-8
+[2014-03-11 19:43:15 -0400] Content encoding: UTF-8
+[2014-03-11 19:43:15 -0400] Local encoding: Cp1252
+[2014-03-11 19:43:15 -0400] Remote encoding: UTF-8
+[2014-03-11 19:43:15 -0400] Negotiate authentication
+[2014-03-11 19:43:15 -0400] Connect to host : www2.viatechpub.com:80
+[2014-03-11 19:43:15 -0400] Read response protocol
+[2014-03-11 19:43:16 -0400] HTTP/1.1 200 OK
+[2014-03-11 19:43:16 -0400] Date: Tue, 11 Mar 2014 23:42:56 GMT
+[2014-03-11 19:43:16 -0400] Server: Apache
+[2014-03-11 19:43:16 -0400] Connection: close
+[2014-03-11 19:43:16 -0400] Cache-Control: max-age=0, s-maxage=0, must-revalidate, proxy-revalidate, no-cache
+[2014-03-11 19:43:16 -0400] Transfer-Encoding: chunked
+[2014-03-11 19:43:16 -0400] Content-Type: application/xml; charset=utf-8
+[2014-03-11 19:43:16 -0400] 
+[2014-03-11 19:43:16 -0400] Read response protocol completed
+[2014-03-11 19:43:16 -0400] Response: 200 : OK
+[2014-03-11 19:43:16 -0400] Response: application/xml; charset=utf-8
+==============================================================================
+
+==============================================================================
+[2014-03-11 19:48:28 -0400] HTTPClient: send message
+[2014-03-11 19:48:28 -0400] Host: http://www2.viatechpub.com/cgi-bin/jsmdirect?PBPRICINGUPDD
+[2014-03-11 19:48:28 -0400] Send content using method : POST
+[2014-03-11 19:48:28 -0400] Path: C:\Program Files\LANSAV\Integrator\Studio\workspace\PB Pricing\solutions\PB Pricing Update\
+[2014-03-11 19:48:28 -0400] File: PB_Pricing_Update.xml
+[2014-03-11 19:48:28 -0400] Content type: application/xml; charset=utf-8
+[2014-03-11 19:48:28 -0400] Content encoding: UTF-8
+[2014-03-11 19:48:28 -0400] Local encoding: Cp1252
+[2014-03-11 19:48:28 -0400] Remote encoding: UTF-8
+[2014-03-11 19:48:28 -0400] Negotiate authentication
+[2014-03-11 19:48:28 -0400] Connect to host : www2.viatechpub.com:80
+[2014-03-11 19:48:28 -0400] Read response protocol
+[2014-03-11 19:48:29 -0400] HTTP/1.1 200 OK
+[2014-03-11 19:48:29 -0400] Date: Tue, 11 Mar 2014 23:48:09 GMT
+[2014-03-11 19:48:29 -0400] Server: Apache
+[2014-03-11 19:48:29 -0400] Connection: close
+[2014-03-11 19:48:29 -0400] Cache-Control: max-age=0, s-maxage=0, must-revalidate, proxy-revalidate, no-cache
+[2014-03-11 19:48:29 -0400] Transfer-Encoding: chunked
+[2014-03-11 19:48:29 -0400] Content-Type: application/xml; charset=utf-8
+[2014-03-11 19:48:29 -0400] 
+[2014-03-11 19:48:29 -0400] Read response protocol completed
+[2014-03-11 19:48:30 -0400] Response: 200 : OK
+[2014-03-11 19:48:30 -0400] Response: application/xml; charset=utf-8
+==============================================================================
+
+==============================================================================
+[2014-03-11 20:07:03 -0400] HTTPClient: send message
+[2014-03-11 20:07:03 -0400] Host: http://www2.viatechpub.com/cgi-bin/jsmdirect?PBPRICINGUPDD
+[2014-03-11 20:07:03 -0400] Send content using method : POST
+[2014-03-11 20:07:03 -0400] Path: C:\Program Files\LANSAV\Integrator\Studio\workspace\PB Pricing\solutions\PB Pricing Update\
+[2014-03-11 20:07:03 -0400] File: PB_Pricing_Update.xml
+[2014-03-11 20:07:03 -0400] Content type: application/xml; charset=utf-8
+[2014-03-11 20:07:03 -0400] Content encoding: UTF-8
+[2014-03-11 20:07:03 -0400] Local encoding: Cp1252
+[2014-03-11 20:07:03 -0400] Remote encoding: UTF-8
+[2014-03-11 20:07:03 -0400] Negotiate authentication
+[2014-03-11 20:07:03 -0400] Connect to host : www2.viatechpub.com:80
+[2014-03-11 20:07:03 -0400] Read response protocol
+[2014-03-11 20:07:07 -0400] HTTP/1.1 200 OK
+[2014-03-11 20:07:07 -0400] Date: Wed, 12 Mar 2014 00:06:45 GMT
+[2014-03-11 20:07:07 -0400] Server: Apache
+[2014-03-11 20:07:07 -0400] Connection: close
+[2014-03-11 20:07:07 -0400] Cache-Control: max-age=0, s-maxage=0, must-revalidate, proxy-revalidate, no-cache
+[2014-03-11 20:07:07 -0400] Transfer-Encoding: chunked
+[2014-03-11 20:07:07 -0400] Content-Type: application/xml; charset=utf-8
+[2014-03-11 20:07:07 -0400] 
+[2014-03-11 20:07:07 -0400] Read response protocol completed
+[2014-03-11 20:07:07 -0400] Response: 200 : OK
+[2014-03-11 20:07:07 -0400] Response: application/xml; charset=utf-8
+==============================================================================
+

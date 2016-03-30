@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<studio-project id="20131111-023020">
+
+  <servers>
+    <server name="BBT400" url="http://12.43.236.138:4561" include-trace-directory="*all"/>
+    <server name="D10PGMLIB" url="http://services.lansa.com:5560" include-trace-directory="*all"/>
+    <server name="ODCPGMLIB" url="http://solutions.lansa.com:4761" include-trace-directory="*all"/>
+    <server name="V13JSMLIB" url="http://10.1.45.2:4563" include-trace-directory="*all"/>
+  </servers>
+
+  <encodings>
+  </encodings>
+
+</studio-project>
+

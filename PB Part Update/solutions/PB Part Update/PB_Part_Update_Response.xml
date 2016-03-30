@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PartsInformationResponse>
+  <Site>7000416</Site>
+  <Status>OK</Status>
+  <ErrorMsg/>
+  <Parts>
+    <Part>
+      <PartNumber>CAL018</PartNumber>
+      <PartDesc>TRAIN THE SERVICE TRAINER WORKBOOK 06-01-07</PartDesc>
+      <Revision> </Revision>
+      <QtyAllocated>10</QtyAllocated>
+      <QtyOnHand>20</QtyOnHand>
+      <QryAvailable>15</QryAvailable>
+    </Part>
+    <Part>
+      <PartNumber>CPK037</PartNumber>
+      <PartDesc>BUSSER LEADER'S GUIDE 06-01-07</PartDesc>
+      <Revision>0.1</Revision>
+      <QtyAllocated>20</QtyAllocated>
+      <QtyOnHand>10</QtyOnHand>
+      <QryAvailable>28</QryAvailable>
+    </Part>
+    <Part>
+      <PartNumber>CAL019</PartNumber>
+      <PartDesc>TRAIN THE KITCHEN TRAINER ENGLISH 06-01-07</PartDesc>
+      <Revision>2</Revision>
+      <QtyAllocated>10</QtyAllocated>
+      <QtyOnHand>20</QtyOnHand>
+      <QryAvailable>25</QryAvailable>
+    </Part>
+    <Part>
+      <PartNumber>CPK100-14F</PartNumber>
+      <PartDesc>PASTA BULK INSERTS ONLY 06-01-13</PartDesc>
+      <Revision>1.9</Revision>
+      <QtyAllocated>30</QtyAllocated>
+      <QtyOnHand>20</QtyOnHand>
+      <QryAvailable>10</QryAvailable>
+    </Part>
+  </Parts>
+</PartsInformationResponse>
+
+
+  

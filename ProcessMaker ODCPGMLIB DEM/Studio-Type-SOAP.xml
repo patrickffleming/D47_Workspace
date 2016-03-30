@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<studio-type type="soap" sort-type-elements="true">
+
+  <type name="Invoices" entity="" description="" readonly="false">
+    <element name="account" type="Integer" array="false" entity="" description="" readonly="false"/>
+    <element name="amount" type="Double" array="false" entity="" description="" readonly="false"/>
+    <element name="branch" type="Integer" array="false" entity="" description="" readonly="false"/>
+    <element name="department" type="Integer" array="false" entity="" description="" readonly="false"/>
+    <element name="line" type="Integer" array="false" entity="" description="" readonly="false"/>
+    <element name="units" type="Double" array="false" entity="" description="" readonly="false"/>
+  </type>
+
+</studio-type>
+

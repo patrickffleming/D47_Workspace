@@ -1,0 +1,151 @@
+==============================================================================
+[2014-04-08 03:50:06 -0500] JSFUserAgent ( 12.1.0 ) started in graphical mode from studio.
+==============================================================================
+
+==============================================================================
+[2014-04-08 03:51:12 -0500] HTTPClient: send message
+[2014-04-08 03:51:12 -0500] Host: http://solutions.lansa.com:8561/cgi-bin/jsmdirect?MLQFN06_SERVICE
+[2014-04-08 03:51:12 -0500] Send content using method : POST
+[2014-04-08 03:51:12 -0500] Path: C:\Program Files (x86)\LANSAD10CMP\Integrator\Studio\workspace\MLQTRAINING\solutions\XML Request\
+[2014-04-08 03:51:12 -0500] File: MLQPRO04_request.xml
+[2014-04-08 03:51:12 -0500] Content type: application/xml; charset=utf-8
+[2014-04-08 03:51:12 -0500] Content encoding: UTF-8
+[2014-04-08 03:51:12 -0500] Local encoding: Cp1252
+[2014-04-08 03:51:12 -0500] Remote encoding: UTF-8
+[2014-04-08 03:51:12 -0500] Negotiate authentication
+[2014-04-08 03:51:12 -0500] Connect to host : solutions.lansa.com:8561
+[2014-04-08 03:51:12 -0500] Read response protocol
+[2014-04-08 03:51:12 -0500] HTTP/1.1 600 JSMDirect Message
+[2014-04-08 03:51:12 -0500] Date: Tue, 08 Apr 2014 08:50:53 GMT
+[2014-04-08 03:51:12 -0500] Server: Apache
+[2014-04-08 03:51:12 -0500] Cache-Control: no-cache
+[2014-04-08 03:51:12 -0500] Transfer-Encoding: chunked
+[2014-04-08 03:51:12 -0500] Content-Type: text/html
+[2014-04-08 03:51:12 -0500] 
+[2014-04-08 03:51:12 -0500] Read response protocol completed
+[2014-04-08 03:56:12 -0500] Response: 600 : JSMDirect Message
+[2014-04-08 03:56:12 -0500] Response: text/html
+==============================================================================
+
+==============================================================================
+[2014-04-10 02:04:36 -0500] JSFUserAgent ( 12.1.0 ) started in graphical mode from studio.
+==============================================================================
+
+==============================================================================
+[2014-04-10 02:04:51 -0500] HTTPClient: send message
+[2014-04-10 02:04:51 -0500] Host: http://solutions.lansa.com:8561/cgi-bin/jsmdirect?MLQFN06_SERVICE
+[2014-04-10 02:04:51 -0500] Send content using method : POST
+[2014-04-10 02:04:51 -0500] Path: C:\Program Files (x86)\LANSAD10CMP\Integrator\Studio\workspace\MLQTRAINING\solutions\XML Request\
+[2014-04-10 02:04:51 -0500] File: MLQPRO04_request.xml
+[2014-04-10 02:04:51 -0500] Content type: application/xml; charset=utf-8
+[2014-04-10 02:04:51 -0500] Content encoding: UTF-8
+[2014-04-10 02:04:51 -0500] Local encoding: Cp1252
+[2014-04-10 02:04:51 -0500] Remote encoding: UTF-8
+[2014-04-10 02:04:51 -0500] Negotiate authentication
+[2014-04-10 02:04:51 -0500] Connect to host : solutions.lansa.com:8561
+[2014-04-10 02:04:51 -0500] Read response protocol
+[2014-04-10 02:04:57 -0500] HTTP/1.1 500 JSM Exception
+[2014-04-10 02:04:57 -0500] Date: Thu, 10 Apr 2014 07:04:32 GMT
+[2014-04-10 02:04:57 -0500] Server: Apache
+[2014-04-10 02:04:57 -0500] Connection: close
+[2014-04-10 02:04:57 -0500] Cache-Control: max-age=0, s-maxage=0, must-revalidate, proxy-revalidate, no-cache
+[2014-04-10 02:04:57 -0500] Transfer-Encoding: chunked
+[2014-04-10 02:04:57 -0500] Content-Type: application/xml; charset=utf-8
+[2014-04-10 02:04:57 -0500] X-Pad: avoid browser bug
+[2014-04-10 02:04:57 -0500] 
+[2014-04-10 02:04:57 -0500] Read response protocol completed
+[2014-04-10 02:04:57 -0500] Response: 500 : JSM Exception
+[2014-04-10 02:04:57 -0500] Response: application/xml; charset=utf-8
+==============================================================================
+
+==============================================================================
+[2014-04-10 02:06:39 -0500] JSFUserAgent ( 12.1.0 ) started in graphical mode from studio.
+==============================================================================
+
+==============================================================================
+[2014-04-10 02:06:48 -0500] HTTPClient: send message
+[2014-04-10 02:06:48 -0500] Host: http://solutions.lansa.com:8561/cgi-bin/jsmdirect?MLQFN06_SERVICE
+[2014-04-10 02:06:48 -0500] Send content using method : POST
+[2014-04-10 02:06:48 -0500] Path: C:\Program Files (x86)\LANSAD10CMP\Integrator\Studio\workspace\MLQTRAINING\solutions\XML Request\
+[2014-04-10 02:06:48 -0500] File: MLQPRO04_request.xml
+[2014-04-10 02:06:48 -0500] Content type: application/xml; charset=utf-8
+[2014-04-10 02:06:48 -0500] Content encoding: UTF-8
+[2014-04-10 02:06:48 -0500] Local encoding: Cp1252
+[2014-04-10 02:06:48 -0500] Remote encoding: UTF-8
+[2014-04-10 02:06:48 -0500] Negotiate authentication
+[2014-04-10 02:06:48 -0500] Connect to host : solutions.lansa.com:8561
+[2014-04-10 02:06:48 -0500] Read response protocol
+[2014-04-10 02:06:48 -0500] HTTP/1.1 500 JSM Exception
+[2014-04-10 02:06:48 -0500] Date: Thu, 10 Apr 2014 07:06:29 GMT
+[2014-04-10 02:06:48 -0500] Server: Apache
+[2014-04-10 02:06:48 -0500] Connection: close
+[2014-04-10 02:06:48 -0500] Cache-Control: max-age=0, s-maxage=0, must-revalidate, proxy-revalidate, no-cache
+[2014-04-10 02:06:48 -0500] Transfer-Encoding: chunked
+[2014-04-10 02:06:48 -0500] Content-Type: application/xml; charset=utf-8
+[2014-04-10 02:06:48 -0500] X-Pad: avoid browser bug
+[2014-04-10 02:06:48 -0500] 
+[2014-04-10 02:06:48 -0500] Read response protocol completed
+[2014-04-10 02:06:48 -0500] Response: 500 : JSM Exception
+[2014-04-10 02:06:48 -0500] Response: application/xml; charset=utf-8
+==============================================================================
+
+==============================================================================
+[2014-04-10 02:08:38 -0500] JSFUserAgent ( 12.1.0 ) started in graphical mode from studio.
+==============================================================================
+
+==============================================================================
+[2014-04-10 02:08:49 -0500] HTTPClient: send message
+[2014-04-10 02:08:49 -0500] Host: http://solutions.lansa.com:8561/cgi-bin/jsmdirect?MLQFN06_SERVICE
+[2014-04-10 02:08:49 -0500] Send content using method : POST
+[2014-04-10 02:08:49 -0500] Path: C:\Program Files (x86)\LANSAD10CMP\Integrator\Studio\workspace\MLQTRAINING\solutions\XML Request\
+[2014-04-10 02:08:49 -0500] File: MLQPRO04_request.xml
+[2014-04-10 02:08:49 -0500] Content type: application/xml; charset=utf-8
+[2014-04-10 02:08:49 -0500] Content encoding: UTF-8
+[2014-04-10 02:08:49 -0500] Local encoding: Cp1252
+[2014-04-10 02:08:49 -0500] Remote encoding: UTF-8
+[2014-04-10 02:08:49 -0500] Negotiate authentication
+[2014-04-10 02:08:49 -0500] Connect to host : solutions.lansa.com:8561
+[2014-04-10 02:08:49 -0500] Read response protocol
+[2014-04-10 02:08:50 -0500] HTTP/1.1 200 OK
+[2014-04-10 02:08:50 -0500] Date: Thu, 10 Apr 2014 07:08:30 GMT
+[2014-04-10 02:08:50 -0500] Server: Apache
+[2014-04-10 02:08:50 -0500] Connection: close
+[2014-04-10 02:08:50 -0500] Cache-Control: max-age=0, s-maxage=0, must-revalidate, proxy-revalidate, no-cache
+[2014-04-10 02:08:50 -0500] Transfer-Encoding: chunked
+[2014-04-10 02:08:50 -0500] Content-Type: application/xml; charset=utf-8
+[2014-04-10 02:08:50 -0500] 
+[2014-04-10 02:08:50 -0500] Read response protocol completed
+[2014-04-10 02:08:50 -0500] Response: 200 : OK
+[2014-04-10 02:08:50 -0500] Response: application/xml; charset=utf-8
+==============================================================================
+
+==============================================================================
+[2014-04-10 03:58:22 -0500] JSFUserAgent ( 12.1.0 ) started in graphical mode from studio.
+==============================================================================
+
+==============================================================================
+[2014-04-10 03:58:31 -0500] HTTPClient: send message
+[2014-04-10 03:58:31 -0500] Host: http://solutions.lansa.com:8561/cgi-bin/jsmdirect?MLQFN06_SERVICE
+[2014-04-10 03:58:31 -0500] Send content using method : POST
+[2014-04-10 03:58:31 -0500] Path: C:\Program Files (x86)\LANSAD10CMP\Integrator\Studio\workspace\MLQTRAINING\solutions\XML Request\
+[2014-04-10 03:58:31 -0500] File: MLQPRO04_request.xml
+[2014-04-10 03:58:31 -0500] Content type: application/xml; charset=utf-8
+[2014-04-10 03:58:31 -0500] Content encoding: UTF-8
+[2014-04-10 03:58:31 -0500] Local encoding: Cp1252
+[2014-04-10 03:58:31 -0500] Remote encoding: UTF-8
+[2014-04-10 03:58:31 -0500] Negotiate authentication
+[2014-04-10 03:58:31 -0500] Connect to host : solutions.lansa.com:8561
+[2014-04-10 03:58:31 -0500] Read response protocol
+[2014-04-10 03:58:32 -0500] HTTP/1.1 200 OK
+[2014-04-10 03:58:32 -0500] Date: Thu, 10 Apr 2014 08:58:12 GMT
+[2014-04-10 03:58:32 -0500] Server: Apache
+[2014-04-10 03:58:32 -0500] Connection: close
+[2014-04-10 03:58:32 -0500] Cache-Control: max-age=0, s-maxage=0, must-revalidate, proxy-revalidate, no-cache
+[2014-04-10 03:58:32 -0500] Transfer-Encoding: chunked
+[2014-04-10 03:58:32 -0500] Content-Type: application/xml; charset=utf-8
+[2014-04-10 03:58:32 -0500] 
+[2014-04-10 03:58:32 -0500] Read response protocol completed
+[2014-04-10 03:58:32 -0500] Response: 200 : OK
+[2014-04-10 03:58:32 -0500] Response: application/xml; charset=utf-8
+==============================================================================
+

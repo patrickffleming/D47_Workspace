@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<workflow>
+    <identifier>
+        <Object>DEM_ORG_SEC_EMP</Object>
+        <Event>Add</Event>
+        <Workflow>Add New Employee</Workflow>
+        <Case_Number>90</Case_Number>
+        <Workflow_User>patrickf</Workflow_User>
+        <DateTime>2013-11-14 01:12:14</DateTime>
+    </identifier>
+    <BEMS>
+        <BEMS_Name>ADDEMPLOYEE</BEMS_Name>
+        <BEMS_Queue>PERSONEL</BEMS_Queue>
+    </BEMS>
+    <data>
+        <Employee>
+            <Number>A8002</Number>
+            <Surname>Cruz</Surname>
+            <GivenName>Ramon</GivenName>
+            <Address1>Add 1</Address1>
+            <Address2>Add 2</Address2>
+            <PostCode>3988</PostCode>
+            <PhoneHome>2888888</PhoneHome>
+            <PhoneBusiness>7773488</PhoneBusiness>
+            <StartDate>2013-11-16</StartDate>
+            <TermDate>00000000</TermDate>
+            <Department>ADM</Department>
+            <Section>01</Section>
+            <Salary>58,000.00</Salary>
+        </Employee>
+    </data>
+</workflow>

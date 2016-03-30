@@ -1,0 +1,255 @@
+       // Sample RPG skeleton for web service
+
+       // Message handling structure and prototype
+     D ErrorDS         DS            16
+     D  BytesProv                    10I 0 INZ(%SIZE(ErrorDS))
+     D  BytesAvail                   10I 0
+     D  ExceptionID                   7A
+
+     D SendMsg         PR                  EXTPGM('QMHSNDPM')
+     D  MsgID                         7A   CONST
+     D  MsgF                         20A   CONST
+     D  MsgData                      30A   CONST
+     D  MsgDataLen                   10I 0 CONST
+     D  MsgType                      10A   CONST
+     D  CallStackEnt                 10A   CONST
+     D  CallStackCtr                 10I 0 CONST
+     D  MsgKey                        4A   CONST
+     D  Error                              LIKE(ErrorDS)
+
+     D Msg             S             78A   INZ(*BLANKS)
+
+       // Prototypes for Integrator service procedures
+     D PROTODS         DS
+     D  DUMMYFIELD                    1A   INZ(*BLANK)
+     D PROTOARRAY      S             60A   DIM(1)
+
+     D JSMX_BEGIN      PR                  EXTPROC('JSMX_BEGIN') OPDESC
+     D                                4A   OPTIONS(*OMIT)
+     D                               10I 0 CONST
+
+     D JSMX_OPEN       PR                  EXTPROC('JSMX_OPEN') OPDESC
+     D                                4A
+     D                               50A   CONST OPTIONS(*VARSIZE)
+     D                               20A   OPTIONS(*VARSIZE)
+     D                              512A   OPTIONS(*VARSIZE)
+
+     D JSMX_BINDFLD    PR                  EXTPROC('JSMX_BINDFLD') OPDESC
+     D                                4A   CONST
+     D  META                               DIM(1) LIKE(PROTOARRAY)
+     D                               10I 0 CONST
+     D  DATA                               LIKEDS(PROTODS)
+     D                               10I 0 CONST
+     D                               20A   OPTIONS(*VARSIZE)
+     D                              512A   OPTIONS(*VARSIZE)
+
+     D JSMX_BINDLST    PR                  EXTPROC('JSMX_BINDLST') OPDESC
+     D                                4A   CONST
+     D  META                               DIM(1) LIKE(PROTOARRAY)
+     D                               10I 0 CONST
+     D  DATA                               LIKEDS(PROTODS)
+     D                               10I 0 CONST
+     D                               10I 0  
+     D                               10I 0 CONST
+     D                               20A   OPTIONS(*VARSIZE)
+     D                              512A   OPTIONS(*VARSIZE)
+
+     D JSMX_COMMAND    PR                  EXTPROC('JSMX_COMMAND') OPDESC
+     D                                4A   CONST
+     D                              512A   CONST OPTIONS(*VARSIZE)
+     D                               20A   OPTIONS(*VARSIZE)
+     D                              512A   OPTIONS(*VARSIZE)
+
+     D JSMX_CLOSE      PR                  EXTPROC('JSMX_CLOSE') OPDESC
+     D                                4A   CONST
+     D                               20A   OPTIONS(*VARSIZE)
+     D                              512A   OPTIONS(*VARSIZE)
+
+     D JSMX_END        PR                  EXTPROC('JSMX_END') OPDESC
+
+       // Variables
+     D JSMXHDLE1       S              4A   INZ(*BLANKS)
+     D JSMXSRV         S             50A   INZ(*BLANKS)
+     D JSMXSTS         S             20A   INZ(*BLANKS)
+     D JSMXMSG         S            512A   INZ(*BLANKS)
+     D JSMXCMD         S            512A   INZ(*BLANKS)
+     D ZEROLENGTH      S             10I 0 INZ(0)
+
+       // The following fields are used by the soap binding map
+     D FIELDDEF        S             60A   DIM(4) CTDATA
+     D FIELDSZE        S             10I 0 INZ(0)
+     D FIELDENT        S             10I 0 INZ(0)
+     D FIELDDTA        DS                  QUALIFIED
+     D  AICTRL...
+     D                               50A   INZ(*BLANKS)
+     D  PM_CASEID...
+     D                               50A   INZ(*BLANKS)
+     D  PM_PROCESSID...
+     D                               50A   INZ(*BLANKS)
+     D  PM_STATUSCODE...
+     D                               50A   INZ(*BLANKS)
+
+      /free
+
+       // Initialize
+       JSMX_BEGIN (*OMIT : ZEROLENGTH);
+
+       // Open service
+       JSMX_OPEN (JSMXHDLE1         :
+                  'LOCALHOST:4560'  :
+                  JSMXSTS           :
+                  JSMXMSG);
+       exsr check;
+
+       // Load service
+       JSMX_COMMAND (JSMXHDLE1      :
+                     'SERVICE_LOAD SERVICE(SOAPSERVERSERVICE)' +
+                     ' SERVICE_CONTENT(*HTTP) TRACE(*YES)' :
+                     JSMXSTS        :
+                     JSMXMSG);
+       exsr check;
+
+       // Open SOAP service
+       JSMX_COMMAND (JSMXHDLE1      :
+                     'OPEN SERVICE(PM GL INVOICE)' :
+                     JSMXSTS        :
+                     JSMXMSG);
+       exsr check;
+
+       // Get parameter - PROCESSID
+       FIELDSZE=%SIZE(FIELDDEF:*ALL);
+       FIELDENT=%SIZE(FIELDDTA);
+       JSMX_BINDFLD (JSMXHDLE1      :
+                     FIELDDEF       :
+                     FIELDSZE       :
+                     FIELDDTA       :
+                     FIELDENT       :
+                     JSMXSTS        :
+                     JSMXMSG);
+       exsr check;
+       JSMX_COMMAND (JSMXHDLE1      :
+                     'GET PARAMETER(PROCESSID)' :
+                     JSMXSTS        :
+                     JSMXMSG);
+       exsr check;
+
+       // Get parameter - CASEID
+       FIELDSZE=%SIZE(FIELDDEF:*ALL);
+       FIELDENT=%SIZE(FIELDDTA);
+       JSMX_BINDFLD (JSMXHDLE1      :
+                     FIELDDEF       :
+                     FIELDSZE       :
+                     FIELDDTA       :
+                     FIELDENT       :
+                     JSMXSTS        :
+                     JSMXMSG);
+       exsr check;
+       JSMX_COMMAND (JSMXHDLE1      :
+                     'GET PARAMETER(CASEID)' :
+                     JSMXSTS        :
+                     JSMXMSG);
+       exsr check;
+
+       // Get parameter - INVOICE
+       JSMX_COMMAND (JSMXHDLE1      :
+                     'IS NOT_NULL(*RETURN)' :
+                     JSMXSTS        :
+                     JSMXMSG);
+       if JSMXSTS = 'OK';
+
+       JSMX_COMMAND (JSMXHDLE1      :
+                     'GET PARAMETER(INVOICE)' :
+                     JSMXSTS        :
+                     JSMXMSG);
+       exsr check;
+
+       // <<< Enter the fragment loop logic for NEWINVOICEREQUEST >>>
+      /end-free
+     C     1             DO        9
+      /free
+
+       // Get fragment loop - NEWINVOICEREQUEST
+       FIELDSZE=%SIZE(FIELDDEF:*ALL);
+       FIELDENT=%SIZE(FIELDDTA);
+       JSMX_BINDFLD (JSMXHDLE1      :
+                     FIELDDEF       :
+                     FIELDSZE       :
+                     FIELDDTA       :
+                     FIELDENT       :
+                     JSMXSTS        :
+                     JSMXMSG);
+       exsr check;
+       JSMX_COMMAND (JSMXHDLE1      :
+                     'GET FRAGMENT(NEWINVOICEREQUEST)' :
+                     JSMXSTS        :
+                     JSMXMSG);
+       if JSMXSTS = 'NOFRAGMENT';
+         leave;
+       endif;
+       exsr check;
+
+       enddo;
+       // <<< Exit the fragment loop logic for NEWINVOICEREQUEST >>>
+
+       endif;
+
+       // <<< Enter your business logic here >>>
+
+       // Set return parameter
+       FIELDSZE=%SIZE(FIELDDEF:*ALL);
+       FIELDENT=%SIZE(FIELDDTA);
+       JSMX_BINDFLD (JSMXHDLE1      :
+                     FIELDDEF       :
+                     FIELDSZE       :
+                     FIELDDTA       :
+                     FIELDENT       :
+                     JSMXSTS        :
+                     JSMXMSG);
+       exsr check;
+       JSMX_COMMAND (JSMXHDLE1      :
+                     'SET PARAMETER(*RETURN)' :
+                     JSMXSTS        :
+                     JSMXMSG);
+       exsr check;
+
+       // Close SOAP service and send back response
+       JSMX_COMMAND (JSMXHDLE1 :
+                     'CLOSE'   :
+                     JSMXSTS   :
+                     JSMXMSG);
+       exsr check;
+
+       // Close service
+       JSMX_CLOSE (JSMXHDLE1 :
+                   JSMXSTS   :
+                   JSMXMSG);
+       exsr check;
+
+       // Finalize
+       JSMX_END ();
+
+       *inlr = *on;
+       return;
+
+       begsr check;
+        if JSMXSTS <> 'OK';
+          JSMX_CLOSE (JSMXHDLE1 :
+                      JSMXSTS   :
+                      JSMXMSG);
+          JSMX_END ();
+          msg = 'Java service error has occured';
+          callp  SendMsg (*blanks: *blanks : Msg : %size(Msg):
+                          '*INFO': '*': 0: *blanks: ErrorDS);
+
+          *inlr = *on;
+          return;
+        endif;
+       endsr;
+
+      /end-free
+
+**CTDATA FIELDDEF
+AICTRL                                            A000005000
+PM_CASEID                                         A000005000
+PM_PROCESSID                                      A000005000
+PM_STATUSCODE                                     A000005000

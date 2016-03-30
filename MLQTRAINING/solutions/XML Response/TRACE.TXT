@@ -1,0 +1,28 @@
+Generate source started
+Generate service source started
+Generate service source completed
+Generate source completed
+Java compile started
+C:\Program Files (x86)\Java\jdk1.6.0_25\bin\javac.exe
+-encoding
+Cp1252
+-source
+1.4
+-target
+1.4
+-verbose
+-deprecation
+-J-Duser.language=en
+-classpath
+"C:\Program Files (x86)\LANSAD10CMP\Integrator\Studio\workspace\MLQTRAINING\solutions\XML Response\compile"
+-extdirs
+"C:\Program Files (x86)\LANSAD10CMP\Integrator\Studio\lib\ext;"
+-d
+"C:\Program Files (x86)\LANSAD10CMP\Integrator\Studio\workspace\MLQTRAINING\solutions\XML Response\compile"
+com\mlqlansa\service\xml\MLQPRO04_responseService.java
+Java compile status: no errors
+Java compile completed
+Create archive started
+add source com/mlqlansa/service/xml/MLQPRO04_responseService.java
+add class com/mlqlansa/service/xml/MLQPRO04_responseService.class
+Create archive completed

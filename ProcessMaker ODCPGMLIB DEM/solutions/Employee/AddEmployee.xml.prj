@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<project package="com.acme.service.xml" service-class="AddEmployeeService" locale="" script="" inbound="true" outbound="true" source="samplexml.xml">
+
+  <inbound>
+    <entity entity="field" name="PMBEMQ" format="" format-script="" trim="" type="" number-format="false" path="/{}workflow/{}BEMS/{}BEMS_Queue"/>
+    <entity entity="field" name="POSTCODE" format="" format-script="" trim="" type="" number-format="false" path="/{}workflow/{}data/{}Employee/{}PostCode"/>
+    <entity entity="field" name="PMBEMN" format="" format-script="" trim="" type="" number-format="false" path="/{}workflow/{}BEMS/{}BEMS_Name"/>
+    <entity entity="field" name="PHONEHME" format="" format-script="" trim="" type="" number-format="false" path="/{}workflow/{}data/{}Employee/{}PhoneHome"/>
+    <entity entity="field" name="PMWUSR" format="" format-script="" trim="" type="" number-format="false" path="/{}workflow/{}identifier/{}Workflow_User"/>
+    <entity entity="field" name="EMPNO" format="" format-script="" trim="" type="" number-format="false" path="/{}workflow/{}data/{}Employee/{}Number"/>
+    <entity entity="fragment" name="WORKFLOW" field="" format="" format-script="" trim="" type="" number-format="false" multiple-occurrence="false" path="/{}workflow"/>
+    <entity entity="field" name="PHONEHME" format="" format-script="" trim="" type="" number-format="false" path="/{}workflow/{}data/{}Employee/{}PhoneBusiness"/>
+    <entity entity="field" name="PMWOBJ" format="" format-script="" trim="" type="" number-format="false" path="/{}workflow/{}identifier/{}Object"/>
+    <entity entity="field" name="PMWEVT" format="" format-script="" trim="" type="" number-format="false" path="/{}workflow/{}identifier/{}Event"/>
+    <entity entity="field" name="SECTION" format="" format-script="" trim="" type="" number-format="false" path="/{}workflow/{}data/{}Employee/{}Section"/>
+    <entity entity="field" name="PMWDTM" format="" format-script="" trim="" type="" number-format="false" path="/{}workflow/{}identifier/{}DateTime"/>
+    <entity entity="field" name="ADDRESS1" format="" format-script="" trim="" type="" number-format="false" path="/{}workflow/{}data/{}Employee/{}Address1"/>
+    <entity entity="field" name="ADDRESS2" format="" format-script="" trim="" type="" number-format="false" path="/{}workflow/{}data/{}Employee/{}Address2"/>
+    <entity entity="field" name="SURNAME" format="" format-script="" trim="" type="" number-format="false" path="/{}workflow/{}data/{}Employee/{}Surname"/>
+    <entity entity="field" name="DEPTMENT" format="" format-script="" trim="" type="" number-format="false" path="/{}workflow/{}data/{}Employee/{}Department"/>
+    <entity entity="fragment" name="DATA" field="" format="" format-script="" trim="" type="" number-format="false" multiple-occurrence="false" path="/{}workflow/{}data"/>
+    <entity entity="fragment" name="IDENTIFIER" field="" format="" format-script="" trim="" type="" number-format="false" multiple-occurrence="false" path="/{}workflow/{}identifier"/>
+    <entity entity="field" name="PMWCID" format="" format-script="" trim="" type="" number-format="false" path="/{}workflow/{}identifier/{}Case_Number"/>
+    <entity entity="fragment" name="BEMS" field="" format="" format-script="" trim="" type="" number-format="false" multiple-occurrence="false" path="/{}workflow/{}BEMS"/>
+    <entity entity="field" name="USALARY" format="" format-script="" trim="" type="" number-format="false" path="/{}workflow/{}data/{}Employee/{}Salary"/>
+    <entity entity="field" name="GIVENAME" format="" format-script="" trim="" type="" number-format="false" path="/{}workflow/{}data/{}Employee/{}GivenName"/>
+    <entity entity="fragment" name="EMPLOYEE" field="" format="" format-script="" trim="" type="" number-format="false" multiple-occurrence="false" path="/{}workflow/{}data/{}Employee"/>
+    <entity entity="field" name="USTARTDTE" format="" format-script="" trim="" type="" number-format="false" path="/{}workflow/{}data/{}Employee/{}StartDate"/>
+    <entity entity="field" name="PMWWNME" format="" format-script="" trim="" type="" number-format="false" path="/{}workflow/{}identifier/{}Workflow"/>
+  </inbound>
+
+  <outbound>
+    <entity entity="field" name="" format="" format-script="" trim="" type="" number-format="false" output-empty-node="true" output-cdata-section="false" output-disable-escape="false" path="/{}workflow/{}identifier/{}Workflow_User"/>
+    <entity entity="fragment" name="WORKFLOW" field="" format-script="" format="" trim="" type="" number-format="false" output-empty-node="true" output-cdata-section="false" output-disable-escape="false" multiple-occurrence="false" path="/{}workflow"/>
+    <entity entity="field" name="" format="" format-script="" trim="" type="" number-format="false" output-empty-node="true" output-cdata-section="false" output-disable-escape="false" path="/{}workflow/{}identifier/{}Object"/>
+    <entity entity="field" name="" format="" format-script="" trim="" type="" number-format="false" output-empty-node="true" output-cdata-section="false" output-disable-escape="false" path="/{}workflow/{}identifier/{}Event"/>
+    <entity entity="field" name="" format="" format-script="" trim="" type="" number-format="false" output-empty-node="true" output-cdata-section="false" output-disable-escape="false" path="/{}workflow/{}identifier/{}DateTime"/>
+    <entity entity="fragment" name="IDENTIFIER" field="" format-script="" format="" trim="" type="" number-format="false" output-empty-node="true" output-cdata-section="false" output-disable-escape="false" multiple-occurrence="false" path="/{}workflow/{}identifier"/>
+    <entity entity="field" name="" format="" format-script="" trim="" type="" number-format="false" output-empty-node="true" output-cdata-section="false" output-disable-escape="false" path="/{}workflow/{}identifier/{}Case_Number"/>
+    <entity entity="field" name="RETCODE" format="" format-script="" trim="" type="" number-format="false" output-empty-node="true" output-cdata-section="false" output-disable-escape="false" path="/{}workflow/{}response/{}status"/>
+    <entity entity="field" name="BEMSMSG" format="" format-script="" trim="" type="" number-format="false" output-empty-node="true" output-cdata-section="false" output-disable-escape="false" path="/{}workflow/{}response/{}message"/>
+    <entity entity="field" name="" format="" format-script="" trim="" type="" number-format="false" output-empty-node="true" output-cdata-section="false" output-disable-escape="false" path="/{}workflow/{}identifier/{}Workflow"/>
+    <entity entity="fragment" name="RESPONSE" field="" format-script="" format="" trim="" type="" number-format="false" output-empty-node="true" output-cdata-section="false" output-disable-escape="false" multiple-occurrence="false" path="/{}workflow/{}response"/>
+  </outbound>
+
+</project>

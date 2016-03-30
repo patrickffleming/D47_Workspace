@@ -1,0 +1,68 @@
+LUXAgentProject constructor ( String projectName, Element projectElement )
+Load classes from C:\Program Files (x86)\LANSAD10CMP\Integrator\Studio\workspace\UHA SOAP Agent Employee Tutorial\solutions\UHAEmployeeAgent\UHAEmployeeAgent.soap.jar
+Get project classes
+Local entry load : com.lansa.UHASOAPServer.Tutorial.UHAEmployeeServerServicePortType
+Local entry load : com.lansa.UHASOAPServer.Tutorial.UHAEmployeeServerServiceBindingStubAccessor
+Local entry load : com.lansa.UHASOAPServer.Tutorial.UHAEmployeeServerServiceServiceLocator
+Local entry load : com.lansa.UHASOAPServer.Tutorial.UHAEmployeeServerServiceService
+Local class load : com.lansa.UHASOAPServer.Tutorial.UHAEmployeeServerServiceService
+Local entry load : com.lansa.UHASOAPAgent.Tutorial.UHAEmployeeAgentService
+Local entry load : com.lansa.UHASOAPServer.Tutorial.Employee
+Local entry load : com.lansa.UHASOAPServer.Tutorial.UHAEmployeeServerServiceBindingStub
+Class count 7
+LUXAgentTypeList constructor ( LUXAgentProject project, Class[] classArray )
+class : com.lansa.UHASOAPServer.Tutorial.UHAEmployeeServerServicePortType
+class : com.lansa.UHASOAPServer.Tutorial.UHAEmployeeServerServiceBindingStubAccessor
+class : com.lansa.UHASOAPServer.Tutorial.UHAEmployeeServerServiceServiceLocator
+class : com.lansa.UHASOAPAgent.Tutorial.UHAEmployeeAgentService
+class : com.lansa.UHASOAPServer.Tutorial.Employee
+class : com.lansa.UHASOAPServer.Tutorial.UHAEmployeeServerServiceBindingStub
+class : com.lansa.UHASOAPServer.Tutorial.UHAEmployeeServerServiceService
+LUXAgentTypeList construction completed
+LUXAgentOperationList constructor ( LUXAgentProject project, Class[] classArray )
+accessor found com.lansa.UHASOAPServer.Tutorial.UHAEmployeeServerServiceBindingStubAccessor
+locator found com.lansa.UHASOAPServer.Tutorial.UHAEmployeeServerServiceServiceLocator
+service found com.lansa.UHASOAPServer.Tutorial.UHAEmployeeServerServiceService
+remote interface found com.lansa.UHASOAPServer.Tutorial.UHAEmployeeServerServicePortType
+create operations
+operation accessor count : 1
+accessor : 1
+stub class : com.lansa.UHASOAPServer.Tutorial.UHAEmployeeServerServiceBindingStub
+stub locator class : com.lansa.UHASOAPServer.Tutorial.UHAEmployeeServerServiceServiceLocator
+stub remote class : com.lansa.UHASOAPServer.Tutorial.UHAEmployeeServerServicePortType
+stub remote methods
+  getEmployees
+  noop
+operations
+  getEmployees ( getEmployees )
+  noop ( noop )
+find operation for remote method : getEmployees
+method name match, check parameters
+method parameter match
+LUXAgentOperation constructor ( LUXAgentProject project, LUXAgentOperationList agentOperationList, Class stubClass, Class locatorClass, Class remoteClass, OperationDesc operationDesc, Method remoteMethod )
+Operation : GETEMPLOYEES
+Process parameters for getEmployees
+LUXDataField constructor ( LUXAgentProject project, LUXAgentOperation operation, Class clazz )
+Parameter class : java.lang.String
+LUXDataField construction completed
+LUXDataField constructor ( LUXAgentProject project, LUXAgentOperation operation, Class clazz )
+Parameter class : java.lang.String
+LUXDataField construction completed
+Process return parameter for getEmployees
+LUXDataField constructor ( LUXAgentProject project, LUXAgentOperation operation, Class clazz )
+Parameter class : [Lcom.lansa.UHASOAPServer.Tutorial.Employee;
+LUXDataField construction completed
+LUXAgentOperation construction completed
+find operation for remote method : noop
+method name match, check parameters
+method parameter match
+LUXAgentOperation constructor ( LUXAgentProject project, LUXAgentOperationList agentOperationList, Class stubClass, Class locatorClass, Class remoteClass, OperationDesc operationDesc, Method remoteMethod )
+Operation : NOOP
+Process parameters for noop
+Process return parameter for noop
+LUXDataField constructor ( LUXAgentProject project, LUXAgentOperation operation, Class clazz )
+Parameter class : void
+LUXDataField construction completed
+LUXAgentOperation construction completed
+LUXAgentOperationList construction completed
+LUXAgentProject construction completed

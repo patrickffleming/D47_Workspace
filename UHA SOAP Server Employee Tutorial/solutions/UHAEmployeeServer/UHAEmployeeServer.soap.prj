@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<project type="server" package="com.lansa.UHASOAPServer.Tutorial" service-class="UHAEmployeeServerService" provider-class="UHAEmployeeServerProvider" endpoint="http://solutions.lansa.com:8561/cgi-bin/jsmdirect?" style="wrapped" typemapping="" archive-types="true">
+
+<operation name="noop" checked="true">
+</operation>
+
+<operation name="getEmployees" checked="true">
+
+  <parameter name="department_code" parameter-type="String" entity-name="DEPTMENT" entity-type="field" entity-format="">
+  </parameter>
+
+  <parameter name="section_code" parameter-type="String" entity-name="SECTION" entity-type="field" entity-format="">
+  </parameter>
+
+  <return name="getEmployeesReturn" parameter-type="Employee" parameter-array="true" entity-name="EMPLOYEE" entity-type="fragment" entity-format="">
+    <entity entity-name="EMPNO" entity-type="field" entity-format="" entity-path="employee_ID"/>
+    <entity entity-name="GIVENAME" entity-type="field" entity-format="" entity-path="firstname"/>
+    <entity entity-name="SALARY" entity-type="field" entity-format="" entity-path="salary"/>
+    <entity entity-name="SURNAME" entity-type="field" entity-format="" entity-path="surname"/>
+  </return>
+
+</operation>
+
+</project>

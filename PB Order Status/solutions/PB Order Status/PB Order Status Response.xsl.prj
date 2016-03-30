@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<project source="PB_Order_Status_Response.xml">
+  <preference indent="true" omit-declaration="false" use-structure="false"/>
+
+  <template path="/OrderStatusResponse/OrderStatusDetails/OrderStatusDetail"/>
+
+  <function>
+    <field name="XBOHSITE" path="/OrderStatusResponse/Site" />
+    <field name="XBOHNUMB" path="/OrderStatusResponse/OrderNumber" />
+    <field name="WK_STATUS" path="/OrderStatusResponse/Status" />
+    <field name="WK_TXT01" path="/OrderStatusResponse/ErrorMsg" />
+  </function>
+
+  <list>
+    <field name="SFNUMB" path="/OrderStatusResponse/OrderStatusDetails/OrderStatusDetail/EcomNumber" />
+    <field name="WK_DAT10A" path="/OrderStatusResponse/OrderStatusDetails/OrderStatusDetail/OrderDate" />
+    <field name="WK_ACDESC" path="/OrderStatusResponse/OrderStatusDetails/OrderStatusDetail/Status" />
+    <field name="OJTRNO" path="/OrderStatusResponse/OrderStatusDetails/OrderStatusDetail/Tracking" />
+  </list>
+</project>

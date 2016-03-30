@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<project source="PB_Order.xml">
+  <preference indent="true" omit-declaration="false" use-structure="false"/>
+
+  <template path="/OrderInfo/Order/Destination/Parts/Part"/>
+
+  <function>
+  </function>
+
+  <list>
+    <field name="XBINPART" path="/OrderInfo/Order/Destination/Parts/Part/PartNumber" />
+    <field name="XBSDORQT" path="/OrderInfo/Order/Destination/Parts/Part/OrderQty" />
+    <field name="XBOHSITE" path="/OrderInfo/Site" />
+    <field name="XBRECNBR" path="/OrderInfo/Order/Destination/RecipientNumber" />
+    <field name="XBSHNAME" path="/OrderInfo/Order/Destination/Name" />
+    <field name="XBSHADR1" path="/OrderInfo/Order/Destination/Address1" />
+    <field name="XBSHADR2" path="/OrderInfo/Order/Destination/Address2" />
+    <field name="XBSHCITY" path="/OrderInfo/Order/Destination/City" />
+    <field name="XBSHSTAT" path="/OrderInfo/Order/Destination/State" />
+    <field name="XBSHZIPC" path="/OrderInfo/Order/Destination/PostalCode" />
+    <field name="XBSHCOCD" path="/OrderInfo/Order/Destination/Country" />
+    <field name="XBOHEMAD" path="/OrderInfo/Order/Destination/Email" />
+    <field name="XBSHS1PH" path="/OrderInfo/Order/Destination/Phone" />
+    <field name="XBSVCACD" path="/OrderInfo/Order/Destination/ShipVia" />
+    <field name="XBSHINST" path="/OrderInfo/Order/Destination/ShipInstructions" />
+    <field name="XBOHNUMB" path="/OrderInfo/Order/OrderNumber" />
+    <field name="XBOHORDT" path="/OrderInfo/Order/OrderDate" />
+    <field name="XBOHUSER" path="/OrderInfo/Order/User" />
+    <field name="XBOHROLE" path="/OrderInfo/Order/Role" />
+    <field name="XBPAYTYP" path="/OrderInfo/Order/PaymentType" />
+    <field name="XBAUTHID" path="/OrderInfo/Order/AuthID" />
+    <field name="XBOHOCAM" path="/OrderInfo/Order/Destination/OrderCharge" />
+    <field name="XBOHSHAM" path="/OrderInfo/Order/Destination/ShippingAmount" />
+    <field name="XBOHSHMG" path="/OrderInfo/Order/Destination/ShippingMessage" />
+    <field name="XBOHTXAM" path="/OrderInfo/Order/Destination/TaxAmount" />
+    <field name="XBOHTXMG" path="/OrderInfo/Order/Destination/TaxMessage" />
+    <field name="XBSDSEPR" path="/OrderInfo/Order/Destination/Parts/Part/UnitPrice" />
+    <field name="XBSDSEAM" path="/OrderInfo/Order/Destination/Parts/Part/ExtPrice" />
+    <field name="XBSDLCAM" path="/OrderInfo/Order/Destination/Parts/Part/LineCharge" />
+    <field name="XBINCOCN" path="/OrderInfo/Order/Destination/Parts/Part/CostCenter" />
+    <field name="XBSFCACT" path="/OrderInfo/Order/Destination/ShipViaAccount" />
+    <field name="XBDEPART" path="/OrderInfo/Order/Destination/Parts/Part/DestItemNo" />
+    <field name="XBCONAME" path="/OrderInfo/Order/Destination/Company" />
+    <field name="XBOHEMA1" path="/OrderInfo/Order/Destination/AdditionalEmailAddress1" />
+    <field name="XBOHEMA2" path="/OrderInfo/Order/Destination/AdditionalEmailAddress2" />
+    <field name="XBOHEMA3" path="/OrderInfo/Order/Destination/AdditionalEmailAddress3" />
+    <field name="XBOHEMA4" path="/OrderInfo/Order/Destination/AdditionalEmailAddress4" />
+    <field name="XBEBEMAD" path="/OrderInfo/Order/Destination/Parts/Part/EBookEmail" />
+  </list>
+</project>

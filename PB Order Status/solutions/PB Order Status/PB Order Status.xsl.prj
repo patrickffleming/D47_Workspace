@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<project source="PB_Order_Status.xml">
+  <preference indent="true" omit-declaration="false" use-structure="false"/>
+
+
+  <function>
+    <field name="XBOHSITE" path="/OrderStatusRequest/Site" />
+    <field name="XBOHNUMB" path="/OrderStatusRequest/OrderNumber" />
+  </function>
+
+  <list>
+  </list>
+</project>

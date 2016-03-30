@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<studio-project id="20140308-100914">
+
+  <servers>
+    <server name="ViaTech" url="http://150.150.2.2:4561" include-trace-directory="*all"/>
+  </servers>
+
+  <encodings>
+  </encodings>
+
+</studio-project>
+

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<studio-project id="20121018-024625">
+
+  <servers>
+    <server name="D10JSMLIB" url="http://services.lansa.com:05560" include-trace-directory="*all"/>
+    <server name="ODCJSMLIB" url="http://solutions.lansa.com:4761" include-trace-directory="*all"/>
+  </servers>
+
+  <encodings>
+  </encodings>
+
+</studio-project>
+

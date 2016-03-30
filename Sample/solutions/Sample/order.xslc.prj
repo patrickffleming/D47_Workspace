@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<project package="com.acme.xslc" archive="translet.jar">
+  <source file="order-receive.xsl" class="OrderReceive" include="true"/>
+</project>

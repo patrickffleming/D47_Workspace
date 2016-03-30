@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PartsPricingResponse>
+  <Site>7000416</Site>
+  <Status>OK</Status>
+  <ErrorMsg/>
+  <Parts>
+    <Part>
+      <PartNumber>PRT1</PartNumber>
+      <Price>2</Price>
+      <CurrencyCode>USD</CurrencyCode>
+      <MinQuantity>1</MinQuantity>
+      <MaxQuantity>10</MaxQuantity>
+    </Part>
+    <Part>
+      <PartNumber>PRT1</PartNumber>
+      <Price>1</Price>
+      <CurrencyCode>USD</CurrencyCode>
+      <MinQuantity>11</MinQuantity>
+      <MaxQuantity>20</MaxQuantity>
+    </Part>
+    <Part>
+      <PartNumber>PRT2</PartNumber>
+      <Price>3</Price>
+      <CurrencyCode>USD</CurrencyCode>
+      <MinQuantity>10</MinQuantity>
+      <MaxQuantity>0</MaxQuantity>
+    </Part>
+  </Parts>
+</PartsPricingResponse>
+
+
+
+  

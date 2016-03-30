@@ -1,0 +1,547 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<project type="agent" package="com.acme.service.soap" service-class="ProcessMakerWSDLService" shared-locator="false" maintain-session="false" gzip="false" http10="false" basic-authentication="true">
+
+<operation name="userList" checked="true">
+
+  <parameter name="userListRequest">
+    <entity entity-name="PM_SESSIONID" entity-type="field" entity-format="" entity-path="sessionId"/>
+  </parameter>
+
+  <return name="userListResponse" entity-name="USERLISTRESPONSE" entity-type="fragment" entity-format="">
+    <entity entity-name="PM_GUID" entity-type="field" entity-format="" entity-path="guid"/>
+    <entity entity-name="PM_USERNAME" entity-type="field" entity-format="" entity-path="name"/>
+  </return>
+
+</operation>
+
+<operation name="createGroup" checked="false">
+
+  <parameter name="createGroupRequest">
+  </parameter>
+
+  <return name="createGroupResponse">
+  </return>
+
+</operation>
+
+<operation name="sendMessage" checked="false">
+
+  <parameter name="sendMessageRequest">
+  </parameter>
+
+  <return name="pmResponse">
+  </return>
+
+</operation>
+
+<operation name="informationUser" checked="false">
+
+  <parameter name="informationUserRequest">
+  </parameter>
+
+  <return name="informationUserResponse">
+  </return>
+
+</operation>
+
+<operation name="assignUserToGroup" checked="false">
+
+  <parameter name="assignUserToGroupRequest">
+  </parameter>
+
+  <return name="pmResponse">
+  </return>
+
+</operation>
+
+<operation name="newCaseImpersonate" checked="true">
+
+  <parameter name="newCaseImpersonateRequest" entity-name="NEWCASEIMPERSONATEREQUEST" entity-type="fragment" entity-format="">
+    <entity entity-name="PM_PROCESSID" entity-type="field" entity-format="" entity-path="processId"/>
+    <entity entity-name="PM_SESSIONID" entity-type="field" entity-format="" entity-path="sessionId"/>
+    <entity entity-name="PM_TASKID" entity-type="field" entity-format="" entity-path="taskId"/>
+    <entity entity-name="PM_USERGUID" entity-type="field" entity-format="" entity-path="userId"/>
+    <entity entity-name="NEWCASEVARS" entity-type="list" entity-format="" entity-path="variables"/>
+    <entity entity-name="NEWCASENAM" entity-type="listfield" entity-format="" entity-path="variables.name"/>
+    <entity entity-name="NEWCASEVAL" entity-type="listfield" entity-format="" entity-path="variables.value"/>
+  </parameter>
+
+  <return name="newCaseImpersonateResponse">
+    <entity entity-name="PM_CASEID" entity-type="field" entity-format="" entity-path="caseId"/>
+    <entity entity-name="PM_CASENUMBER" entity-type="field" entity-format="" entity-path="caseNumber"/>
+    <entity entity-name="PM_MESSAGE" entity-type="field" entity-format="" entity-path="message"/>
+    <entity entity-name="PM_STATUSCODE" entity-type="field" entity-format="" entity-path="status_code"/>
+    <entity entity-name="PM_TIMESTAMP" entity-type="field" entity-format="" entity-path="timestamp"/>
+  </return>
+
+</operation>
+
+<operation name="createDepartment" checked="false">
+
+  <parameter name="createDepartmentRequest">
+  </parameter>
+
+  <return name="createDepartmentResponse">
+  </return>
+
+</operation>
+
+<operation name="departmentList" checked="false">
+
+  <parameter name="departmentListRequest">
+  </parameter>
+
+  <return name="departmentListResponse">
+  </return>
+
+</operation>
+
+<operation name="unassignedCaseList" checked="false">
+
+  <parameter name="unassignedCaseListRequest">
+  </parameter>
+
+  <return name="unassignedCaseListResponse">
+  </return>
+
+</operation>
+
+<operation name="login" checked="true">
+
+  <parameter name="login">
+    <entity entity-name="PM_PASSWORD" entity-type="field" entity-format="" entity-path="password"/>
+    <entity entity-name="PM_USERID" entity-type="field" entity-format="" entity-path="userid"/>
+  </parameter>
+
+  <return name="loginResponse">
+    <entity entity-name="PM_RESPONSE_MESSAGE" entity-type="field" entity-format="" entity-path="message"/>
+    <entity entity-name="PM_RESPONSE_STATUS_CODE" entity-type="field" entity-format="" entity-path="status_code"/>
+    <entity entity-name="PM_RESPONSE_TIMESTAMP" entity-type="field" entity-format="" entity-path="timestamp"/>
+    <entity entity-name="PM_RESPONSE_VERSION" entity-type="field" entity-format="" entity-path="version"/>
+  </return>
+
+</operation>
+
+<operation name="processList" checked="true">
+
+  <parameter name="processListRequest">
+    <entity entity-name="PM_SESSIONID" entity-type="field" entity-format="" entity-path="sessionId"/>
+  </parameter>
+
+  <return name="processListResponse" entity-name="PROCESSLISTRESPONSE" entity-type="fragment" entity-format="">
+    <entity entity-name="PM_GUID" entity-type="field" entity-format="" entity-path="guid"/>
+    <entity entity-name="PM_NAME" entity-type="field" entity-format="" entity-path="name"/>
+  </return>
+
+</operation>
+
+<operation name="roleList" checked="false">
+
+  <parameter name="roleListRequest">
+  </parameter>
+
+  <return name="roleListResponse">
+  </return>
+
+</operation>
+
+<operation name="groupList" checked="false">
+
+  <parameter name="groupListRequest">
+  </parameter>
+
+  <return name="groupListResponse">
+  </return>
+
+</operation>
+
+<operation name="caseList" checked="true">
+
+  <parameter name="caseListRequest">
+    <entity entity-name="PM_SESSIONID" entity-type="field" entity-format="" entity-path="sessionId"/>
+  </parameter>
+
+  <return name="caseListResponse" entity-name="CASELISTRESPONSE" entity-type="fragment" entity-format="">
+    <entity entity-name="PM_DELINDEX" entity-type="field" entity-format="" entity-path="delIndex"/>
+    <entity entity-name="PM_GUID" entity-type="field" entity-format="" entity-path="guid"/>
+    <entity entity-name="PM_NAME" entity-type="field" entity-format="" entity-path="name"/>
+    <entity entity-name="PM_PROCESSID" entity-type="field" entity-format="" entity-path="processId"/>
+    <entity entity-name="PM_STATUS" entity-type="field" entity-format="" entity-path="status"/>
+  </return>
+
+</operation>
+
+<operation name="createUser" checked="false">
+
+  <parameter name="createUserRequest">
+  </parameter>
+
+  <return name="createUserResponse">
+  </return>
+
+</operation>
+
+<operation name="updateUser" checked="false">
+
+  <parameter name="updateUserRequest">
+  </parameter>
+
+  <return name="updateUserResponse">
+  </return>
+
+</operation>
+
+<operation name="newCase" checked="true">
+
+  <parameter name="newCaseRequest" entity-name="NEWCASEREQ" entity-type="fragment" entity-format="">
+    <entity entity-name="" entity-type="list" entity-format="" entity-path="executeTriggers"/>
+    <entity entity-name="" entity-type="listfield" entity-format="" entity-path="executeTriggers.entry"/>
+    <entity entity-name="PM_PROCESSID" entity-type="field" entity-format="" entity-path="processId"/>
+    <entity entity-name="PM_SESSIONID" entity-type="field" entity-format="" entity-path="sessionId"/>
+    <entity entity-name="PM_TASKID" entity-type="field" entity-format="" entity-path="taskId"/>
+    <entity entity-name="NEWCASEVARS" entity-type="list" entity-format="" entity-path="variables"/>
+    <entity entity-name="NEWCASENAM" entity-type="listfield" entity-format="" entity-path="variables.name"/>
+    <entity entity-name="NEWCASEVAL" entity-type="listfield" entity-format="" entity-path="variables.value"/>
+  </parameter>
+
+  <return name="newCaseResponse">
+    <entity entity-name="PM_CASEID" entity-type="field" entity-format="" entity-path="caseId"/>
+    <entity entity-name="PM_CASENUMBER" entity-type="field" entity-format="" entity-path="caseNumber"/>
+    <entity entity-name="PM_MESSAGE" entity-type="field" entity-format="" entity-path="message"/>
+    <entity entity-name="PM_STATUSCODE" entity-type="field" entity-format="" entity-path="status_code"/>
+    <entity entity-name="PM_TIMESTAMP" entity-type="field" entity-format="" entity-path="timestamp"/>
+  </return>
+
+</operation>
+
+<operation name="reassignCase" checked="false">
+
+  <parameter name="reassignCaseRequest">
+  </parameter>
+
+  <return name="pmResponse">
+  </return>
+
+</operation>
+
+<operation name="routeCase" checked="true">
+
+  <parameter name="routeCaseRequest">
+    <entity entity-name="PM_CASEID" entity-type="field" entity-format="" entity-path="caseId"/>
+    <entity entity-name="PM_DELINDEX" entity-type="field" entity-format="" entity-path="delIndex"/>
+    <entity entity-name="PM_SESSIONID" entity-type="field" entity-format="" entity-path="sessionId"/>
+  </parameter>
+
+  <return name="routeCaseResponse" entity-name="ROUTECASERESPONSE" entity-type="fragment" entity-format="">
+    <entity entity-name="PM_MESSAGE" entity-type="field" entity-format="" entity-path="message"/>
+    <entity entity-name="ROUTECASELISTRESPONSE" entity-type="list" entity-format="" entity-path="routing"/>
+    <entity entity-name="PM_DELINDEX" entity-type="listfield" entity-format="" entity-path="routing.delIndex"/>
+    <entity entity-name="PM_DELTHREAD" entity-type="listfield" entity-format="" entity-path="routing.delThread"/>
+    <entity entity-name="PM_DELTHREADSTATUS" entity-type="listfield" entity-format="" entity-path="routing.delThreadStatus"/>
+    <entity entity-name="PM_TASKID" entity-type="listfield" entity-format="" entity-path="routing.taskId"/>
+    <entity entity-name="PM_TASKNAME" entity-type="listfield" entity-format="" entity-path="routing.taskName"/>
+    <entity entity-name="PM_USERID" entity-type="listfield" entity-format="" entity-path="routing.userId"/>
+    <entity entity-name="PM_USERNAME" entity-type="listfield" entity-format="" entity-path="routing.userName"/>
+    <entity entity-name="PM_STATUSCODE" entity-type="field" entity-format="" entity-path="status_code"/>
+    <entity entity-name="PM_TIMESTAMP" entity-type="field" entity-format="" entity-path="timestamp"/>
+  </return>
+
+</operation>
+
+<operation name="getVariables" checked="false">
+
+  <parameter name="getVariablesRequest">
+  </parameter>
+
+  <return name="getVariablesResponse">
+  </return>
+
+</operation>
+
+<operation name="getCaseInfo" checked="true">
+
+  <parameter name="getCaseInfoRequest">
+    <entity entity-name="PM_CASEID" entity-type="field" entity-format="" entity-path="caseId"/>
+    <entity entity-name="PM_DELINDEX" entity-type="field" entity-format="" entity-path="delIndex"/>
+    <entity entity-name="PM_SESSIONID" entity-type="field" entity-format="" entity-path="sessionId"/>
+  </parameter>
+
+  <return name="getCaseInfoResponse" entity-name="GETCASEINFORESPONSE" entity-type="fragment" entity-format="">
+    <entity entity-name="PM_CREATEUSER" entity-type="field" entity-format="" entity-path="caseCreatorUser"/>
+    <entity entity-name="PM_CREATEUSERNAME" entity-type="field" entity-format="" entity-path="caseCreatorUserName"/>
+    <entity entity-name="PM_CASEID" entity-type="field" entity-format="" entity-path="caseId"/>
+    <entity entity-name="PM_CASENAME" entity-type="field" entity-format="" entity-path="caseName"/>
+    <entity entity-name="PM_CASENUMBER" entity-type="field" entity-format="" entity-path="caseNumber"/>
+    <entity entity-name="PM_CASEPARALELL" entity-type="field" entity-format="" entity-path="caseParalell"/>
+    <entity entity-name="PM_CASESTATUS" entity-type="field" entity-format="" entity-path="caseStatus"/>
+    <entity entity-name="PM_CREATEDATE" entity-type="field" entity-format="" entity-path="createDate"/>
+    <entity entity-name="" entity-type="fragment" entity-format="" entity-path="currentUsers"/>
+    <entity entity-name="PM_GIDELINDEX" entity-type="field" entity-format="" entity-path="currentUsers.delIndex"/>
+    <entity entity-name="PM_GIDELTHREAD" entity-type="field" entity-format="" entity-path="currentUsers.delThread"/>
+    <entity entity-name="PM_GIDELTHREADSTATUS" entity-type="field" entity-format="" entity-path="currentUsers.delThreadStatus"/>
+    <entity entity-name="PM_GITASKID" entity-type="field" entity-format="" entity-path="currentUsers.taskId"/>
+    <entity entity-name="PM_GITASKNAME" entity-type="field" entity-format="" entity-path="currentUsers.taskName"/>
+    <entity entity-name="PM_GIUSERID" entity-type="field" entity-format="" entity-path="currentUsers.userId"/>
+    <entity entity-name="PM_GIUSERNAME" entity-type="field" entity-format="" entity-path="currentUsers.userName"/>
+    <entity entity-name="PM_MESSAGE" entity-type="field" entity-format="" entity-path="message"/>
+    <entity entity-name="PM_PROCESSID" entity-type="field" entity-format="" entity-path="processId"/>
+    <entity entity-name="PM_PROCESSNAME" entity-type="field" entity-format="" entity-path="processName"/>
+    <entity entity-name="PM_STATUSCODE" entity-type="field" entity-format="" entity-path="status_code"/>
+    <entity entity-name="PM_UPDATEDATE" entity-type="field" entity-format="" entity-path="updateDate"/>
+  </return>
+
+</operation>
+
+<operation name="taskList" checked="true">
+
+  <parameter name="taskListRequest">
+    <entity entity-name="PM_SESSIONID" entity-type="field" entity-format="" entity-path="sessionId"/>
+  </parameter>
+
+  <return name="taskListResponse" entity-name="TASKLISTRESPONSE" entity-type="fragment" entity-format="">
+    <entity entity-name="PM_GUID" entity-type="field" entity-format="" entity-path="guid"/>
+    <entity entity-name="PM_INITIALTASK" entity-type="field" entity-format="" entity-path="initialTask"/>
+    <entity entity-name="PM_NAME" entity-type="field" entity-format="" entity-path="name"/>
+    <entity entity-name="PM_PROCESSID" entity-type="field" entity-format="" entity-path="processId"/>
+  </return>
+
+</operation>
+
+<operation name="taskCase" checked="false">
+
+  <parameter name="taskCaseRequest">
+  </parameter>
+
+  <return name="taskCaseResponse">
+  </return>
+
+</operation>
+
+<operation name="triggerList" checked="true">
+
+  <parameter name="triggerListRequest">
+    <entity entity-name="PM_SESSIONID" entity-type="field" entity-format="" entity-path="sessionId"/>
+  </parameter>
+
+  <return name="triggerListResponse" entity-name="TRIGGERLISTRESPONSE" entity-type="fragment" entity-format="">
+    <entity entity-name="PM_GUID" entity-type="field" entity-format="" entity-path="guid"/>
+    <entity entity-name="PM_NAME" entity-type="field" entity-format="" entity-path="name"/>
+    <entity entity-name="PM_PROCESSID" entity-type="field" entity-format="" entity-path="processId"/>
+  </return>
+
+</operation>
+
+<operation name="getCaseNotes" checked="false">
+
+  <parameter name="getCaseNotesRequest">
+  </parameter>
+
+  <return name="getCaseNotesResponse">
+  </return>
+
+</operation>
+
+<operation name="deleteCase" checked="false">
+
+  <parameter name="deleteCaseRequest">
+  </parameter>
+
+  <return name="deleteCaseResponse">
+  </return>
+
+</operation>
+
+<operation name="cancelCase" checked="false">
+
+  <parameter name="cancelCaseRequest">
+  </parameter>
+
+  <return name="cancelCaseResponse">
+  </return>
+
+</operation>
+
+<operation name="pauseCase" checked="false">
+
+  <parameter name="pauseCaseRequest">
+  </parameter>
+
+  <return name="pauseCaseResponse">
+  </return>
+
+</operation>
+
+<operation name="unpauseCase" checked="false">
+
+  <parameter name="unpauseCaseRequest">
+  </parameter>
+
+  <return name="unpauseCaseResponse">
+  </return>
+
+</operation>
+
+<operation name="addCaseNote" checked="false">
+
+  <parameter name="addCaseNoteRequest">
+  </parameter>
+
+  <return name="addCaseNoteResponse">
+  </return>
+
+</operation>
+
+<operation name="assignUserToDepartment" checked="false">
+
+  <parameter name="assignUserToDepartmentRequest">
+  </parameter>
+
+  <return name="pmResponse">
+  </return>
+
+</operation>
+
+<operation name="inputDocumentProcessList" checked="true">
+
+  <parameter name="inputDocumentProcessListRequest">
+    <entity entity-name="PM_PROCESSID" entity-type="field" entity-format="" entity-path="processId"/>
+    <entity entity-name="PM_SESSIONID" entity-type="field" entity-format="" entity-path="sessionId"/>
+  </parameter>
+
+  <return name="inputDocumentProcessListResponse" entity-name="INPUTDOCUMENTPROCESSLISTRESPONSE" entity-type="fragment" entity-format="">
+    <entity entity-name="PM_DESC" entity-type="field" entity-format="" entity-path="description"/>
+    <entity entity-name="PM_GUID" entity-type="field" entity-format="" entity-path="guid"/>
+    <entity entity-name="PM_NAME" entity-type="field" entity-format="" entity-path="name"/>
+  </return>
+
+</operation>
+
+<operation name="importProcessFromLibrary" checked="false">
+
+  <parameter name="importProcessFromLibraryRequest">
+  </parameter>
+
+  <return name="importProcessFromLibraryResponse">
+  </return>
+
+</operation>
+
+<operation name="executeTrigger" checked="true">
+
+  <parameter name="executeTriggerRequest">
+    <entity entity-name="PM_CASEID" entity-type="field" entity-format="" entity-path="caseId"/>
+    <entity entity-name="PM_DELINDEX" entity-type="field" entity-format="" entity-path="delIndex"/>
+    <entity entity-name="PM_SESSIONID" entity-type="field" entity-format="" entity-path="sessionId"/>
+    <entity entity-name="PM_TRIGGERINDEX" entity-type="field" entity-format="" entity-path="triggerIndex"/>
+  </parameter>
+
+  <return name="pmResponse">
+    <entity entity-name="PM_MESSAGE" entity-type="field" entity-format="" entity-path="message"/>
+    <entity entity-name="PM_STATUSCODE" entity-type="field" entity-format="" entity-path="status_code"/>
+    <entity entity-name="PM_TIMESTAMP" entity-type="field" entity-format="" entity-path="timestamp"/>
+  </return>
+
+</operation>
+
+<operation name="sendVariables" checked="true">
+
+  <parameter name="sendVariablesRequest" entity-name="NEWSENDVARIABLEREQUEST" entity-type="fragment" entity-format="">
+    <entity entity-name="PM_CASEID" entity-type="field" entity-format="" entity-path="caseId"/>
+    <entity entity-name="PM_SESSIONID" entity-type="field" entity-format="" entity-path="sessionId"/>
+    <entity entity-name="NEWCASEVARS" entity-type="list" entity-format="" entity-path="variables"/>
+    <entity entity-name="NEWCASENAM" entity-type="listfield" entity-format="" entity-path="variables.name"/>
+    <entity entity-name="NEWCASEVAL" entity-type="listfield" entity-format="" entity-path="variables.value"/>
+  </parameter>
+
+  <return name="pmResponse">
+    <entity entity-name="PM_MESSAGE" entity-type="field" entity-format="" entity-path="message"/>
+    <entity entity-name="PM_STATUSCODE" entity-type="field" entity-format="" entity-path="status_code"/>
+    <entity entity-name="PM_TIMESTAMP" entity-type="field" entity-format="" entity-path="timestamp"/>
+  </return>
+
+</operation>
+
+<operation name="getVariablesNames" checked="false">
+
+  <parameter name="getVariablesNamesRequest">
+  </parameter>
+
+  <return name="getVariablesNamesResponse">
+  </return>
+
+</operation>
+
+<operation name="systemInformation" checked="false">
+
+  <parameter name="systemInformationRequest">
+  </parameter>
+
+  <return name="systemInformationResponse">
+  </return>
+
+</operation>
+
+<operation name="outputDocumentList" checked="true">
+
+  <parameter name="outputDocumentListRequest">
+    <entity entity-name="PM_CASEID" entity-type="field" entity-format="" entity-path="caseId"/>
+    <entity entity-name="PM_SESSIONID" entity-type="field" entity-format="" entity-path="sessionId"/>
+  </parameter>
+
+  <return name="outputDocumentListResponse" entity-name="OUTPUTDOCUMENTLISTRESPONSE" entity-type="fragment" entity-format="">
+    <entity entity-name="PM_DOCUSER" entity-type="field" entity-format="" entity-path="createBy"/>
+    <entity entity-name="PM_DOCDATE" entity-type="field" entity-format="" entity-path="createDate"/>
+    <entity entity-name="PM_DOCUMENT" entity-type="field" entity-format="" entity-path="docId"/>
+    <entity entity-name="PM_DOCNAM" entity-type="field" entity-format="" entity-path="filename"/>
+    <entity entity-name="PM_DOCUID" entity-type="field" entity-format="" entity-path="guid"/>
+    <entity entity-name="PM_DOCINDEX" entity-type="field" entity-format="" entity-path="index"/>
+    <entity entity-name="PM_DOCPATH" entity-type="field" entity-format="" entity-path="link"/>
+    <entity entity-name="PM_DOCTYPE" entity-type="field" entity-format="" entity-path="type"/>
+    <entity entity-name="PM_DOCVER" entity-type="field" entity-format="" entity-path="version"/>
+  </return>
+
+</operation>
+
+<operation name="inputDocumentList" checked="true">
+
+  <parameter name="inputDocumentListRequest">
+    <entity entity-name="PM_CASEID" entity-type="field" entity-format="" entity-path="caseId"/>
+    <entity entity-name="PM_SESSIONID" entity-type="field" entity-format="" entity-path="sessionId"/>
+  </parameter>
+
+  <return name="inputDocumentListResponse" entity-name="INPUTDOCUMENTLISTRESPONSE" entity-type="fragment" entity-format="">
+    <entity entity-name="PM_DOCUSER" entity-type="field" entity-format="" entity-path="createBy"/>
+    <entity entity-name="PM_DOCDATE" entity-type="field" entity-format="" entity-path="createDate"/>
+    <entity entity-name="PM_DOCUMENT" entity-type="field" entity-format="" entity-path="docId"/>
+    <entity entity-name="PM_DOCNAM" entity-type="field" entity-format="" entity-path="filename"/>
+    <entity entity-name="PM_DOCUID" entity-type="field" entity-format="" entity-path="guid"/>
+    <entity entity-name="PM_DOCINDEX" entity-type="field" entity-format="" entity-path="index"/>
+    <entity entity-name="PM_DOCPATH" entity-type="field" entity-format="" entity-path="link"/>
+    <entity entity-name="PM_DOCTYPE" entity-type="field" entity-format="" entity-path="type"/>
+    <entity entity-name="PM_DOCVER" entity-type="field" entity-format="" entity-path="version"/>
+  </return>
+
+</operation>
+
+<operation name="removeDocument" checked="false">
+
+  <parameter name="removeDocumentRequest">
+  </parameter>
+
+  <return name="removeDocumentResponse">
+  </return>
+
+</operation>
+
+<operation name="removeUserFromGroup" checked="false">
+
+  <parameter name="removeUserFromGroupRequest">
+  </parameter>
+
+  <return name="pmResponse">
+  </return>
+
+</operation>
+
+</project>

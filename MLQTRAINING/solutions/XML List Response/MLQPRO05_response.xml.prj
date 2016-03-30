@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<project package="com.mlqlansa.service.xml" service-class="MLQPRO05_responseService" locale="" script="" inbound="false" outbound="true" source="MLQPRO05_response.xml">
+
+  <inbound>
+  </inbound>
+
+  <outbound>
+    <entity entity="field" name="DEPTMENT" format="" format-script="" trim="" type="" number-format="false" output-empty-node="true" output-cdata-section="false" output-disable-escape="false" path="/{}DepartmentListResponse/{}Department/{}Code"/>
+    <entity entity="list" name="DEPARTMENT" field="" format-script="" format="" trim="" type="" number-format="false" output-empty-node="true" output-cdata-section="false" output-disable-escape="false" path="/{}DepartmentListResponse/{}Department"/>
+    <entity entity="field" name="DEPTDESC" format="" format-script="" trim="" type="" number-format="false" output-empty-node="true" output-cdata-section="false" output-disable-escape="false" path="/{}DepartmentListResponse/{}Department/{}Description"/>
+    <entity entity="fragment" name="DEPARTMENTLISTRESPONSE" field="" format-script="" format="" trim="" type="" number-format="false" output-empty-node="true" output-cdata-section="false" output-disable-escape="false" multiple-occurrence="false" path="/{}DepartmentListResponse"/>
+    <entity entity="field" name="STD_TEXTS" format="" format-script="" trim="" type="" number-format="false" output-empty-node="true" output-cdata-section="false" output-disable-escape="false" path="/{}DepartmentListResponse/{}ReverseString"/>
+  </outbound>
+
+</project>

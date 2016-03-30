@@ -1,0 +1,31 @@
+C:\Program Files (x86)\Java\jre7\bin\java.exe
+-classpath
+"C:\Program Files (x86)\LANSAD10CMP\Integrator\Studio\workspace\MLQSOAP01\solutions\EmployeeServer\compile"
+"-Djava.ext.dirs=C:\Program Files (x86)\LANSAD10CMP\Integrator\Studio\lib\ext;"
+-Duser.language=en
+org.apache.axis.wsdl.Java2WSDL
+-l
+http://solutions.lansa.com:8561/cgi-bin/jsmdirect?mlqtutorial
+-o
+C:\Program Files (x86)\LANSAD10CMP\Integrator\Studio\workspace\MLQSOAP01\solutions\EmployeeServer\MLQEmployeeServerService.wsdl
+-b
+MLQEmployeeServerServiceBinding
+-S
+MLQEmployeeServerServiceService
+-s
+MLQEmployeeServerServicePort
+-P
+MLQEmployeeServerServicePortType
+-y
+WRAPPED
+-u
+LITERAL
+-T
+1.2
+-A
+OPERATION
+-i
+com.lansa.SOAPServer.mlqtutorial.MLQEmployeeServerProviderStub
+com.lansa.SOAPServer.mlqtutorial.MLQEmployeeServerProvider
+log4j:WARN No appenders could be found for logger (org.apache.axis.i18n.ProjectResourceBundle).
+log4j:WARN Please initialize the log4j system properly.

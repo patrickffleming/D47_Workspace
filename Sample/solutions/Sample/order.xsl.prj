@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<project>
+
+  <preference indent="yes" omit-declaration="no" use-structure="no"/>
+
+  <source path="order.xml"/>
+
+  <template path="/Orders/SalesOrder/Line"/>
+
+  <function>
+    <field name="ORDNUM" path="/Orders/SalesOrder/@SONumber" />
+    <field name="CUSTNUM" path="/Orders/SalesOrder/Customer/@CustNumber" />
+    <field name="CUSTNAME" path="/Orders/SalesOrder/Customer/CustName" />
+    <field name="STREET" path="/Orders/SalesOrder/Customer/Street" />
+    <field name="CITY" path="/Orders/SalesOrder/Customer/City" />
+    <field name="STATE" path="/Orders/SalesOrder/Customer/State" />
+    <field name="ZIP" path="/Orders/SalesOrder/Customer/PostCode" />
+    <field name="ORDDTE" path="/Orders/SalesOrder/OrderDate" />
+  </function>
+
+  <list>
+    <field name="LINENUM" path="/Orders/SalesOrder/Line/@LineNumber" />
+    <field name="PARTNUM" path="/Orders/SalesOrder/Line/Part/@PartNumber" />
+    <field name="PARTDESC" path="/Orders/SalesOrder/Line/Part/Description" />
+    <field name="PRICE" path="/Orders/SalesOrder/Line/Part/Price" />
+    <field name="QTY" path="/Orders/SalesOrder/Line/Quantity" />
+  </list>
+
+</project>

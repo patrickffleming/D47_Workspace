@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CurrencyResponse>
+  <Status>OK</Status>
+  <ErrorMsg/>
+  <Currencies>
+    <Currency>
+      <CurrencyCode>USD</CurrencyCode>
+      <CurrencyDescription>US Dollar</CurrencyDescription>
+      <ExchangeRate>1</ExchangeRate>
+      <ExchangeRateDate>03/03/2014</ExchangeRateDate>
+    </Currency>
+    <Currency>
+      <CurrencyCode>EUR</CurrencyCode>
+      <CurrencyDescription>Euro</CurrencyDescription>
+      <ExchangeRate>5</ExchangeRate>
+      <ExchangeRateDate>03/03/2014</ExchangeRateDate>
+    </Currency>
+    <Currency>
+      <CurrencyCode>AUD</CurrencyCode>
+      <CurrencyDescription>Australian Dollar</CurrencyDescription>
+      <ExchangeRate>10</ExchangeRate>
+      <ExchangeRateDate>03/03/2014</ExchangeRateDate>
+    </Currency>
+  </Currencies>
+</CurrencyResponse>
+
+
+
+  

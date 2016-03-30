@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TaxAndShipChargesResponse>
+   <Site>7000416</Site>
+   <Status>OK or ER</Status>
+   <ErrorMsg>An appropriate message - if no confirmation produced</ErrorMsg>
+   <Order>
+    <User>sstewart</User>
+    <OrderDate>01/22/2013 10:45:03AM</OrderDate>
+    	  <Destination>
+		<RecipientNumber>1</RecipientNumber>
+		<ShipVia>FedEx Std Overnight - by 3:00 pm</ShipVia>
+		<ShippingAmount>7.70</ShippingAmount>
+		<ShippingMessage>OK</ShippingMessage>
+		<TaxAmount>4.32</TaxAmount>
+		<TaxMessage>OK</TaxMessage>
+	  </Destination>
+	  <Destination>
+		<RecipientNumber>2</RecipientNumber>
+		<ShipVia>FedEx 2nd Day - by 4:30 pm</ShipVia>
+		<ShippingAmount>7.70</ShippingAmount>
+		<ShippingMessage>OK</ShippingMessage>
+		<TaxAmount>4.32</TaxAmount>
+		<TaxMessage>OK</TaxMessage>
+	  </Destination>
+	</Order>
+</TaxAndShipChargesResponse>
+  

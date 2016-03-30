@@ -1,0 +1,77 @@
+Generate source started
+Generate server bean source started
+Generate server bean : Employee
+Generate server bean completed
+Generate server bean source completed
+Generate service source started
+Generate service source completed
+Generate provider interface source started
+Generate provider interface source completed
+Generate provider stub source started
+Generate provider stub source completed
+Generate source completed
+Java compile started
+C:\Program Files (x86)\Java\jdk1.6.0_25\bin\javac.exe
+-g
+-encoding
+Cp1252
+-source
+1.4
+-target
+1.4
+-verbose
+-deprecation
+-J-Duser.language=en
+-classpath
+"C:\Program Files (x86)\LANSAD10CMP\Integrator\Studio\workspace\UHA SOAP Tutorial 2\solutions\EmployeeServer\compile"
+-extdirs
+"C:\Program Files (x86)\LANSAD10CMP\Integrator\Studio\lib\ext;"
+-d
+"C:\Program Files (x86)\LANSAD10CMP\Integrator\Studio\workspace\UHA SOAP Tutorial 2\solutions\EmployeeServer\compile"
+com\UHAcompany\service\soap\Employee.java
+com\UHAcompany\service\soap\UHAEmployeeServerService.java
+com\UHAcompany\service\soap\UHAEmployeeServerProvider.java
+com\UHAcompany\service\soap\UHAEmployeeServerProviderStub.java
+Java compile status: no errors
+Java compile completed
+Create archive started
+add source com/UHAcompany/service/soap/Employee.java
+add source com/UHAcompany/service/soap/UHAEmployeeServerService.java
+add source com/UHAcompany/service/soap/UHAEmployeeServerProvider.java
+add source com/UHAcompany/service/soap/UHAEmployeeServerProviderStub.java
+add class com/UHAcompany/service/soap/Employee.class
+add class com/UHAcompany/service/soap/UHAEmployeeServerService.class
+add class com/UHAcompany/service/soap/UHAEmployeeServerProvider.class
+add class com/UHAcompany/service/soap/UHAEmployeeServerProviderStub.class
+Create archive completed
+Create WSDL from source started
+C:\Program Files (x86)\Java\jre7\bin\java.exe
+-classpath
+"C:\Program Files (x86)\LANSAD10CMP\Integrator\Studio\workspace\UHA SOAP Tutorial 2\solutions\EmployeeServer\compile"
+"-Djava.ext.dirs=C:\Program Files (x86)\LANSAD10CMP\Integrator\Studio\lib\ext;"
+-Duser.language=en
+org.apache.axis.wsdl.Java2WSDL
+-l
+http://solutions.lansa.com:8561/cgi-bin/jsmdirect?UHAEMPLOYEESERVER
+-o
+C:\Program Files (x86)\LANSAD10CMP\Integrator\Studio\workspace\UHA SOAP Tutorial 2\solutions\EmployeeServer\UHAEmployeeServerService.wsdl
+-b
+UHAEmployeeServerServiceBinding
+-S
+UHAEmployeeServerServiceService
+-s
+UHAEmployeeServerServicePort
+-P
+UHAEmployeeServerServicePortType
+-y
+WRAPPED
+-u
+LITERAL
+-T
+1.2
+-A
+OPERATION
+-i
+com.UHAcompany.service.soap.UHAEmployeeServerProviderStub
+com.UHAcompany.service.soap.UHAEmployeeServerProvider
+Create WSDL from source completed

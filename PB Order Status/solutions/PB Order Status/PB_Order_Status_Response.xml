@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<OrderStatusResponse>
+  <Site>7000416</Site>
+  <OrderNumber>112233</OrderNumber>
+  <Status>OK</Status>
+  <ErrorMsg/>
+  <OrderStatusDetails>
+      <OrderStatusDetail>
+        <EcomNumber>1111111</EcomNumber>
+        <OrderDate>01/01/2014</OrderDate>
+        <Status>Shipped</Status>
+        <Tracking>1ZY22R15161161</Tracking>
+      </OrderStatusDetail> 
+      <OrderStatusDetail>
+        <EcomNumber>1111112</EcomNumber>
+        <OrderDate>01/01/2014</OrderDate>
+        <Status>Shipped</Status>
+        <Tracking>1ZY22R15161162</Tracking>
+      </OrderStatusDetail>
+      <OrderStatusDetail>
+        <EcomNumber>1111113</EcomNumber>
+        <OrderDate>01/01/2014</OrderDate>
+        <Status>Shipped</Status>
+        <Tracking>1ZY22R15161163</Tracking>
+    </OrderStatusDetail>
+  </OrderStatusDetails>
+</OrderStatusResponse>
+
+
+
+  

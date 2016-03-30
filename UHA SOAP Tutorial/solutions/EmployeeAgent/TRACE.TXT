@@ -1,0 +1,54 @@
+Generate source started
+Generate service source started
+Generate service source completed
+Generate source completed
+Java compile started
+C:\Program Files (x86)\Java\jdk1.6.0_25\bin\javac.exe
+-encoding
+Cp1252
+-source
+1.4
+-target
+1.4
+-verbose
+-deprecation
+-J-Duser.language=en
+-classpath
+"C:\Program Files (x86)\LANSAD10CMP\Integrator\Studio\workspace\UHA SOAP Tutorial\solutions\EmployeeAgent\compile-agent"
+-extdirs
+"C:\Program Files (x86)\LANSAD10CMP\Integrator\Studio\lib\ext;"
+-d
+"C:\Program Files (x86)\LANSAD10CMP\Integrator\Studio\workspace\UHA SOAP Tutorial\solutions\EmployeeAgent\compile-agent"
+com\UHAcompany\service\soap\UHAEmployeeAgentService.java
+Java compile status: no errors
+Java compile completed
+Update archive started
+Get project services
+Get project classes
+Local entry load : com.UHAcompany.service.soap.UHAEmployeeAgentService
+Local entry load : com.UHAcompany.service.soap.UHAEmployeeServerServicePortType
+Local entry load : com.UHAcompany.service.soap.UHAEmployeeServerServiceBindingStubAccessor
+Local entry load : com.UHAcompany.service.soap.UHAEmployeeServerServiceService
+Local entry load : com.UHAcompany.service.soap.Employee
+Local entry load : com.UHAcompany.service.soap.UHAEmployeeServerServiceServiceLocator
+Local entry load : com.UHAcompany.service.soap.UHAEmployeeServerServiceBindingStub
+found previous service com/UHAcompany/service/soap/UHAEmployeeAgentService.class
+found previous service com/UHAcompany/service/soap/UHAEmployeeAgentService.java
+keep com/UHAcompany/service/soap/Employee.java
+keep com/UHAcompany/service/soap/UHAEmployeeServerServicePortType.java
+keep com/UHAcompany/service/soap/UHAEmployeeServerServiceBindingStub.java
+keep com/UHAcompany/service/soap/UHAEmployeeServerServiceService.java
+keep com/UHAcompany/service/soap/UHAEmployeeServerServiceServiceLocator.java
+keep com/UHAcompany/service/soap/UHAEmployeeServerServiceBindingStubAccessor.java
+keep com/UHAcompany/service/soap/Employee.class
+keep com/UHAcompany/service/soap/UHAEmployeeServerServicePortType.class
+keep com/UHAcompany/service/soap/UHAEmployeeServerServiceBindingStub.class
+keep com/UHAcompany/service/soap/UHAEmployeeServerServiceService.class
+keep com/UHAcompany/service/soap/UHAEmployeeServerServiceServiceLocator.class
+keep com/UHAcompany/service/soap/UHAEmployeeServerServiceBindingStubAccessor.class
+remove previous service com/UHAcompany/service/soap/UHAEmployeeAgentService.java
+remove previous service com/UHAcompany/service/soap/UHAEmployeeAgentService.class
+add source com/UHAcompany/service/soap/UHAEmployeeAgentService.java
+add class com/UHAcompany/service/soap/UHAEmployeeAgentService.class
+temporary archive closed
+Update archive completed

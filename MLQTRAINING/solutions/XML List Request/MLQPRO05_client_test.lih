@@ -1,0 +1,174 @@
+# LANSA Integrator Host Information
+
+# Transport Directives
+# transport=jms
+# transport=ftp
+# transport=sftp
+# transport=http
+# transport=mqseries
+
+# javax.net.ssl.keyStore=
+# javax.net.ssl.keyStoreType=jks
+# javax.net.ssl.keyStorePassword=
+# javax.net.ssl.trustStore=
+# javax.net.ssl.trustStoreType=jks
+# javax.net.ssl.trustStorePassword=
+# javax.net.debug=all
+# javax.net.debug=ssl,handshake,data,trustmanager
+# java.protocol.handler.pkgs=com.sun.net.ssl.internal.www.protocol
+
+# Content Encoding
+# local.read.text.encoding=ISO8859_1
+# remote.write.text.encoding=UTF-8
+# remote.read.text.encoding=UTF-8
+# local.write.text.encoding=ISO8859_1
+# remote.read.xml.encoding=*charset | *autodetect | value
+# local.write.xml.encoding=*charset | *default | *text | value
+
+# Extension based Content Types (Default is application/octet-stream)
+gif=image/gif
+jpg=image/jpeg
+jpeg=image/jpeg
+pdf=application/pdf
+xls=application/vnd.ms-excel
+txt=text/plain; charset=utf-8
+html=text/html; charset=utf-8
+x12=application/edi-x12; charset=utf-8
+edi=application/edifact; charset=utf-8
+xml=application/xml; charset=utf-8
+tsv=application/tab-separated-values; charset=utf-8
+csv=application/comma-separated-values; charset=utf-8
+# xml=text/xml; charset=utf-8
+# tsv=text/tab-separated-values; charset=utf-8
+csv=text/comma-separated-values; charset=utf-8
+
+# Application Directives
+# tab.placement=*top | *bottom | *left | *right
+tab.placement=*bottom
+# source.send=*prompt
+# source.send=*noprompt
+# source.open=*prompt
+# source.open=order.csv
+# source.convert.yen=*yes
+# source.xml.validation=*yes | *no
+source.filter.extension=xml,csv,tsv,xls,gif,jpg,edi,x12
+source.filter.description=All Sources
+source.chooser.description=XML Documents,Comma Separated Values,Tab Separated Values,Excel Documents,GIF Images,JPG Images,EDIFACT Interchanges,X12 Interchanges
+response.filter.extension=xml,csv,tsv,xls,gif,jpg,edi,x12
+response.filter.description=All Responses
+response.chooser.description=XML Documents,Comma Separated Values,Tab Separated Values,Excel Documents,GIF Images,JPG Images,EDIFACT Interchanges,X12 Interchanges
+
+# Excel Directives
+# excel.sheet.read=order-data
+# excel.sheet.write=Sheet1
+# excel.read.value.trim=*none | *both | *leading | *trailing
+# excel.trace=*yes
+# excel.filter.empty=*no
+# excel.scale=4
+# excel.dateformat=yyyy-MM-dd
+# excel.convert.decimal=*yes
+excel.convert=text/comma-separated-values; charset=utf-8
+# excel.convert=text/tab-separated-values; charset=utf-8
+
+# SOCKS Directives
+# socks=myproxy:1080
+# socks.user=
+# socks.version=4a
+
+# HTTP Directives
+name=MLQFN07_SERVICE
+host=http://solutions.lansa.com:8561
+# method=get | head | trace | options | post | put | find ...
+# user=
+# password=
+# authentication.encoding=ISO8859-1
+# authentication.preemptive=*basic | *digest | *ntlm | *negotiate
+# host.trusted=*yes
+# proxy=http://myproxy:80
+# proxy.user=
+# proxy.password=
+# proxy.authentication.encoding=ISO8859-1
+# locale=en_AU
+# protocol.version=2
+# protocol.encoding=ISO8859-1
+#
+# GET,HEAD,TRACE or OPTIONS URI or default POST URI
+uri=/download.html
+#
+# Extension based POST or other method URI's
+xml.uri=/cgi-bin/jsmdirect?MLQFN07_SERVICE
+csv.uri=/cgi-bin/jsmdirect?MLQFN07_SERVICE
+tsv.uri=/cgi-bin/jsmdirect?ordersv
+edi.uri=/cgi-bin/jsmdirect?orderedi
+x12.uri=/cgi-bin/jsmdirect?orderedi
+xls.uri=/cgi-bin/jsmdirect?upload-xls
+gif.uri=/cgi-bin/jsmdirect?upload-image
+jpg.uri=/cgi-bin/jsmdirect?upload-image
+
+# FTP Directives
+ftp.name=Acme Corporation FTP site
+ftp.host=ftp://lansa01:21
+# ftp.method=get | put
+# ftp.type=*binary | *ascii
+# ftp.mode=*passive | *port
+ftp.user=
+ftp.password=
+ftp.directory=/upload/
+ftp.path=/upload/fixedname.txt
+
+# SFTP Directives
+sftp.name=Acme Corporation SFTP site
+sftp.host=sftp://lansa01:22
+# sftp.method=get | put
+sftp.user=
+sftp.password=
+sftp.directory=/upload/
+sftp.path=/upload/fixedname.txt
+# sftp.path.encoding=value
+
+# JMS Directives
+jms.name=Message queue
+# jms.vendor=mqseries | sonicmq | activemq | tibcomq
+jms.host=
+# jms.port=
+# jms.method=get | put
+# jms.user=user
+# jms.password=password
+jms.queue=
+# jms.channel=
+# jms.queue.manager=*default
+# jms.clientid=
+# jms.priority=4
+# jms.persistent=*yes
+# jms.expiry=*unlimited
+# jms.waittime=2000
+
+# MQSeries Directives
+mq.name=Message queue
+mq.host=
+mq.port=1414
+# mq.method=get | put
+mq.user=
+mq.password=
+mq.queue=
+mq.channel=
+mq.queue.manager=*default
+mq.ccsid=37
+mq.encoding=*ccsid | value
+mq.type=*datagram
+# mq.type=*datagram | 65536 to 999999999
+mq.format=*default
+# mq.format=*none | *default | value
+mq.priority=0
+mq.persistent=*default
+# mq.persistent=*default | *yes | *no
+mq.expiry=*unlimited
+# mq.expiry=*unlimited | value
+# mq.waittime=2000
+mq.userid=
+# mq.applicationid=
+# mq.messageid=*none | value
+# mq.correlationid=*none | value
+# mq.id.encoding=*ccsid | value
+# mq.reply.queue=
+# mq.reply.queue.manager=
